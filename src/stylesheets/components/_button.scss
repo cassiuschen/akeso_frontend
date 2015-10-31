@@ -21,11 +21,13 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 			&:hover {
 				background-color: $color;
 				color: calcColorByBg($color);
+				border-color: $color;
 			}
 
 			&:active {
 				background-color: $darken;
 				color: calcColorByBg($darken);
+				border-color: $darken;
 			}
 
 			&.inverted {
@@ -34,6 +36,12 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 
 				&:hover {
 					background-color: $color;
+				}
+
+				&:active {
+					background-color: $darken;
+					color: calcColorByBg($darken);
+					border-color: $darken;
 				}
 			}
 		}
