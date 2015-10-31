@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AKESO</title>
+    <link href="/assets/css/vendor.css" rel="stylesheet" />
+    <link href="/assets/css/application.css" rel="stylesheet" />
+    <script src="/assets/js/lib/modernizr.js"></script>
+    <script src="/assets/js/lib/require.js"></script>
+    <script>
+      requirejs(['/assets/js/application.js'], function(app){
+        requirejs(['ui/navbar', 'app/index']);
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="title-area">
+          <a class="logo"></a>
+          <div class="mobile-menu-button">
+            <a href="#"><span>Menu</span></a>
+          </div>
+        </div>
+        <section class="navbar-section">
+          <div class="items left underline">
+            <a class="item" href="/"><span>首页</span></a><a class="item"><span>产品</span></a><a class="item active"><span>健康</span></a><a class="item"><span>服务</span></a>
+            <div class="animated-line"></div>
+          </div>
+          <div class="items right">
+            <a class="item"><span>EN</span></a><a class="item btn"><span>登陆/注册</span></a>
+          </div>
+        </section>
+      </div>
+    </nav><h1>
+      This in index/screen
+    </h1>
+    <h2>
+      walalalala
+    </h2>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@import "var";
+@import "components";
+
+body, html {
+	margin: 0;
+	padding: 0;
+	-webkit-locale: zh-Hans-CN;
+	-webkit-tap-highlight-color: transparent;
+	text-size-adjust: 100%;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+* {
+	transition: all .28s ease-in;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	outline: none !important;
+	font-family: "Lato Regular", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+a, a:link, a:hover, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}

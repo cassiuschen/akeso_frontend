@@ -1,0 +1,22 @@
+{
+  "name": "akeso",
+  "version": "0.1.0",
+  "authors": [
+    "cassiuschen <chzsh1995@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "foundation": "~5.5.3",
+    "font-awesome": "fontawesome#~4.4.0",
+    "requirejs": "~2.1.20"
+  }
+}

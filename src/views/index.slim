@@ -1,0 +1,21 @@
+ruby:
+  def render(filename, options = {}, &block)
+    Slim::Template.new("src/views/#{filename}.slim", options).render(self, &block)
+  end
+
+
+doctype html
+html
+  head
+    title AKESO
+    link rel="stylesheet" href="/assets/css/vendor.css"
+    link rel="stylesheet" href="/assets/css/application.css"
+    script src="/assets/js/lib/modernizr.js"
+    script src="/assets/js/lib/require.js"
+    javascript:
+      requirejs(['/assets/js/application.js'], function(app){
+        requirejs(['ui/navbar', 'app/index']);
+      });
+  body
+    == render 'components/_navbar'
+    == render 'index/_screen'

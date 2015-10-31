@@ -1,0 +1,119 @@
+/*
+	Author: Cassius Chen
+	Created At: 2015-10-30
+*/
+
+$nav_bgColor: $ak_blue;
+$nav_height: 80px;
+$nav_color: #fff;
+
+nav.navbar {
+	background-color: $nav_bgColor;
+	height: $nav_height;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: $nav_color;
+	font-size: 0;
+	
+	.title-area {
+		display: inline-block;
+		vertical-align: middle;
+
+		.logo {
+			height: 36px;
+			width: 162px;
+			display: inline-block;
+			background-image: url(/assets/images/logo-white.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
+
+@media (screen and min-width: 640px) {
+	nav.navbar {
+		.mobile-menu-button {
+			display: none;
+		}
+
+		.navbar-section {
+			height: 100%;
+			padding: 28px 0;
+			width: calc(100% - 162px);
+			display: inline-block;
+			vertical-align: middle;
+
+			.items {
+				position: relative;
+				font-size: 0;
+				padding: 0 10px;
+				&.left {
+					float: left;
+				}
+
+				&.right {
+					float: right;
+				}
+				.item {
+
+					position: relative;
+					display: inline-block;
+					vertical-align: middle;
+					padding: 0 40px;
+					margin: 0;
+					font-size: 16px;
+					opacity: .7;
+
+					&:hover, &.active, &:active {
+						opacity: 1;
+						cursor: pointer;
+
+						span {
+							border-bottom: 2px solid #fff;
+						}
+					}
+
+					span {
+						padding: 6px 0;
+					}
+
+					&.btn {
+						padding: 0 25px;
+						span {
+							background-color: rgba(255,255,255,.2);
+							border-radius: 5px;
+							padding: 5px 15px;
+						}
+
+						&:hover, &:active, &.active {
+							span { border-bottom: none; }
+						}
+					}
+					
+				}
+
+				&.underline {
+					.item:hover, .item:active, .item.active {
+						span {
+							border-bottom: none !important;
+						}
+					}
+					.animated-line {
+						display: block;
+						margin: 0;
+						position: absolute;
+						bottom: -6px;
+						height: 2px;
+						background-color: #fff;
+
+					}
+				}
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,49 @@
+{
+  "name": "TaoBaoMobile",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-cache": "^0.2.4",
+    "gulp-concat": "^2.4.3",
+    "gulp-jshint": "^1.9.0",
+    "gulp-livereload": "^3.2.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-notify": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^1.0.2",
+    "gulp-coffee": "^2.2.0",
+    "gulp-slim": "0.0.13",
+    "gulp-connect": "^2.2.0",
+    "gulp-open": "^0.3.1",
+    "node-webkit-builder": "^0.3.2"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "gulp-bower-normalize": "^1.0.3",
+    "gulp-cjsx": "^3.0.0",
+    "gulp-coffee": "^2.2.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-slim": "0.0.13",
+    "gulp-uncss": "^1.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cassiuschen/taobao_mobile_rebuild"
+  },
+  "keywords": [
+    "html5",
+    "digital",
+    "art",
+    "cuc"
+  ],
+  "author": "Cassius Chen",
+  "license": "Apache"
+}
