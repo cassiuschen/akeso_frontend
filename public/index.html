@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>产品 | AKESO</title>
     <link href="/assets/css/vendor.css" rel="stylesheet" />
     <link href="/assets/css/application.css" rel="stylesheet" />
     <script src="/assets/js/lib/modernizr.js"></script>
     <script src="/assets/js/lib/require.js"></script>
+    <meta content="width=980, initial-scale=1.0, user-scalable=yes" name="viewport" />
     <script>
       requirejs(['/assets/js/application.js'], function(app){
         requirejs(['app/production']);
@@ -23,14 +25,22 @@
         </div>
         <section class="navbar-section">
           <div class="items left underline">
-            <a class="item" data-active="home" href="/"><span>首页</span></a><a class="item" data-active="production"><span>产品</span></a><a class="item" data-active="health"><span>健康</span></a><a class="item" data-active="service"><span>服务</span></a>
+            <a class="item" data-active="home" href="/"><span>首页</span></a><a class="item has-hover-menu" data-active="production" data-menu="prod-select"><span>产品</span></a><a class="item disabled" data-active="health"><span>健康</span></a><a class="item disabled" data-active="service"><span>服务</span></a>
             <div class="animated-line"></div>
           </div>
           <div class="items right">
-            <a class="item"><span>EN</span></a><a class="item btn"><span>登陆/注册</span></a>
+            <a class="item disabled"><span>EN</span></a><a class="item btn disabled"><span>登陆/注册</span></a>
           </div>
         </section>
       </div>
+      <section class="hover-menu" id="prod-select">
+        <div class="types container">
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+        </div>
+      </section>
     </nav><div class="margin-nav" id="productionHeroArea">
       <div class="container">
         <h1 class="title">

@@ -3,8 +3,9 @@ define(['jquery'], function($) {
     setActive: function(str) {
       $(".items .item[data-active='" + str + "']").addClass('active');
       if ($('.items.underline').size()) {
-        return this.underline();
+        this.underline();
       }
+      return this.hoverMenu();
     },
     underline: function() {
       var $active, $line, itemLeft, margin, spanPaddingLeft, width;
@@ -20,9 +21,9 @@ define(['jquery'], function($) {
           width: width
         });
         $('.items.underline .item').on('mouseover', function(evt) {
-          if ($(this).hasClass('noLine')) {
+          if ($(this).hasClass('noLine') || $(this).hasClass('disabled')) {
             $line.css({
-              left: spanPaddingLeft + margin,
+              left: itemLeft + spanPaddingLeft + margin,
               width: width
             });
           } else {
@@ -39,6 +40,28 @@ define(['jquery'], function($) {
           });
         });
       }
+    },
+    hoverMenu: function() {
+      var targetMenu;
+      targetMenu = "first-init";
+      $('.items.underline .item').on('mouseover', function(evt) {
+        var onShowMenu;
+        onShowMenu = targetMenu;
+        targetMenu = $(this).data('menu') || "nil";
+        if (onShowMenu === "first-init") {
+          onShowMenu = targetMenu;
+          $(".hover-menu#" + targetMenu).addClass('show');
+        }
+        if (targetMenu !== onShowMenu) {
+          $(".hover-menu#" + onShowMenu).removeClass('show');
+          if (targetMenu !== 'nil') {
+            return $(".hover-menu#" + targetMenu).addClass('show');
+          }
+        }
+      });
+      return $('body').on('click', function() {
+        return $('nav.navbar .hover-menu.show').removeClass('show');
+      });
     }
   };
 });

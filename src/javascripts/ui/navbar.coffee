@@ -3,6 +3,7 @@ define ['jquery'], ($) ->
 		$(".items .item[data-active='#{str}']").addClass 'active'
 		if $('.items.underline').size()
 			@underline()
+		@hoverMenu()
 
 	underline: ->
 		if $('.underline .animated-line').size()
@@ -20,9 +21,9 @@ define ['jquery'], ($) ->
 
 			$('.items.underline .item').on 'mouseover', (evt) ->
 				
-				if $(this).hasClass 'noLine'
+				if $(this).hasClass('noLine') || $(this).hasClass('disabled')
 					$line.css
-						left: spanPaddingLeft + margin
+						left: itemLeft + spanPaddingLeft + margin
 						width: width
 				else
 					$line.css
@@ -33,3 +34,18 @@ define ['jquery'], ($) ->
 				$line.css
 					left: itemLeft + spanPaddingLeft + margin
 					width: width
+	hoverMenu: ->
+		targetMenu = "first-init"
+		$('.items.underline .item').on 'mouseover', (evt) ->
+			onShowMenu = targetMenu
+			targetMenu = $(this).data('menu') || "nil"
+			#console.log("Hover on #{$(this).children().first().text()}, target: #{targetMenu}, onShow: #{onShowMenu}")
+			if onShowMenu == "first-init"
+				onShowMenu = targetMenu
+				$(".hover-menu##{targetMenu}").addClass 'show'
+			if targetMenu != onShowMenu
+				$(".hover-menu##{onShowMenu}").removeClass 'show'
+				unless targetMenu == 'nil'
+					$(".hover-menu##{targetMenu}").addClass 'show'
+		$('body').on 'click', ->
+			$('nav.navbar .hover-menu.show').removeClass 'show'
