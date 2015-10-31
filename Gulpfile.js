@@ -2,12 +2,13 @@
 // Write by Cassius Chen, 2015
 
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
+    inlineimage = require('gulp-inline-image'),
     //pngquant = require('imagemin-pngquant'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
@@ -35,14 +36,13 @@ gulp.task('default', function() {
 
 gulp.task('scss', function() {
   gulp.src(['src/stylesheets/*.scss', 'src/stylesheets/**/*.scss'])
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
             browsers: ['last 5 Chrome versions', 'iOS > 0', 'Android > 0', '> 5%'],
             cascade: true,
             remove: true
         }))
-    .pipe(sass({precision: 5, sourcemap: false, stopOnError: false, } ))
-    
-    
+    .pipe(inlineimage())
     //.pipe(uncss({html: ['public/*.html']}))
     .pipe(gulp.dest('public/assets/css'))
     .pipe(rename({suffix: '.min'}))

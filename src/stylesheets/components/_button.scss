@@ -1,0 +1,58 @@
+$btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue));
+
+@function calcColorByBg($color) {
+	@if lightness($color) > 50% {
+		@return $ak_blue;
+	} @else {
+		@return #fff;
+	}
+}
+
+
+@mixin btnColor($list) {
+	@each $data in $list {
+		$name: nth($data, 1);
+		$color: nth($data, 2);
+		$darken: nth($data, 3);
+		&.#{$name} {
+			border-color: $darken;
+			color: $darken;
+
+			&:hover {
+				background-color: $color;
+				color: calcColorByBg($color);
+			}
+
+			&:active {
+				background-color: $darken;
+				color: calcColorByBg($darken);
+			}
+
+			&.inverted {
+				color: calcColorByBg($color);
+				background-color: $darken;
+
+				&:hover {
+					background-color: $color;
+				}
+			}
+		}
+	}
+}
+
+.button {
+	box-sizing: border-box;
+
+	min-width: 140px !important;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 9px;
+	width: 140px;
+	@include btnColor($btn-color);
+
+	&:hover, &:active {
+		cursor: pointer;
+	}
+}

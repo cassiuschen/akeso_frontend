@@ -1,0 +1,79 @@
+#productionHeroArea {
+	padding: 70px 0;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	height: 700px;
+	background-color: #ebecf1;
+	background-image: url(/assets/images/glass-1.png);
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-size: 972px 325px;
+
+	.title {
+		font-size: 46px;
+		line-height: 1.2;
+		margin: 0;
+		margin-top: 36px;
+		font-weight: normal;
+		position: relative;
+	}
+
+	.sub-title {
+		margin: 0;
+		position: relative;
+		margin-top: 16px;
+		font-size: 24px;
+		color: $second_level_black;
+		font-weight: normal;
+		margin-bottom: 32px;
+	}
+
+	.actions {
+		text-align: center;
+		position: relative;
+	}
+
+	.button {
+		display: block;
+		margin: 0 auto 13px auto;
+	}
+
+	.version {
+		position: absolute;
+		bottom: 95px;
+		left: calc(50% - 103px);
+		height: 36px;
+		width: 206px;
+		background-image: url(/assets/images/logo-dark.svg);
+		background-position: 0 center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+
+		span {
+			margin-top: 5px;
+			background-color: $red;
+			font-size: 24px;
+			padding: 0 10px;
+			color: #fff;
+			border-radius: 2px;
+			float: right;
+			line-height: 26px;
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	#productionHeroArea {
+		background-position: calc(50% + 48px) 100%;
+		background-size: 972px 325px;
+	}
+}
+
+@media (min-width: 965px) {
+	#productionHeroArea {
+		background-position: calc(50% + 50px) 100%;
+		background-size: 960px 321px;
+	}
+}

@@ -8,6 +8,7 @@ $nav_height: 80px;
 $nav_color: #fff;
 
 nav.navbar {
+	z-index: 10000;
 	background-color: $nav_bgColor;
 	height: $nav_height;
 	position: fixed;
@@ -33,7 +34,7 @@ nav.navbar {
 	}
 }
 
-@media (screen and min-width: 640px) {
+@media (min-width: 640px) {
 	nav.navbar {
 		.mobile-menu-button {
 			display: none;

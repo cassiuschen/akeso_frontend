@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AKESO</title>
+    <title>产品 | AKESO</title>
     <link href="/assets/css/vendor.css" rel="stylesheet" />
     <link href="/assets/css/application.css" rel="stylesheet" />
     <script src="/assets/js/lib/modernizr.js"></script>
     <script src="/assets/js/lib/require.js"></script>
     <script>
       requirejs(['/assets/js/application.js'], function(app){
-        requirejs(['app/index']);
+        requirejs(['app/production']);
       });
     </script>
   </head>
@@ -31,8 +31,8 @@
           </div>
         </section>
       </div>
-    </nav><div class="container margin-nav">
-      <div id="heroArea">
+    </nav><div class="margin-nav" id="productionHeroArea">
+      <div class="container">
         <h1 class="title">
           懂你的，才能真正关心你
         </h1>
@@ -40,7 +40,10 @@
           帮你改善眼健康的新朋友，现已开始预售
         </h3>
         <div class="actions">
-          <a class="button blue">了解更多 <i class="fa fa-angle-right"></i></a><a class="button blue inverted"></a>
+          <a class="button blue">了解更多 <i class="fa fa-angle-right"></i></a><a class="button blue inverted">立即预定</a>
+        </div>
+        <div class="version">
+          <span>1</span>
         </div>
       </div>
     </div>
