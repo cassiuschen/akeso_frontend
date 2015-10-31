@@ -9,6 +9,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 100%;
 	background-size: 972px 325px;
+	background-attachment: fixed;
 
 	.title {
 		font-size: 46px;
@@ -64,10 +65,34 @@
 	}
 }
 
+@media (min-height: 1280px) {
+	#productionHeroArea {
+		height: calc(100vh - 542px);
+	}
+}
+
+@media (min-height: 1100px) {
+	#productionHeroArea {
+		height: calc(100vh - 416px);
+	}
+}
+
+@media (max-height: 1100px) {
+	#productionHeroArea {
+		height: calc(100vh - 80px);
+	}
+}
+
 @media (min-width: 1280px) {
 	#productionHeroArea {
 		background-position: calc(50% + 48px) 100%;
 		background-size: 972px 325px;
+	}
+
+	.panel {
+		.video {
+			width: 400px !important;
+		}
 	}
 }
 
@@ -75,6 +100,12 @@
 	#productionHeroArea {
 		background-position: calc(50% + 50px) 100%;
 		background-size: 960px 321px;
+	}
+
+	.panel {
+		.video {
+			width: 300px;
+		}
 	}
 }
 
@@ -87,10 +118,10 @@
 		.container {
 			display: flex;
 			justify-content: space-around;
-
+			
 			.video {
-				width: 300px;
 				text-align: center;
+				width: 300px;
 				img {
 					display: block;
 					width: 100%;
