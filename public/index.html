@@ -8,7 +8,7 @@
     <script src="/assets/js/lib/require.js"></script>
     <script>
       requirejs(['/assets/js/application.js'], function(app){
-        requirejs(['ui/navbar', 'app/index']);
+        requirejs(['app/index']);
       });
     </script>
   </head>
@@ -23,7 +23,7 @@
         </div>
         <section class="navbar-section">
           <div class="items left underline">
-            <a class="item" href="/"><span>首页</span></a><a class="item"><span>产品</span></a><a class="item active"><span>健康</span></a><a class="item"><span>服务</span></a>
+            <a class="item" data-active="home" href="/"><span>首页</span></a><a class="item" data-active="production"><span>产品</span></a><a class="item" data-active="health"><span>健康</span></a><a class="item" data-active="service"><span>服务</span></a>
             <div class="animated-line"></div>
           </div>
           <div class="items right">

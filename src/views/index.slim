@@ -14,7 +14,7 @@ html
     script src="/assets/js/lib/require.js"
     javascript:
       requirejs(['/assets/js/application.js'], function(app){
-        requirejs(['ui/navbar', 'app/index']);
+        requirejs(['app/index']);
       });
   body
     == render 'components/_navbar'
