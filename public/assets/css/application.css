@@ -2,6 +2,8 @@
 .container {
   display: block;
   margin: 0 auto; }
+  .container.margin-nav {
+    margin-top: 80px; }
 
 @media (max-width: 964px) {
   .container {
@@ -63,7 +65,8 @@ nav.navbar {
         padding: 0 40px;
         margin: 0;
         font-size: 16px;
-        opacity: .7; }
+        opacity: .7;
+        text-shadow: 0 2px 2px rgba(55, 55, 55, 0.5); }
         nav.navbar .navbar-section .items .item:hover, nav.navbar .navbar-section .items .item.active, nav.navbar .navbar-section .items .item:active {
           opacity: 1;
           cursor: pointer; }
