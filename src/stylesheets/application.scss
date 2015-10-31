@@ -10,6 +10,7 @@ body, html {
 	min-width: 100%;
 	min-height: 100%;
 	width: 100%;
+	font-size: 0;
 }
 
 * {
@@ -24,6 +25,9 @@ a, a:link, a:hover, a:active {
 	text-decoration: none;
 	color: inherit;
 }
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{height:1%;}
 
 input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
 

@@ -1,0 +1,33 @@
+footer {
+	padding: 40px 0;
+	background-color: #2a2a2a;
+	
+	.left {
+		float: left;
+	}	
+
+	.right {
+		float: right;
+	}
+
+	.info {
+		color: #fff;
+		font-size: 12px;
+		display: inline-block;
+		vertical-align: top;
+		
+		a, p {
+			line-height: 23px;
+			opacity: .7;
+		}
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		a:hover, a:active {
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+}
