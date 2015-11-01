@@ -107,6 +107,13 @@ gulp.task('image', function() {
     //    }))
     .pipe(gulp.dest('public/assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
+  gulp.src(['./src/images/*.jpg', './src/images/*.png'])
+    .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}]
+        }))
+    .pipe(gulp.dest('public/assets/images'))
+    .pipe(notify({ message: 'Images MINI task complete' }));
 })
 // Basic Functions Done ==================================
 
