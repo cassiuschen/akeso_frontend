@@ -129,6 +129,10 @@
 			.video {
 				text-align: center;
 				width: 300px;
+
+				&.disabled {
+					opacity: .4;
+				}
 				img {
 					display: block;
 					width: 100%;
