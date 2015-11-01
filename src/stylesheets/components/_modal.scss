@@ -1,0 +1,45 @@
+.modal {
+	&.open {
+		display: block;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	display: none;
+	background-color: #fff;
+	z-index: 10000000;
+
+	a.close {
+		display: block;
+		width: 55px;
+		height: 55px;
+		background-image: url(/assets/images/close.svg);
+		background-repeat: no-repeat;
+		background-size: 25px 25px;
+		background-position: center;
+		position: fixed;
+		top: 15px;
+		left: 15px;
+		opacity: .3;
+
+		&:hover, &:active {
+			opacity: .8;
+			cursor: pointer;
+		}
+	}
+
+	.player {
+		position: fixed;
+		top: 90px;
+		left: 70px;
+		width: calc(100vw - 140px);
+		height: calc(100vh - 140px);
+		margin: 0 auto;
+	}
+}
+
+.has-modal:hover, .has-modal:active {
+	cursor: pointer;
+}

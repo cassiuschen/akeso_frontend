@@ -1,4 +1,5 @@
-define(['jquery', 'navbar'], function($, NavBar) {
+define(['jquery', 'navbar', 'modal'], function($, NavBar, M) {
   NavBar.setActive("home");
-  return $('body').addClass('Index');
+  $('body').addClass('Index');
+  return M.init();
 });

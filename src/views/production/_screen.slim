@@ -15,7 +15,7 @@
 
 .panel.videos
   .container
-    a.video href="http://v.youku.com/v_show/id_XMTM2Mzk5MDY1Ng==.html" target="_blank"
+    a.video.has-modal data-modal="video-1"
       img src="/assets/images/prod-v-1.png" alt=""/
       | 艾索的生活态度
     a.video.disabled
@@ -24,3 +24,10 @@
     a.video.disabled
       img src="/assets/images/prod-v-3.png" alt=""/
       | 艾索与眼健康
+
+.modal#video-1
+  a.close
+    == fa 'close'
+  .player#youku
+  script src="http://player.youku.com/jsapi"
+    | player = new YKU.Player('youku',{styleid: '0', client_id: '0cac65a381ef56c9',vid: 'XMTM2Mzk5MDY1Ng==',autoplay: true,show_related: false});
