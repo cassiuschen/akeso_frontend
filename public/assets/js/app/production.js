@@ -1,4 +1,4 @@
 define(['jquery', 'navbar'], function($, NavBar) {
-  NavBar.setActive("production");
+  NavBar.setActive("home");
   return $('body').addClass('Index');
 });

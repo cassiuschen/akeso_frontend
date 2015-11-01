@@ -1,3 +1,3 @@
 define ['jquery', 'navbar'], ($, NavBar) ->
-	NavBar.setActive("production")
+	NavBar.setActive("home")
 	$('body').addClass 'Index'
