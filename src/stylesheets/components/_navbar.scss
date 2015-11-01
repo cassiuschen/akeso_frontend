@@ -84,7 +84,7 @@ nav.navbar {
 }
 
 @media (min-width: 640px) {
-	nav.navbar {
+	nav.navbar, .detail-nav {
 		.mobile-menu-button {
 			display: none;
 		}
@@ -96,76 +96,81 @@ nav.navbar {
 			display: inline-block;
 			vertical-align: middle;
 
-			.items {
+
+		}
+
+		.items {
+			* {
+				transition: all .28s ease-in;
+			}
+			position: relative;
+			font-size: 0;
+			padding: 0 10px;
+			&.left {
+				float: left;
+			}
+
+			&.right {
+				float: right;
+			}
+
+			.item {
 				position: relative;
-				font-size: 0;
-				padding: 0 10px;
-				&.left {
-					float: left;
-				}
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 40px;
+				margin: 0;
+				font-size: 16px;
+				opacity: .7;
+				text-shadow: 0 2px 2px rgba(55,55,55,.5);
 
-				&.right {
-					float: right;
-				}
-				.item {
-
-					position: relative;
-					display: inline-block;
-					vertical-align: middle;
-					padding: 0 40px;
-					margin: 0;
-					font-size: 16px;
-					opacity: .7;
-					text-shadow: 0 2px 2px rgba(55,55,55,.5);
-
-					&:hover, &.active, &:active {
-						opacity: 1;
-						cursor: pointer;
-
-						span {
-							border-bottom: 2px solid #fff;
-						}
-					}
+				&:hover, &.active, &:active {
+					opacity: 1;
+					cursor: pointer;
 
 					span {
-						padding: 6px 0;
+						border-bottom: 2px solid #fff;
 					}
-
-					&.disabled, &.disabled:hover, &.disabled:active {
-						opacity: .2;
-						cursor: not-allowed;
-					}
-
-					&.btn {
-						padding: 0 25px;
-						span {
-							background-color: rgba(255,255,255,.2);
-							border-radius: 5px;
-							padding: 5px 15px;
-						}
-
-						&:hover, &:active, &.active {
-							span { border-bottom: none; }
-						}
-					}
-					
 				}
 
-				&.underline {
-					.item:hover, .item:active, .item.active {
-						span {
-							border-bottom: none !important;
-						}
-					}
-					.animated-line {
-						display: block;
-						margin: 0;
-						position: absolute;
-						bottom: -6px;
-						height: 2px;
-						background-color: #fff;
+				span {
+					padding: 6px 0;
+				}
 
+				&.disabled, &.disabled:hover, &.disabled:active {
+					opacity: .2;
+					cursor: not-allowed;
+				}
+
+				&.btn {
+					padding: 0 25px;
+					span {
+						background-color: rgba(255,255,255,.2);
+						border-radius: 5px;
+						padding: 5px 15px;
 					}
+
+					&:hover, &:active, &.active {
+						span { border-bottom: none !important; }
+					}
+				}
+				
+			}
+
+			&.underline {
+				.item:hover, .item:active, .item.active {
+					span {
+						border-bottom: none !important;
+					}
+				}
+				.animated-line {
+					display: block;
+					margin: 0;
+					position: absolute;
+					bottom: -6px;
+					height: 2px;
+					background-color: #fff;
+
 				}
 			}
 		}

@@ -117,7 +117,9 @@ var libs = {
         "vendor/assets/jquery/dist/jquery.min.js",
         "vendor/assets/modernizr/modernizr.js",
         "vendor/assets/fastclick/lib/fastclick.js",
-        "vendor/assets/foundation/js/foundation.min.js"
+        "vendor/assets/foundation/js/foundation.min.js",
+        "vendor/assets/underscore/underscore.js",
+        "vendor/assets/jquery.pin/jquery.pin.js"
     ],
     css: [
         "vendor/assets/foundation/scss/normalize.css",

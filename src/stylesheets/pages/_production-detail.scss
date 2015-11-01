@@ -1,0 +1,138 @@
+body.productionDetail {
+	background-color: #ebecf1;
+	nav.navbar {
+		position: relative;
+	}
+	.page {
+		font-size: 0;
+		.detail-nav {
+			height: 55px;
+			background-color: #fff;
+			box-shadow: 0px 0px 6px 0px rgba(46, 48, 81, 0.19);
+			opacity: .8;
+			z-index: 1000;
+
+			.left {
+				float: left;
+				font-size: 24px;
+				line-height: 27px;
+				padding: 14px 0;
+				font-weight: 100;
+			}
+			
+			.items {
+				height: 100%;
+				padding: 15px;
+				.item {
+					padding: 0 15px;
+					color: #121b3c;
+					font-size: 14px;
+					line-height: 25px;
+					text-shadow: none;
+					border-color: #121b3c;
+
+					&.btn>span {
+						background-color: rgba(0,0,0,.2);
+					}
+
+					&:hover, &:active {
+						span {
+							border-bottom: 1px solid #121b3c;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.detail-page {
+		width: 100%;
+		min-height: 500px;
+
+		.text {
+			.version, .title {
+				color: #0c1534;
+				font-size: 38px;
+			}
+
+			.title {
+				font-weight: bold;
+			}
+
+			.version {
+				font-weight: 100;
+			}
+
+			.sub-title {
+				color: #666666;
+				font-size: 20px;
+			}
+		}
+
+		&>div[id^="page-"] {
+			width: 100%;
+		}
+
+		#page-1 {
+			height: calc(100vh - 135px);
+			min-height: 600px;
+			background-image: url(/assets/images/glass-1.png);
+			background-repeat: no-repeat;
+			background-position: 50% 100%;
+			background-size: 972px 325px;
+			padding-top: 80px;
+			.text {
+				
+				text-align: center;
+			}
+		}
+
+		#page-2 {
+			background-color: #f2f2f5;
+			height: 100vh;
+			background-image: url(/assets/images/p-d-1.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: auto 100%;
+			
+			.text {
+				float: right;
+				padding-top: 200px;
+				width: 40%;
+				.title, .sub-title {
+					text-align: left;
+				}
+			}
+		}
+		#page-3 {
+			height: 100vh;
+			background-image: url(/assets/images/p-d-2.png);
+			background-repeat: no-repeat;
+			background-position: 0 100%;
+			background-size: 100% auto;
+			
+			.text {
+				float: left;
+				padding-top: 200px;
+				width: 40%;
+				.title, .sub-title {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	#page-1 {
+		background-position: calc(50% + 48px) 100%;
+		background-size: 972px 325px;
+	}
+}
+
+@media (min-width: 965px) {
+	#page-1 {
+		background-position: calc(50% + 50px) 100%;
+		background-size: 960px 321px;
+	}
+}
