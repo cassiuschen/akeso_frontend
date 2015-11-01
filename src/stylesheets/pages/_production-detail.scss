@@ -137,3 +137,21 @@ body.productionDetail {
 		background-size: 960px 321px;
 	}
 }
+
+@media (min-height: 1280px) {
+	#page-1, #page-2, #page-3 {
+		height: 600px !important;
+	}
+}
+
+@media (min-height: 1100px) {
+	#page-1, #page-2, #page-3 {
+		height: 600px;
+	}
+}
+
+@media (max-height: 1100px) {
+	#page-1, #page-2, #page-3 {
+		height: 600px;
+	}
+}
