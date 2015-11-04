@@ -65,7 +65,8 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 	}
 
 	&.disabled, &[disabled] {
-		opacity: .1;
+		opacity: .2;
+		color: #fff;
 		background-color: #666 !important;
 		border-color: #666 !important;
 		&:hover, &:active {

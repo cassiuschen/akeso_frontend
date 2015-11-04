@@ -17,11 +17,41 @@ define(['jquery'], function($) {
         return el.after("<div class=\"info\"><i class=\"fa fa-warning\"></i> " + warning_text + "</div>");
       }
     },
-    getWarn: function(selector, warning_text) {
+    getWarn: function(selector, warning_text, callback) {
       var el;
       el = $(selector);
       el.addClass("warning");
-      return el.after("<div class=\"info\"><i class=\"fa fa-warning\"></i> " + warning_text + "</div>");
+      el.after("<div class=\"info\"><i class=\"fa fa-warning\"></i> " + warning_text + "</div>");
+      return el.bind('input propertychange', function() {
+        el.removeClass('warning');
+        $(selector + "+.info").remove();
+        try {
+          callback.call(el);
+        } catch (undefined) {}
+        return el.unbind('input propertychange');
+      });
+    },
+    actionBtn: function(settings) {
+      var el;
+      if (settings == null) {
+        settings = {
+          selector: '.button.action',
+          onclick: (function() {}),
+          onfinish: (function() {}),
+          loadingText: "请稍后..."
+        };
+      }
+      el = $(settings.selector);
+      return el.on('click', function() {
+        el.text = settings.loadingText;
+        el.attr('disabled', 'true');
+        try {
+          settings.onclick.call(el);
+        } catch (undefined) {}
+        try {
+          return settings.onfinish.call(el);
+        } catch (undefined) {}
+      });
     }
   };
 });
