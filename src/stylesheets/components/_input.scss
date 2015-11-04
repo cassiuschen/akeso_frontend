@@ -1,0 +1,68 @@
+.form {
+	position: relative;
+	input {
+		font-size: 20px;
+		line-height: 1;
+		color: #262626;
+		border: 1px solid #dcdcdc;
+		border-radius: 5px;
+		padding: 15px;
+		width: 100%;
+
+		transition: all .28s;
+
+		&.disabled, &[disabled] {
+			border-color: #999;
+			background-color: #eee;
+			user-select: none !important;
+		}
+
+		&.warning {
+			border-color: $red;
+			color: $red;
+			&:active, &:focus {
+				color: $red;
+				border-color: $red;
+			}
+
+			&+.info {
+				color: $red;
+			}
+		}
+
+		&:active, &:focus {
+			border-color: $blue;
+		}
+
+		&+.info {
+			font-size: 12px;
+			position: relative;
+			top: -8px;
+			padding-left: 15px;
+			line-height: 15px;
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.input-group {
+		@extend .clearfix;
+		input {
+			width: calc(100% - 160px);
+			float: left;
+			vertical-align: middle;
+		}
+		.button {
+			//width: 50%;
+			//font-size: 20px;
+			padding: 15px;
+			font-size: 20px;
+			line-height: 1;
+			text-align: center;
+			float: right;
+			vertical-align: middle;
+			box-sizing: border-box;
+		}
+	}
+}

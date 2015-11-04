@@ -64,7 +64,7 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 		cursor: pointer;
 	}
 
-	&.disabled {
+	&.disabled, &[disabled] {
 		opacity: .1;
 		background-color: #666 !important;
 		border-color: #666 !important;

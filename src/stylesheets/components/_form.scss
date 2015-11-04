@@ -1,0 +1,26 @@
+.form-title {
+	padding-top: 25%;
+	width: 100%;
+	h1.title {
+		font-size: 30px;
+		color: $ak_blue;
+		margin: 0;
+		margin-bottom: 16px;
+		width: 100%;
+	}
+	.sub-title {
+		font-size: 14px;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+		color: #999;
+		font-weight: lighter;
+	}
+}
+
+.form {
+	input {
+		margin-bottom: 20px;
+		
+	}
+}

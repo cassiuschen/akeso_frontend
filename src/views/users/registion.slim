@@ -12,7 +12,7 @@ doctype html
 html
   head
     meta charset="utf-8"
-    title 产品 | AKESO
+    title AKESO | 艾索健康科技
     link rel="stylesheet" href="/assets/css/vendor.css"
     link rel="stylesheet" href="/assets/css/application.css"
     script src="/assets/js/lib/modernizr.js"
@@ -20,9 +20,22 @@ html
     meta name="viewport" content="width=1020, user-scalable=yes"
     javascript:
       requirejs(['/assets/js/application.js'], function(app){
-        requirejs(['app/production_detail']);
+        requirejs(['app/registion']);
       });
   body
     == render 'components/_navbar'
-    == render 'production/_detail'
+    .container.small.margin-nav.footer-in-page
+      .form-title
+        h1.title 信息验证
+        h3.sub-title 请填写您申请 AKESO 内测用户时所登记的姓名和电话号码，以验证您的中奖信息。
+      #step1.form
+        input#name type="text" placeholder="姓名"
+        input#mobile type="tel" placeholder="电话"
+        .input-group
+          input#code type="text" placeholder="手机验证码"
+          a.button.blue#sendCode 发送验证码
+        .actions
+          a.button.blue.inverted 下一步
+
+
     == render 'components/_footer'

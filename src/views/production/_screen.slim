@@ -1,3 +1,11 @@
+ruby:
+  def render(filename, options = {}, &block)
+    Slim::Template.new("src/views/#{filename}.slim", options).render(self, &block)
+  end
+
+  def fa(str)
+    "<i class=\"fa fa-#{str}\"></i>"
+  end
 #productionHeroArea.margin-nav
   .container
     h1.title 懂你的，才能真正关心你

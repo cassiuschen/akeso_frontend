@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AKESO | 艾索健康科技</title>
+    <link href="/assets/css/vendor.css" rel="stylesheet" />
+    <link href="/assets/css/application.css" rel="stylesheet" />
+    <script src="/assets/js/lib/modernizr.js"></script>
+    <script src="/assets/js/lib/require.js"></script>
+    <meta content="width=1020, user-scalable=yes" name="viewport" />
+    <script>
+      requirejs(['/assets/js/application.js'], function(app){
+        requirejs(['app/registion']);
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="title-area">
+          <a class="logo"></a>
+          <div class="mobile-menu-button">
+            <a href="#"><span>Menu</span></a>
+          </div>
+        </div>
+        <section class="navbar-section">
+          <div class="items left underline">
+            <a class="item" data-active="home" href="/"><span>首页</span></a><a class="item has-hover-menu" data-active="production" data-menu="" href="/detail.html"><span>产品</span></a><a class="item disabled" data-active="health"><span>健康</span></a><a class="item disabled" data-active="service"><span>服务</span></a>
+            <div class="animated-line"></div>
+          </div>
+          <div class="items right">
+            <a class="item disabled"><span>EN</span></a><a class="item btn disabled"><span>登陆/注册</span></a>
+          </div>
+        </section>
+      </div>
+      <section class="hover-menu" id="prod-select">
+        <div class="types container">
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+          <a class="type"><img alt="" src="/assets/images/demo-glass-type.png" />狂拽炫酷款</a>
+        </div>
+      </section>
+    </nav>
+    <div class="container small margin-nav footer-in-page">
+      <div class="form-title">
+        <h1 class="title">
+          信息验证
+        </h1>
+        <h3 class="sub-title">
+          请填写您申请 AKESO 内测用户时所登记的姓名和电话号码，以验证您的中奖信息。
+        </h3>
+      </div>
+      <div class="form" id="step1">
+        <input id="name" placeholder="姓名" type="text" /><input id="mobile" placeholder="电话" type="tel" />
+        <div class="input-group">
+          <input id="code" placeholder="手机验证码" type="text" /><a class="button blue" id="sendCode">发送验证码</a>
+        </div>
+        <div class="actions">
+          <a class="button blue inverted">下一步</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container clearfix">
+        <div class="left info">
+          <p>
+            © 2014 - 2015 AKESO Eyecare Ltd. All rights reserved.
+          </p>
+          <p>
+            京 ICP 备 15054163 号
+          </p>
+        </div>
+        <div class="right info">
+          <a>关于艾索</a> ｜ <a>艾索新闻</a> ｜ <a>加入艾索</a> ｜ <a>联系我们</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

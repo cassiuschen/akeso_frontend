@@ -93,7 +93,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('slim', function () {
-  gulp.src('./src/views/*.slim')
+  gulp.src(['./src/views/*.slim', './src/views/**/*.slim'])
     .pipe(slim({pretty: true, options: ["encoding='utf-8'", "use_html_safe=false"]}))
     .pipe(gulp.dest('public/'))
     .pipe(notify({ message: 'Slim task complete' }));

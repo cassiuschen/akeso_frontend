@@ -31,6 +31,8 @@ a, a:link, a:hover, a:active {
 	}
 }
 
+.disabled, *[disabled] { pointer-events: none !important; }
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{height:1%;}
 

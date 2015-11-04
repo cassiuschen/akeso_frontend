@@ -2,6 +2,15 @@
 	display: block;
 	margin: 0 auto;
 	z-index: 100;
+
+	&.small {
+		width: 420px;
+	}
+
+	&.footer-in-page {
+		min-height: 500px;
+		height: calc(100vh - 80px - 126px);
+	}
 }
 
 .margin-nav {
