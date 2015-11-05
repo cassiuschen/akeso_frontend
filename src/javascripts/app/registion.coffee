@@ -1,4 +1,4 @@
-define ['jquery', 'cookie', 'navbar', 'leancloud', 'form'], ($, CC, NavBar, LC, UIForm) ->
+define ['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], ($, CC, NavBar, LC, UIForm, M) ->
 	$('body').addClass 'users registion'
 	try
 		NavBar.setActive 'users'
@@ -28,5 +28,44 @@ define ['jquery', 'cookie', 'navbar', 'leancloud', 'form'], ($, CC, NavBar, LC, 
 			age: attendanceData.age
 			illness: attendanceData.illness
 		CC.session "user_session", userQuery.sessionToken
+		CC.session "user_id", userQuery.objectId#
+		if LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)
+			$('#step1 .actions')
+				.css 'opacity', '0'
+				.remove()
+			$('#step1 .input-group')
+				.css 'opacity', '0'
+				.remove()
+			$('.sub-title')
+				.css 'opacity', '0'
+				#.remove()
+			$('#step1').css 'margin-top', '-60px'
+			$('#step2')
+				#.css 'margin-top', '-60px'
+				.fadeIn 700
+			$('#t1')
+				.css 'opacity', '0'
 
-		LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)
+				.text '订单信息'
+				.delay 500, ->
+					$(this).css 'opacity', '1'
+			$('input#mobile').attr 'disabled', 'disabled'
+
+			M.init()
+			$('.selections .selection').on 'click', ->
+				$('.selections input').val $(this).data 'type'
+				$('.selection.selected').removeClass 'selected'
+				$(this).addClass 'selected'
+			$('#submit').on 'click', ->
+				$('#nameCheck').text $('input#name').val()
+				$('#mobileCheck').text $('input#mobile').val()
+				$('#addressCheck').text $('input#address').val()
+				$('#typeCheck').text $(".selection[data-type=#{$('input#type').val()}]").text()
+			$('#confirmed').on 'click', ->
+				$('#confirmed').attr 'disabled', 'disabled'
+				$(this).text '请稍后...'
+				data =
+					type: $('input#type').val()
+					address: $('input#address').val()
+				if LC.updateUserData CC.session('user_id'), CC.session("user_session"), data
+					window.location = '/users/registion-success.html'

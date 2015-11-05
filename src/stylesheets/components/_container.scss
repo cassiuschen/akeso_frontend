@@ -21,7 +21,7 @@
 
 @media (max-width: 964px) {
 	.container {
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -37,3 +37,11 @@
 	}
 }
 
+.floated {
+	&.right {
+		float: right;
+	}
+	&.left {
+		float: left;
+	}
+}

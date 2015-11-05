@@ -1,4 +1,4 @@
-define(['jquery', 'cookie', 'navbar', 'leancloud', 'form'], function($, CC, NavBar, LC, UIForm) {
+define(['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], function($, CC, NavBar, LC, UIForm, M) {
   $('body').addClass('users registion');
   try {
     NavBar.setActive('users');
@@ -35,6 +35,40 @@ define(['jquery', 'cookie', 'navbar', 'leancloud', 'form'], function($, CC, NavB
       illness: attendanceData.illness
     };
     CC.session("user_session", userQuery.sessionToken);
-    return LC.updateUserData(userQuery.objectId, CC.session("user_session"), data);
+    CC.session("user_id", userQuery.objectId);
+    if (LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)) {
+      $('#step1 .actions').css('opacity', '0').remove();
+      $('#step1 .input-group').css('opacity', '0').remove();
+      $('.sub-title').css('opacity', '0');
+      $('#step1').css('margin-top', '-60px');
+      $('#step2').fadeIn(700);
+      $('#t1').css('opacity', '0').text('订单信息').delay(500, function() {
+        return $(this).css('opacity', '1');
+      });
+      $('input#mobile').attr('disabled', 'disabled');
+      M.init();
+      $('.selections .selection').on('click', function() {
+        $('.selections input').val($(this).data('type'));
+        $('.selection.selected').removeClass('selected');
+        return $(this).addClass('selected');
+      });
+      $('#submit').on('click', function() {
+        $('#nameCheck').text($('input#name').val());
+        $('#mobileCheck').text($('input#mobile').val());
+        $('#addressCheck').text($('input#address').val());
+        return $('#typeCheck').text($(".selection[data-type=" + ($('input#type').val()) + "]").text());
+      });
+      return $('#confirmed').on('click', function() {
+        $('#confirmed').attr('disabled', 'disabled');
+        $(this).text('请稍后...');
+        data = {
+          type: $('input#type').val(),
+          address: $('input#address').val()
+        };
+        if (LC.updateUserData(CC.session('user_id'), CC.session("user_session"), data)) {
+          return window.location = '/users/registion-success.html';
+        }
+      });
+    }
   });
 });

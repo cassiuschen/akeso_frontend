@@ -11,6 +11,12 @@
 	background-color: #fff;
 	z-index: 10000000;
 
+	.actions {
+		* {
+			margin-left: 15px;
+		}
+	}
+
 	a.close {
 		display: block;
 		width: 55px;
@@ -28,6 +34,13 @@
 			opacity: .8;
 			cursor: pointer;
 		}
+	}
+
+	.title {
+		font-size: 30px;
+		color: $ak_blue;
+		margin-bottom: 20px;
+
 	}
 
 	.player {
