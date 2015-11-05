@@ -58,7 +58,7 @@ define(['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], function($,
       $('#submit').on('click', function() {
         $('#nameCheck').text($('input#name').val());
         $('#mobileCheck').text($('input#mobile').val());
-        $('#addressCheck').text($('input#address').val());
+        $('#addressCheck').text($('#address').val());
         return $('#typeCheck').text($(".selection[data-type=" + ($('input#type').val()) + "]").text());
       });
       return $('#confirmed').on('click', function() {
@@ -66,7 +66,7 @@ define(['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], function($,
         $(this).text('请稍后...');
         data = {
           type: $('input#type').val(),
-          address: $('input#address').val()
+          address: $('#address').val()
         };
         if (LC.updateUserData(CC.session('user_id'), CC.session("user_session"), data)) {
           return window.location = '/users/registion-success.html';

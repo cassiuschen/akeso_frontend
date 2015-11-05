@@ -58,13 +58,13 @@ define ['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], ($, CC, Nav
 			$('#submit').on 'click', ->
 				$('#nameCheck').text $('input#name').val()
 				$('#mobileCheck').text $('input#mobile').val()
-				$('#addressCheck').text $('input#address').val()
+				$('#addressCheck').text $('#address').val()
 				$('#typeCheck').text $(".selection[data-type=#{$('input#type').val()}]").text()
 			$('#confirmed').on 'click', ->
 				$('#confirmed').attr 'disabled', 'disabled'
 				$(this).text '请稍后...'
 				data =
 					type: $('input#type').val()
-					address: $('input#address').val()
+					address: $('#address').val()
 				if LC.updateUserData CC.session('user_id'), CC.session("user_session"), data
 					window.location = '/users/registion-success.html'
