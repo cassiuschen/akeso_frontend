@@ -17,8 +17,8 @@
 		width: 100%;
 		margin: 0;
 		margin-bottom: 20px;
-		color: #999;
-		font-weight: lighter;
+		color: #666;
+		font-weight: normal;
 	}
 }
 
@@ -65,12 +65,12 @@
 .order {
 	@extend .clearfix;
 	width: 100%;
-	border-radius: 5px;
 	border: 1px solid #dcdcdc;
 	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 6px 0px rgba(46, 48, 81, 0.19);
 
-	&:before {
+	&:before, &:after {
 		content: ' ';
 		display: block;
 		width: 100%;
@@ -79,7 +79,9 @@
 		background-size: auto 100%;
 		background-repeat: repeat;
 		background-position: 0 0;
+
 	}
+
 	.preview {
 		width: 300px;
 		float: left;
@@ -97,11 +99,11 @@
 	}
 
 	.info {
-		width: calc(100% - 350px);
+		width: calc(100% - 320px);
 		float: right;
 		display: inline-block;
 		vertical-align: middle;
-		margin-top: 7%;
+		margin-top: 10%;
 		.inline {
 			display: flex;
 			justify-content: space-around;

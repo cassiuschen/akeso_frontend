@@ -36,7 +36,7 @@ html
           input#code type="text" placeholder="手机验证码"
           a.button.blue#sendCode 发送验证码
         .actions
-          a.button.blue.inverted#nextMove 下一步
+          a.button.blue.inverted#nextMove disabled="disabled" 下一步
       #step2.form.hide
         input#address type="text" placeholder="收货地址"
         .selections
@@ -50,7 +50,7 @@ html
     .modal#check-order
       a.close
         == fa 'close'
-      .container.margin-nav
+      .container.margin-nav.medium
           h1.title 订单确认
           .order
             .preview

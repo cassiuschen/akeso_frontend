@@ -14,12 +14,11 @@ define ['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], ($, CC, Nav
 					$('#sendCode').removeAttr 'disabled'
 			else
 				$(@selector).text '已发送'
-				LC.SMSVerifySend mobileNumber
+				LC.SMSVerifySend mobileNumber, template: "registion", username: $('input#name').val()
 				$('#nextMove').removeAttr 'disabled'
 	$("#nextMove").on 'click', ->
 		userQuery = LC.createUserByMobile $('input#mobile').val(), $('input#code').val()
 		attendanceData = LC.getUserAttendanceDataByMobile($('input#mobile').val())
-
 		data =
 			username: attendanceData.name
 			email: attendanceData.email

@@ -17,7 +17,10 @@ define(['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], function($,
         });
       } else {
         $(this.selector).text('已发送');
-        LC.SMSVerifySend(mobileNumber);
+        LC.SMSVerifySend(mobileNumber, {
+          template: "registion",
+          username: $('input#name').val()
+        });
         return $('#nextMove').removeAttr('disabled');
       }
     }

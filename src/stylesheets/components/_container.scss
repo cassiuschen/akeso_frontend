@@ -7,6 +7,10 @@
 		width: 420px;
 	}
 
+	&.medium {
+		width: 680px;
+	}
+
 	&.footer-in-page {
 		min-height: 500px;
 		height: calc(100vh - 80px - 126px);
@@ -43,5 +47,17 @@
 	}
 	&.left {
 		float: left;
+	}
+}
+
+.aligned {
+	&.center {
+		text-align: center;
+	}
+	&.right {
+		text-align: right;
+	}
+	&.left {
+		text-align: left;
 	}
 }

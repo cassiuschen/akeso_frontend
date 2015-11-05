@@ -81,13 +81,19 @@ define(['jquery', 'underscore'], function($, _) {
         return false;
       }
     },
-    SMSVerifySend: function(mobile) {
+    SMSVerifySend: function(mobile, set) {
+      var data;
+      if (set == null) {
+        set = {};
+      }
+      data = {
+        mobilePhoneNumber: mobile
+      };
+      data = _.extend(data, set);
       return this._makeReq({
         method: "POST",
         url: "requestSmsCode",
-        data: {
-          mobilePhoneNumber: mobile
-        }
+        data: data
       });
     },
     SMSVerifyCheck: function(mobile, code) {

@@ -57,12 +57,14 @@ define ['jquery', 'underscore'], ($, _) ->
     else
       return false
 
-  SMSVerifySend: (mobile) ->
+  SMSVerifySend: (mobile, set={}) ->
+    data =
+      mobilePhoneNumber: mobile
+    data = _.extend data, set
     @_makeReq
       method: "POST"
       url: "requestSmsCode"
-      data:
-        mobilePhoneNumber: mobile
+      data: data
 
   SMSVerifyCheck: (mobile, code) ->
     @_makeReq
