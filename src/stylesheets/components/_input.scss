@@ -48,9 +48,9 @@
 
 	.input-group {
 		@extend .clearfix;
+		position: relative;
 		input {
 			width: calc(100% - 160px);
-			float: left;
 			vertical-align: middle;
 		}
 		.button {
@@ -60,7 +60,9 @@
 			font-size: 20px;
 			line-height: 1;
 			text-align: center;
-			float: right;
+			position: absolute;
+			right: 0;
+			top: 3px;
 			vertical-align: middle;
 			box-sizing: border-box;
 		}
