@@ -17,18 +17,18 @@ define ['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], ($, CC, Nav
 				LC.SMSVerifySend mobileNumber, template: "registion", username: $('input#name').val()
 				$('#nextMove').removeAttr 'disabled'
 	$("#nextMove").on 'click', ->
-#		userQuery = LC.createUserByMobile $('input#mobile').val(), $('input#code').val()
-#		attendanceData = LC.getUserAttendanceDataByMobile($('input#mobile').val())
-#		data =
-#			username: attendanceData.name
-#			email: attendanceData.email
-#			job: attendanceData.job
-#			gender: attendanceData.gender
-#			age: attendanceData.age
-#			illness: attendanceData.illness
-#		CC.session "user_session", userQuery.sessionToken
-#		CC.session "user_id", userQuery.objectId#
-#		if LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)
+		userQuery = LC.createUserByMobile $('input#mobile').val(), $('input#code').val()
+		attendanceData = LC.getUserAttendanceDataByMobile($('input#mobile').val())
+		data =
+			username: attendanceData.name
+			email: attendanceData.email
+			job: attendanceData.job
+			gender: attendanceData.gender
+			age: attendanceData.age
+			illness: attendanceData.illness
+		CC.session "user_session", userQuery.sessionToken
+		CC.session "user_id", userQuery.objectId#
+		if LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)
 			$('#step1 .actions')
 				.css 'opacity', '0'
 				.remove()
