@@ -26,52 +26,44 @@ define(['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], function($,
     }
   });
   return $("#nextMove").on('click', function() {
-    var attendanceData, data, userQuery;
-    userQuery = LC.createUserByMobile($('input#mobile').val(), $('input#code').val());
-    attendanceData = LC.getUserAttendanceDataByMobile($('input#mobile').val());
-    data = {
-      username: attendanceData.name,
-      email: attendanceData.email,
-      job: attendanceData.job,
-      gender: attendanceData.gender,
-      age: attendanceData.age,
-      illness: attendanceData.illness
-    };
-    CC.session("user_session", userQuery.sessionToken);
-    CC.session("user_id", userQuery.objectId);
-    if (LC.updateUserData(userQuery.objectId, CC.session("user_session"), data)) {
-      $('#step1 .actions').css('opacity', '0').remove();
-      $('#step1 .input-group').css('opacity', '0').remove();
-      $('.sub-title').css('opacity', '0');
-      $('#step1').css('margin-top', '-60px');
-      $('#step2').fadeIn(700);
-      $('#t1').css('opacity', '0').text('订单信息').delay(500, function() {
-        return $(this).css('opacity', '1');
-      });
-      $('input#mobile').attr('disabled', 'disabled');
-      M.init();
-      $('.selections .selection').on('click', function() {
-        $('.selections input').val($(this).data('type'));
-        $('.selection.selected').removeClass('selected');
-        return $(this).addClass('selected');
-      });
-      $('#submit').on('click', function() {
-        $('#nameCheck').text($('input#name').val());
-        $('#mobileCheck').text($('input#mobile').val());
-        $('#addressCheck').text($('#address').val());
-        return $('#typeCheck').text($(".selection[data-type=" + ($('input#type').val()) + "]").text());
-      });
-      return $('#confirmed').on('click', function() {
-        $('#confirmed').attr('disabled', 'disabled');
-        $(this).text('请稍后...');
-        data = {
-          type: $('input#type').val(),
-          address: $('#address').val()
-        };
-        if (LC.updateUserData(CC.session('user_id'), CC.session("user_session"), data)) {
-          return window.location = '/users/registion-success.html';
-        }
-      });
-    }
+    $('#step1 .actions').css('opacity', '0').remove();
+    $('#step1 .input-group').css('opacity', '0').remove();
+    $('.sub-title').css('opacity', '0');
+    $('#step1').css('margin-top', '-60px');
+    $('#step2').fadeIn(700);
+    $('#t1').css('opacity', '0').text('订单信息').delay(500, function() {
+      return $(this).css('opacity', '1');
+    });
+    $('input#mobile').attr('disabled', 'disabled');
+    M.init();
+    $('.selections .selection').on('click', function() {
+      if (!$('#typePreviewImg').hasClass('show')) {
+        $('#typePreviewImg').addClass('show');
+      }
+      $('#typePreviewImg img').attr('src', "/assets/images/type-" + ($(this).data('type')) + ".jpg");
+      $('#submit').removeAttr('disabled');
+      $('.selections input').val($(this).text());
+      $('.selection.selected').removeClass('selected');
+      return $(this).addClass('selected');
+    });
+    $('#submit').on('click', function() {
+      $('#nameCheck').text($('input#name').val());
+      $('#mobileCheck').text($('input#mobile').val());
+      $('#addressCheck').text($('#address').val());
+      $('#typeImg').attr('src', "/assets/images/type-" + ($('.selection.selected').data('type')) + ".jpg");
+      return $('#typeCheck').text($('input#type').val());
+    });
+    return $('#confirmed').on('click', function() {
+      var data;
+      $('#confirmed').attr('disabled', 'disabled');
+      $(this).text('请稍后...');
+      data = {
+        type: $('input#type').val(),
+        address: $('#address').val()
+      };
+      if (LC.updateUserData(CC.session('user_id'), CC.session("user_session"), data)) {
+        return window.location = '/users/registion-success.html';
+      }
+    });
   });
 });

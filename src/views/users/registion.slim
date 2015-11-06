@@ -24,7 +24,7 @@ html
       });
   body
     == render 'components/_navbar'
-    .container.small.margin-nav.footer-in-page
+    .container.small.margin-nav.footer-in-page style="position:relative;"
       .form-title
         h1.title#t1 信息验证
         h1.title#t2.hide 订单信息
@@ -36,17 +36,18 @@ html
           input#code type="text" placeholder="手机验证码"
           a.button.blue#sendCode 发送验证码
         .actions
-          a.button.blue.inverted#nextMove disabled="disabled" 下一步
+          a.button.blue.inverted#nextMove 下一步
       #step2.form.hide
         textarea#address type="text" placeholder="收货地址"
         .selections
           input#type type="hidden"
-          - i = 0
-          - 4.times
-            a.selection data-type="#{i}" 狂拽炫酷款
-            - i += 1
+            a.selection data-type="1" 板材款
+            a.selection data-type="2" 木质款
+            a.selection data-type="3" 钛架款
         .actions
-          a.button.blue.inverted.has-modal#submit data-modal="check-order" 提交订单
+          a.button.blue.inverted.has-modal#submit disabled="disabled" data-modal="check-order" 提交订单
+      /.preview#typePreviewImg.show
+        img src="" alt=""
     .modal#check-order
       a.close
         == fa 'close'
@@ -54,7 +55,7 @@ html
           h1.title 订单确认
           .order
             .preview
-              img src="/assets/images/type-preview.jpg" alt=""/
+              img#typeImg alt=""/
               .des#typeCheck
             .info
               .inline

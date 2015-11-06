@@ -36,13 +36,16 @@
 	.selections {
 		@extend .clearfix;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
+		text-align: left;
 		.selection {
 			color: #262626;
 			display: inline-block;
 			vertical-align: top;
 			font-size: 14px;
 			line-height: 20px;
+			text-align: center;
+			width: 30%;
 			padding: 10px 15px;
 			border-radius: 5px;
 			border: 1px solid #dcdcdc;
@@ -131,4 +134,13 @@
 	}
 
 
+}
+#typePreviewImg {
+	position: absolute;
+	right: -300px;
+	width: 300px;
+	top: 120px;
+	img {
+		width: 100%;
+	}
 }
