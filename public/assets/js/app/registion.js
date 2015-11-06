@@ -30,7 +30,7 @@ define(['jquery', 'underscore', 'cookie', 'navbar', 'leancloud', 'form', 'modal'
     $('#nextMove').text('请稍后...');
     userQuery = LC.createUserByMobile($('input#mobile').val(), $('input#code').val());
     console.log(_.has(userQuery, "code"));
-    if (_.has(userQuery, "code")) {
+    if (!_.has(userQuery, "objectId")) {
       UIForm.getWarn('input#code', '验证码错误，请重新输入！', function(el) {
         return console.log('reload');
       });
