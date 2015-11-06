@@ -1,4 +1,5 @@
 .container {
+	transition: left .6s, right .6s;
 	display: block;
 	margin: 0 auto;
 	z-index: 100;

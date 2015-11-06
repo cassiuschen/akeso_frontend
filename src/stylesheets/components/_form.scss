@@ -154,10 +154,16 @@
 }
 #typePreviewImg {
 	position: absolute;
-	right: -300px;
-	width: 300px;
-	top: 120px;
+	right: -340px;
+	width: 320px;
+	top: -100px;
+	padding-left: 20px;
+	display: none;
+	&.show {
+		display: block;
+	}
+	border-left: 1px solid #dfdfdf;
 	img {
-		width: 100%;
+		width: 300px;
 	}
 }

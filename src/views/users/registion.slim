@@ -24,7 +24,7 @@ html
       });
   body
     == render 'components/_navbar'
-    .container.small.margin-nav.footer-in-page style="position:relative;"
+    .container.small.margin-nav.footer-in-page#forming style="position:relative;left:0px;"
       .form-title
         h1.title#t1 信息验证
         h1.title#t2.hide 订单信息
@@ -46,8 +46,8 @@ html
             a.selection data-type="3" 钛架款
         .actions
           a.button.blue.inverted.has-modal#submit disabled="disabled" data-modal="check-order" 提交订单
-      /.preview#typePreviewImg.show
-        img src="" alt=""
+        .preview#typePreviewImg
+          img src="" alt=""
     .modal#check-order
       a.close
         == fa 'close'

@@ -54,6 +54,7 @@ define ['jquery', 'cookie', 'navbar', 'leancloud', 'form', 'modal'], ($, CC, Nav
 			$('.selections .selection').on 'click', ->
 				if !$('#typePreviewImg').hasClass 'show'
 					$('#typePreviewImg').addClass 'show'
+					$('#forming').css 'left', '-170px'
 				$('#typePreviewImg img').attr 'src', "/assets/images/type-#{$(this).data 'type'}.jpg"
 				$('#submit').removeAttr 'disabled'
 				$('.selections input').val $(this).text()
