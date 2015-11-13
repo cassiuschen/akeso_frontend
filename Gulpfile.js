@@ -28,14 +28,14 @@ gulp.task('default', function() {
     gulp.run("libs");
     gulp.run("generate");
     gulp.run("watch");
-    gulp.run("server");
-    gulp.run("open");
+    //gulp.run("server");
+    //gulp.run("open");
 });
 
 // Basic Assets Generate Functions =========================
 
 gulp.task('scss', function() {
-  gulp.src(['src/stylesheets/*.scss', 'src/stylesheets/**/*.scss'])
+  gulp.src(['app/assets/stylesheets/*.scss', 'app/assets/stylesheets/**/*.scss'])
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
             browsers: ['last 5 Chrome versions', 'iOS > 0', 'Android > 0', '> 5%'],
@@ -51,14 +51,14 @@ gulp.task('scss', function() {
     .pipe(notify({ message: 'Stylesheets task complete!' }));
 });
 gulp.task('css', function() {
-  gulp.src('src/stylesheets/*.css')
+  gulp.src('app/assets/stylesheets/*.css')
     //.pipe(uncss({html: ['public/*.html']}))
     .pipe(gulp.dest('public/assets/css'))
     .pipe(notify({ message: 'CSS Stylesheets task complete!' }));
 });
 
 gulp.task('coffee', function() {
-  gulp.src(['./src/javascripts/*.coffee','./src/javascripts/**/*.coffee'])
+  gulp.src(['./app/assets/javascripts/*.coffee','./app/assets/javascripts/**/*.coffee'])
     .pipe(coffee({bare: true}).on('error', console.log))
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
@@ -71,7 +71,7 @@ gulp.task('coffee', function() {
 });
 
 gulp.task('cjsx', function() {
-  gulp.src('./src/javascripts/*.cjsx')
+  gulp.src('./app/assets/javascripts/*.cjsx')
     .pipe(cjsx({bare: true}).on('error', console.log))
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
@@ -84,7 +84,7 @@ gulp.task('cjsx', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('./src/javascripts/*.js')
+  gulp.src('./app/assets/javascripts/*.js')
     .pipe(gulp.dest('public/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -93,21 +93,21 @@ gulp.task('js', function() {
 });
 
 gulp.task('slim', function () {
-  gulp.src(['./src/views/*.slim', './src/views/**/*.slim'])
+  gulp.src(['./app/views/*.slim', './app/views/**/*.slim'])
     .pipe(slim({pretty: true, options: ["encoding='utf-8'", "use_html_safe=false"]}))
     .pipe(gulp.dest('public/'))
     .pipe(notify({ message: 'Slim task complete' }));
 })
 
 gulp.task('image', function() {
-  gulp.src('./src/images/*.*')
+  gulp.src('./app/assets/images/*.*')
     //.pipe(imagemin({
     //        progressive: true,
     //        svgoPlugins: [{removeViewBox: false}]
     //    }))
     .pipe(gulp.dest('public/assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
-  gulp.src(['./src/images/*.jpg', './src/images/*.png'])
+  gulp.src(['./app/assets/images/*.jpg', './app/assets/images/*.png'])
     .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]
@@ -161,7 +161,7 @@ gulp.task("libs", function() {
 });
 
 gulp.task("data", function() {
-  gulp.src('src/data/*.*')
+  gulp.src('app/assets/data/*.*')
     .pipe(gulp.dest('public/data'))
     .pipe(notify({ message: 'JSON Data Updated!' }));
 });
@@ -188,7 +188,7 @@ gulp.task('build', ['generate'], function() {
 });
 // Server Doen ======================================
 
-gulp.task('generate', ['image', 'scss', 'css', 'cjsx', 'coffee', 'js', 'slim', 'data'])
+gulp.task('generate', ['image', 'scss', 'css', 'cjsx', 'coffee', 'js', 'data'])
 gulp.task('clean', function(cb) {
     del(['public/assets/css/*.css', 'public/assets/css/*.map', 'public/assets/js'], cb)
 });
@@ -197,26 +197,26 @@ gulp.task('reload', ['clean', 'default'])
 gulp.task('watch', function() {
 
     livereload.listen();
-    gulp.watch(['src/**']).on('change', livereload.changed);
+    gulp.watch(['app/assets/**']).on('change', livereload.changed);
 
-    gulp.watch('src/images/*.*', ['image']);
-    gulp.watch('src/data/*.*', ['data']);
+    gulp.watch('app/assets/images/*.*', ['image']);
+    gulp.watch('app/assets/data/*.*', ['data']);
 
     // Watch .scss files/
-    gulp.watch('src/stylesheets/*.scss', ['scss']);
-    gulp.watch('src/stylesheets/**/*.scss', ['scss']);
-    gulp.watch('src/stylesheets/*.css', ['css']);
+    gulp.watch('app/assets/stylesheets/*.scss', ['scss']);
+    gulp.watch('app/assets/stylesheets/**/*.scss', ['scss']);
+    gulp.watch('app/assets/stylesheets/*.css', ['css']);
 
     // Watch .coffee files
-    gulp.watch(['src/javascripts/*.coffee', './src/javascripts/**/*.coffee'], ['coffee']);
-    gulp.watch('src/javascripts/*.cjsx', ['cjsx']);
+    gulp.watch(['app/assets/javascripts/*.coffee', './app/assets/javascripts/**/*.coffee'], ['coffee']);
+    gulp.watch('app/assets/javascripts/*.cjsx', ['cjsx']);
 
     // Watch .js files
-    gulp.watch('src/javascripts/*.js', ['js']);
+    gulp.watch('app/assets/javascripts/*.js', ['js']);
 
     // Watch .slim files
-    gulp.watch('src/views/*.slim', ['slim']);
-    gulp.watch('src/views/**/*.slim', ['slim']);
+    //gulp.watch('app/views/*.slim', ['slim']);
+    //gulp.watch('app/views/**/*.slim', ['slim']);
 
 
 });

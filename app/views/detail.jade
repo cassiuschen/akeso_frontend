@@ -1,0 +1,46 @@
+extends layouts/default
+
+block title
+  title 产品 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/production_detail']);
+    | });
+
+block content
+  .page
+    .detail-nav
+      .container.clearfix
+        .name.left
+          | AKESO 1
+        .items.right
+          a.item.disabled
+            span 功能
+          a.item.disabled
+            span 设计
+          a.item.disabled
+            span 性能
+          a.item.disabled
+            span 材质
+          a.item.disabled
+            span App
+          a.item.disabled.btn
+            span 立即购买
+    .detail-page
+      #page-1
+        .text
+          .version AKESO 1
+          .title 眼睛的新朋友，更是他的好朋友
+          .sub-title 适合你的好眼镜，全面呵护你的眼健康
+      #page-2
+        .container
+          .text
+            .title 钟表级精细加工
+            .sub-title 眼镜的耐用性和舒适度与铰链息息相关。AKESO-1 采用自主设计的专利铰链，经钟表级加工中心精细加工，坚固耐用又贴合脸型，陪伴你度过每一次考验。
+      #page-3
+        .container
+          .text
+            .title 轻快舒适
+            .sub-title 每天与你相伴的眼镜，舒适格外重要。AKESO-1 采用优质空气鼻托，结合多处人体工程学设计，大幅减轻了佩戴时的重量感，让你的鼻梁上轻若无物。

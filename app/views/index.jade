@@ -1,0 +1,42 @@
+extends layouts/default
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/production']);
+    | });
+
+block content
+  #productionHeroArea.margin-nav
+    .container
+      h1.title 懂你的，才能真正关心你
+      h3.sub-title 帮你改善眼健康的新朋友，现已开始预售
+      .actions
+        a.button.blue(href="/detail")
+          | 了解更多 
+          +fa('angle-right')
+        a.button.blue.inverted.disabled
+          | 立即预定
+        p.notice
+          | * 预定将于11月15日开放
+      .version
+        span 1
+
+  .panel.videos
+    .container
+      a.video.has-modal(data-modal="video-1")
+        img(src="/assets/images/prod-v-1.png" alt="")
+        | 艾索的生活态度
+      a.video.disabled
+        img(src="/assets/images/prod-v-2.png" alt="")
+        | 一副好眼镜背后的故事
+      a.video.disabled
+        img(src="/assets/images/prod-v-3.png" alt="")
+        | 艾索与眼健康
+
+  .modal#video-1
+    a.close
+      +fa('close')
+    .player#youku
+    script(src="http://player.youku.com/jsapi")
+      | player = new YKU.Player('youku',{styleid: '0', client_id: '0cac65a381ef56c9',vid: 'XMTM3NTQ3OTI4OA==',autoplay: false,show_related: false});

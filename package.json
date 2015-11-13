@@ -1,52 +1,56 @@
 {
-  "name": "TaoBaoMobile",
-  "version": "0.0.1",
-  "description": "",
-  "main": "Gulpfile.js",
+  "name": "akeso",
+  "version": "1.0.0",
+  "description": "Akeso Official Website",
+  "main": "app.coffee",
   "dependencies": {
-    "del": "^1.1.1",
-    "gulp": "^3.8.10",
-    "gulp-autoprefixer": "^2.0.0",
-    "gulp-cache": "^0.2.4",
-    "gulp-coffee": "^2.2.0",
-    "gulp-concat": "^2.4.3",
+    "body-parser": "^1.14.1",
+    "bower": "^1.6.5",
+    "coffee-script": "^1.10.0",
+    "cookie-parser": "^1.4.0",
+    "del": "^1.2.1",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-bower-normalize": "^1.0.6",
+    "gulp-cache": "^0.2.10",
+    "gulp-cjsx": "^3.0.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.2.0",
     "gulp-imagemin": "^2.4.0",
-    "gulp-inline-image": "0.0.4",
-    "gulp-jshint": "^1.9.0",
-    "gulp-livereload": "^3.2.0",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-notify": "^2.1.0",
-    "gulp-open": "^0.3.1",
-    "gulp-rename": "^1.2.0",
+    "gulp-inline-image": "^0.0.4",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^0.3.13",
+    "gulp-notify": "^2.2.0",
+    "gulp-open": "^0.3.2",
+    "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-sass": "^2.1.0",
-    "gulp-slim": "0.0.13",
-    "gulp-uglify": "^1.0.2",
-    "node-webkit-builder": "^0.3.2"
+    "gulp-slim": "^0.0.13",
+    "gulp-uglify": "^1.4.2",
+    "gulp-uncss": "^1.0.4",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1",
+    "node-webkit-builder": "^0.3.2",
+    "serve-favicon": "^2.3.0"
   },
-  "devDependencies": {
-    "bower": "^1.3.12",
-    "gulp-bower-normalize": "^1.0.3",
-    "gulp-cjsx": "^3.0.0",
-    "gulp-coffee": "^2.2.0",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-slim": "0.0.13",
-    "gulp-uncss": "^1.0.3"
-  },
+  "devDependencies": {},
   "scripts": {
+    "start": "coffee bin/start.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:cassiuschen/taobao_mobile_rebuild"
+    "url": "https://github.com/cassiuschen/akeso_frontend"
   },
-  "keywords": [
-    "html5",
-    "digital",
-    "art",
-    "cuc"
-  ],
-  "author": "Cassius Chen",
-  "license": "Apache"
+  "author": "cassiuschen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassiuschen/akeso_frontend/issues"
+  },
+  "homepage": "https://github.com/cassiuschen/akeso_frontend"
 }

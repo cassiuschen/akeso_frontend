@@ -1,0 +1,18 @@
+include ../mixin
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    block title
+      title AKESO | 艾索健康科技
+    link(rel="stylesheet" href="/assets/css/vendor.css")
+    link(rel="stylesheet" href="/assets/css/application.css")
+    script(src="/assets/js/lib/modernizr.js")
+    script(src="/assets/js/lib/require.js")
+    meta(name="viewport" content="width=1020, user-scalable=yes")
+    block requirejs
+  body
+    include ../components/navbar
+    block content
+    include ../components/footer
