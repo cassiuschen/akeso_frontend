@@ -101,5 +101,44 @@ define ['jquery', 'underscore'], ($, _) ->
       data: data
       headers: 
         "X-LC-Session": session
+  getUserThatHaveNotSignIn: ->
+    attendances = @attendances()
+    #attendances = _.map attendances, (u) ->
+    #  return {
+    #    mobile: u.mobile
+    #    name: u.name
+    #  }
+    attendancesMobile = _.map attendances, (u) ->
+      return u.mobile
 
+    users = @_makeReq
+      method: 'GET'
+      url: 'users'
+    #users = _.map users.results, (u) ->
+    #  return {
+    #    mobile: u.mobilePhoneNumber
+    #    name: u.username
+    #  }
+    userMobile = _.map users.results, (u) ->
+      return u.mobilePhoneNumber
+    #console.log users
+    #console.log attendances
+    window._ = _
+    diff = _.difference attendancesMobile, userMobile
+    _.filter attendances, (u) ->
+      _.contains diff, u.mobile
+
+  sendNoticeToUserWhoHaveNotSignIn: ->
+    users = @getUserThatHaveNotSignIn()
+    for user in users
+      @SMSVerifySend user.mobile, template: 'notice-email', name: user.name
+
+  attendances: ->
+    first = @_makeReq
+      method: 'GET'
+      url: 'classes/Attendances'
+    last = @_makeReq
+      method: 'GET'
+      url: 'classes/Attendances?skip=100'
+    return first.results.concat last.results
 

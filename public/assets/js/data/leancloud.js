@@ -143,6 +143,50 @@ define(['jquery', 'underscore'], function($, _) {
           "X-LC-Session": session
         }
       });
+    },
+    getUserThatHaveNotSignIn: function() {
+      var attendances, attendancesMobile, diff, userMobile, users;
+      attendances = this.attendances();
+      attendancesMobile = _.map(attendances, function(u) {
+        return u.mobile;
+      });
+      users = this._makeReq({
+        method: 'GET',
+        url: 'users'
+      });
+      userMobile = _.map(users.results, function(u) {
+        return u.mobilePhoneNumber;
+      });
+      window._ = _;
+      diff = _.difference(attendancesMobile, userMobile);
+      return _.filter(attendances, function(u) {
+        return _.contains(diff, u.mobile);
+      });
+    },
+    sendNoticeToUserWhoHaveNotSignIn: function() {
+      var i, len, results, user, users;
+      users = this.getUserThatHaveNotSignIn();
+      results = [];
+      for (i = 0, len = users.length; i < len; i++) {
+        user = users[i];
+        results.push(this.SMSVerifySend(user.mobile, {
+          template: 'notice-email',
+          name: user.name
+        }));
+      }
+      return results;
+    },
+    attendances: function() {
+      var first, last;
+      first = this._makeReq({
+        method: 'GET',
+        url: 'classes/Attendances'
+      });
+      last = this._makeReq({
+        method: 'GET',
+        url: 'classes/Attendances?skip=100'
+      });
+      return first.results.concat(last.results);
     }
   };
 });
