@@ -42,8 +42,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "coffee bin/start.coffee",
-    "prod": "NODE_ENV=production PORT=8080 pm2 start bin/start.coffee --name Akeso -i max",
+    "start": "NODE_ENV=production PORT=8080 pm2 start bin/start.coffee --name Akeso -i max -e ../log/akeso.err.log -o ../log/akeso.log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
