@@ -37,11 +37,13 @@
     "method-override": "^2.3.5",
     "morgan": "^1.6.1",
     "node-webkit-builder": "^0.3.2",
+    "pm2": "^0.15.10",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {},
   "scripts": {
     "start": "coffee bin/start.coffee",
+    "prod": "NODE_ENV=production PORT=8080 pm2 start bin/start.coffee --name Akeso -i max",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
