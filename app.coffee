@@ -12,8 +12,10 @@ bodyParser     = require 'body-parser'
 expressSession = require 'express-session'
 methodOverride = require 'method-override'
 
-jade            = require 'jade'
+jade           = require 'jade'
 fs             = require 'fs'
+
+leancloud      = require 'avoscloud-sdk'
 
 # uncomment after placing your favicon in /public
 # app.use favicon(__dirname + '/public/favicon.ico')
@@ -45,6 +47,7 @@ app.use cookieParser()
 app.use expressSession secret: 'secret key'
 
 
+leancloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
 app.use('/', routes)
 
 # catch 404 and forward to error handler

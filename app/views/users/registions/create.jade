@@ -1,0 +1,60 @@
+extends ../../layouts/default
+
+block title
+  title 内侧登记 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/registion']);
+    | });
+
+block content
+  .container.small.margin-nav.footer-in-page#forming(style="position:relative;left:0px;")
+    .form-title
+      h1.title#t1 信息验证
+      h1.title#t2.hide 订单信息
+      h3.sub-title 请填写您申请 AKESO 内测用户时所登记的姓名和电话号码，以验证您的中奖信息。
+    #step1.form
+      input#name(type="text" placeholder="姓名")
+      input#mobile(type="tel" placeholder="电话")
+      .input-group
+        input#code(type="text" placeholder="手机验证码")
+        a.button.blue#sendCode 发送验证码
+      .actions
+        a.button.blue.inverted#nextMove(disabled="disabled") 下一步
+    #step2.form.hide
+      textarea#address(type="text" placeholder="收货地址")
+      .selections
+        input#type(type="hidden")
+          a.selection(data-type="1") 板材款
+          a.selection(data-type="3") 钛架款
+      .actions
+        a.button.blue.inverted.has-modal#submit(disabled="disabled" data-modal="check-order") 提交订单
+      .preview#typePreviewImg
+        img(src="" alt="")
+  .modal#check-order
+    a.close
+      +fa('close')
+    .container.margin-nav.medium
+        h1.title 订单确认
+        .order
+          .preview
+            img#typeImg(alt="")
+            .des#typeCheck
+          .info
+            .inline
+              .info-span
+                h5.label 收货人
+                .content#nameCheck
+              .info-span
+                h5.label 联系电话
+                .content#mobileCheck
+            .info-span
+              h5.label 寄送地址
+              .content#addressCheck
+
+
+        .actions.floated.right
+          a.button.blue(data-close-modal="true") 返回修改
+          a.button.blue.inverted#confirmed 确认订单

@@ -84,7 +84,7 @@ define(['jquery', 'underscore', 'cookie', 'navbar', 'leancloud', 'form', 'modal'
             address: $('#address').val()
           };
           if (LC.updateUserData(CC.session('user_id'), CC.session("user_session"), data)) {
-            return window.location = '/users/registion-success.html';
+            return window.location = '/users/registion?success=1';
           }
         });
       }

@@ -81,4 +81,4 @@ define ['jquery', 'underscore', 'cookie', 'navbar', 'leancloud', 'form', 'modal'
 						type: $('input#type').val()
 						address: $('#address').val()
 					if LC.updateUserData CC.session('user_id'), CC.session("user_session"), data
-						window.location = '/users/registion-success.html'
+						window.location = '/users/registion?success=1'

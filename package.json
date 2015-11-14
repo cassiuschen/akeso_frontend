@@ -4,6 +4,7 @@
   "description": "Akeso Official Website",
   "main": "app.coffee",
   "dependencies": {
+    "avoscloud-sdk": "^0.6.5",
     "body-parser": "^1.14.1",
     "bower": "^1.6.5",
     "coffee-script": "^1.10.0",
