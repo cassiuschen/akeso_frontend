@@ -76,6 +76,7 @@ router
         order.set 'type', req.body.orders.type
         order.set 'color', req.body.orders.color
         order.set 'glass', req.body.orders.glass
+        order.set 'author', user_req
         order.save null,
           success: (order_saved) ->
             user.relation("orders").add order_saved
@@ -83,6 +84,12 @@ router
             user.save null,
               success: (order) ->
                 # Send SMS to notice
+                LeanCloud.Cloud.requestSmsCode
+                    mobilePhoneNumber: user.mobilePhoneNumber
+                    template: "order-success"
+                    name: user.username
+                    gender: ''
+                    type: "#{req.body.orders.color}#{eq.body.orders.type}"
                 res.send
                   success: 0
               error: (usr, err) ->
