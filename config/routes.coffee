@@ -82,7 +82,7 @@ router
           status: 500
 
   .get '/orders/new', (req, res) ->
-    res.render 'orders/new', {types: AkesoData.types}
+    res.render 'orders/new', {types: AkesoData.types, glass: AkesoData.glass}
 
   .get '/orders/success', (req, res) ->
     res.render 'orders/success'

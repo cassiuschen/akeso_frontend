@@ -12,24 +12,48 @@ define ['jquery', 'underscore'], ($, _) ->
 				$('.step').removeClass 'onStepOne'
 				$('.step').addClass "on#{$('#next').data 'target'}"
 				$('#next').data 'target', 'StepOne'
+				$(this).text '选择款式'
+				height = $('#step-1').height()
+				$('#step-1').hide()
+				setTimeout ->
+						$('#step-2')
+							.removeClass 'hide'
+							.fadeIn(600)
+							.addClass 'show'
+							#.css "-webkit-transform", "translateY(-#{height}px)"
+							#.css "transform", "translateY(-#{height}px)"
+					, 200
 			else
+				$('#step-1').show()
+				$('#step-2')
+					.fadeOut(600)
+					.addClass 'hide'
+					.removeClass 'show'
+					#.css "-webkit-transform", "translateY(0)"
+					#.css "transform", "translateY(0)"
 				console.log 'toStepOne'
 				$('.step').removeClass 'onStepTwo'
 				$('.step').addClass "on#{$('#next').data 'target'}"
 				$('#next').data 'target', 'StepTwo'
+				$(this).text '填写信息'
+
+				
 
 	handleColorSelect: ->
 		that = @
 		$('.colors .color').on 'click', (el) ->
 			$('.color').addClass 'mute'
 			$('.color.selected').removeClass 'selected'
+			$('#next').removeAttr 'disabled'
 			$(this)
 				.removeClass 'mute'
 				.addClass 'selected'
 			that.updatePrice $(@).data('price')
 			type = $(@).parent().data 'type'
+			$('.typeInput').text "已选款式：#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
 			$("##{type}").attr 'src', $(@).data('img')
-			console.log $(@).data('img')
+			$("#preview").attr 'src', $(@).data('preview')
+
 
 			
 	updatePrice: (newPrice) ->

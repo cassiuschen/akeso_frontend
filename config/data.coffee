@@ -1,5 +1,17 @@
 ASSETS_URL = '/assets'
 data = 
+	glass: [
+		{
+			name: "无镜片"
+			value: 0
+		}, {
+			name: "蔡司A系列1.665非球面树脂镜片"
+			value: 699
+		}, {
+			name: "蔡司抗疲劳1.665数码型镜片"
+			value: 1299
+		}
+	]
 	types:
 		akesoSheet: 
 			name: "板材款"

@@ -23,6 +23,7 @@ block content
           .right
             a.button.blue.inverted#next(
               data-target="StepTwo"
+              disabled="disabled"
             )
               | 填写信息
       .content#step-1
@@ -36,16 +37,35 @@ block content
             img(id="#{type.shortcut}" src="#{type.colors[0].photo.positive}")
             .colors(
               data-type="#{type.shortcut}"
+              data-typeName="#{type.name}"
             )
               each color in type.colors
                 a.color(
                   data-price="#{color.price}"
                   data-color="#{color.shortcut}"
                   data-img="#{color.photo.positive}"
+                  data-preview="#{color.photo.side}"
+                  data-name="#{color.name}"
                 )
                   img(src="#{color.photo.color}")
                   = color.name 
-
-
-
+      .content.hide#step-2
+        h3.title
+          span.count 2
+          | 填写信息
+        .form
+          img#preview
+          .typeInput(style="font-size:18px;margin-bottom:15px") 已选款式：
+          .selections
+            input#glass(type="hidden")
+            each g in glass
+              a.selection(data-value="#{g.value}")= g.name
+          input#name(type="text" placeholder="姓名")
+          input#mobile(type="tel" placeholder="手机")
+          input#email(type="email" placeholder="电子邮箱")
+          .input-group
+            input#code(type="text" placeholder="手机验证码")
+            a.button.blue#sendCode 发送验证码
+          .actions
+            a.button.blue.inverted#submit(disabled="disabled") 提交订单
 block footer
