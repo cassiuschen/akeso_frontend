@@ -107,13 +107,14 @@ gulp.task('image', function() {
     //    }))
     .pipe(gulp.dest('public/assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
-  gulp.src(['./app/assets/images/*.jpg', './app/assets/images/*.png','./app/assets/images/**/*.jpg', './app/assets/images/**/*.png'])
-    .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}]
-        }))
-    .pipe(gulp.dest('public/assets/images'))
-    .pipe(notify({ message: 'Images MINI task complete' }));
+  //gulp.src(['./app/assets/images/*.jpg', './app/assets/images/*.png','./app/assets/images/**/*.jpg', './app/assets/images/**/*.png'])
+  //  .pipe(imagemin({
+   //         progressive: true,
+    //        svgoPlugins: [{removeViewBox: false}]
+   //     }))
+  //  .pipe(gulp.dest('public/assets/images'))
+   // .pipe(notify({ message: 'Images MINI task complete' }));
+//
 })
 // Basic Functions Done ==================================
 

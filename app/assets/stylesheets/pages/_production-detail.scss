@@ -52,7 +52,7 @@ body.productionDetail {
 		.text {
 			.version, .title {
 				color: #0c1534;
-				font-size: 48px;
+				font-size: 42px;
 				text-align: center;
 			}
 
@@ -239,7 +239,7 @@ body.productionDetail {
 
 		#page-4 {
 			min-height: 100vh;
-			@include linear-gradient-with-image('/assets/images/detail/1_02.png',to bottom, rgb(230, 230,230), #fff);
+			@include linear-gradient-with-image('/assets/images/detail/1_02.png',to bottom, rgb(230, 230,230), #f9f9f9);
 			background-repeat: no-repeat;
 			background-position: 100% 0, 0 0;
 			//background-size: 60% auto, cover;
@@ -323,6 +323,10 @@ body.productionDetail {
 			padding-top: 20% !important;
 			background-size: 90% auto !important;
 			background-position: 50% 75% !important;
+			.text {
+				width: 80% !important;
+				margin: 0 5% !important;
+			}
 		}
 
 		#page-6 {
