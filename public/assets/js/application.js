@@ -8,6 +8,7 @@ requirejs.config({
     pin: 'lib/jquery.pin',
     cookie: 'lib/CCSession',
     leancloud: 'data/leancloud',
-    underscore: 'lib/underscore'
+    underscore: 'lib/underscore',
+    onePage: 'ui/onePageScroll'
   }
 });

@@ -84,7 +84,7 @@ gulp.task('cjsx', function() {
 });
 
 gulp.task('js', function() {
-  gulp.src('./app/assets/javascripts/*.js')
+  gulp.src(['./app/assets/javascripts/*.js', './app/assets/javascripts/**/*.js'])
     .pipe(gulp.dest('public/assets/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())

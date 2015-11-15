@@ -178,7 +178,7 @@ nav.navbar {
 }
 
 @media (max-width: 600px) {
-	nav.navbar {
+	nav.navbar, .detail-nav  {
 		.title-area {
 			width: 100%;
 			text-align: center;
@@ -191,5 +191,25 @@ nav.navbar {
 		.navbar-section {
 			display: none;
 		}
+
+		.right {
+			float: right;
+		}
+
+
+
+		.btn {
+			padding: 0 25px;
+			span {
+				background-color: rgba(255,255,255,.2);
+				border-radius: 5px;
+				padding: 5px 15px;
+			}
+
+			&:hover, &:active, &.active {
+				span { border-bottom: none !important; }
+			}
+		}
+				
 	}
 }

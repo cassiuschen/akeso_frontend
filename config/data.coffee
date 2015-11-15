@@ -76,7 +76,7 @@ data =
 				}
 			]
 		akesoWood:
-			name: "檀木款（全框）"
+			name: "檀木款(全框)"
 			shortcut: 'wood'
 			price: 1699
 			colors: [
@@ -107,7 +107,7 @@ data =
 				}
 			]
 		akesoWoodHald:
-			name: "檀木款（半框）"
+			name: "檀木款(半框)"
 			shortcut: 'woodHalf'
 			price: 1699
 			colors: [

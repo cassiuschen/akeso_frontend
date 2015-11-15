@@ -1,4 +1,4 @@
-extends ../layouts/default
+extends ../layouts/responsive
 
 block title
   title 产品 | AKESO
@@ -16,31 +16,27 @@ block content
         .name.left
           | AKESO 1
         .items.right
-          a.item.disabled
-            span 功能
-          a.item.disabled
-            span 设计
-          a.item.disabled
-            span 性能
-          a.item.disabled
-            span 材质
-          a.item.disabled
-            span App
-          a.item.disabled.btn
-            span 立即购买
+          a.item.btn(href="/orders/new")
+            span 立即预定
     .detail-page
-      #page-1
+      section#page-1
         .text
-          .version AKESO 1
-          .title 眼睛的新朋友，更是他的好朋友
-          .sub-title 适合你的好眼镜，全面呵护你的眼健康
-      #page-2
-        .container
-          .text
-            .title 钟表级精细加工
-            .sub-title 眼镜的耐用性和舒适度与铰链息息相关。AKESO-1 采用自主设计的专利铰链，经钟表级加工中心精细加工，坚固耐用又贴合脸型，陪伴你度过每一次考验。
-      #page-3
-        .container
-          .text
-            .title 轻快舒适
-            .sub-title 每天与你相伴的眼镜，舒适格外重要。AKESO-1 采用优质空气鼻托，结合多处人体工程学设计，大幅减轻了佩戴时的重量感，让你的鼻梁上轻若无物。
+          .version
+            img(src="/assets/images/detail/akeso_1.svg")
+          .sub-title 眼镜，如此体贴。
+      section#page-2
+        .text
+          .version 智能
+          .title 
+            | 紫外线、强光、眼周湿度、坐姿，
+            br
+            | 危害眼健康的每处风险，它都知道。
+          .sub-title 你的眼睛无比重要，危害它的风险却无处不在。 我们创新性地将眼镜与智能硬件的融合，在细小的眼镜腿中装入数个传感器，实现了对相关数据的时时监测，让你对潜在的眼健康风险了如指掌。
+      section#page-3
+        .text
+          .version 健康
+          .title 
+            | 专业的护眼指导，
+            br
+            | 效果显著的健康改善。
+          .sub-title 健康是件大事，但改善健康需从小事做起。AKESO-1 的功能设计由眼科博士主导，能够对环境风险、疲劳程度、运动量等数据进行实时分析，并给出针对性的专业护眼指导，为你带来切实的眼健康改善。
