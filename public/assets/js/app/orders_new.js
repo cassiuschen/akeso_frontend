@@ -6,6 +6,8 @@ define(['jquery', 'underscore'], function($, _) {
       return this.handleColorSelect();
     },
     handleNextBtn: function() {
+      var that;
+      that = this;
       return $('#next').on('click', function() {
         var height;
         console.log('click!');
@@ -17,8 +19,10 @@ define(['jquery', 'underscore'], function($, _) {
           $(this).text('选择款式');
           height = $('#step-1').height();
           $('#step-1').hide();
+          $(this).data('layoutValue', $('.price').data('price'));
           return setTimeout(function() {
-            return $('#step-2').removeClass('hide').fadeIn(600).addClass('show');
+            $('#step-2').removeClass('hide').fadeIn(600).addClass('show');
+            return that.selectionUI();
           }, 200);
         } else {
           $('#step-1').show();
@@ -45,6 +49,18 @@ define(['jquery', 'underscore'], function($, _) {
         $('.typeInput').text("已选款式：" + ($(this).data('name')) + ($(this).parent().data('typename')));
         $("#" + type).attr('src', $(this).data('img'));
         return $("#preview").attr('src', $(this).data('preview'));
+      });
+    },
+    selectionUI: function() {
+      var that;
+      that = this;
+      return $('.selections .selection').on('click', function() {
+        var oldPrice;
+        $('.selections input').val($(this).text());
+        $('.selection.selected').removeClass('selected');
+        $(this).addClass('selected');
+        oldPrice = Number($('#next').data('layoutValue'));
+        return that.updatePrice(oldPrice + Number($(this).data('value')));
       });
     },
     updatePrice: function(newPrice) {

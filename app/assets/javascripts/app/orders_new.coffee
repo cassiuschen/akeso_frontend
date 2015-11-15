@@ -5,6 +5,7 @@ define ['jquery', 'underscore'], ($, _) ->
 		@handleColorSelect()
 
 	handleNextBtn: ->
+		that = @
 		$('#next').on 'click', ->
 			console.log 'click!'
 			if $('#next').data('target') == "StepTwo"
@@ -15,11 +16,13 @@ define ['jquery', 'underscore'], ($, _) ->
 				$(this).text '选择款式'
 				height = $('#step-1').height()
 				$('#step-1').hide()
+				$(this).data 'layoutValue', $('.price').data('price')
 				setTimeout ->
 						$('#step-2')
 							.removeClass 'hide'
 							.fadeIn(600)
 							.addClass 'show'
+							that.selectionUI()
 							#.css "-webkit-transform", "translateY(-#{height}px)"
 							#.css "transform", "translateY(-#{height}px)"
 					, 200
@@ -37,6 +40,7 @@ define ['jquery', 'underscore'], ($, _) ->
 				$('#next').data 'target', 'StepTwo'
 				$(this).text '填写信息'
 
+
 				
 
 	handleColorSelect: ->
@@ -53,6 +57,15 @@ define ['jquery', 'underscore'], ($, _) ->
 			$('.typeInput').text "已选款式：#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
 			$("##{type}").attr 'src', $(@).data('img')
 			$("#preview").attr 'src', $(@).data('preview')
+
+	selectionUI: ->
+		that = @
+		$('.selections .selection').on 'click', ->
+			$('.selections input').val $(this).text()
+			$('.selection.selected').removeClass 'selected'
+			$(this).addClass 'selected'
+			oldPrice = Number($('#next').data 'layoutValue')
+			that.updatePrice(oldPrice + Number($(this).data 'value'))
 
 
 			

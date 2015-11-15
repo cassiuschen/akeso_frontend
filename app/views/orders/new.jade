@@ -57,9 +57,12 @@ block content
           img#preview
           .typeInput(style="font-size:18px;margin-bottom:15px") 已选款式：
           .selections
-            input#glass(type="hidden")
+            input#glass(type="hidden" value="无")
             each g in glass
-              a.selection(data-value="#{g.value}")= g.name
+              if g == glass[0]
+                a.selection.selected(data-value="#{g.value}")= g.name
+              else
+                a.selection(data-value="#{g.value}")= g.name
           input#name(type="text" placeholder="姓名")
           input#mobile(type="tel" placeholder="手机")
           input#email(type="email" placeholder="电子邮箱")
