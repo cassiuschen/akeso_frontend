@@ -47,7 +47,7 @@ app.use cookieParser()
 app.use expressSession secret: 'secret key'
 
 
-leancloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
+
 app.use('/', routes)
 
 # catch 404 and forward to error handler

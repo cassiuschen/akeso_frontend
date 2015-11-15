@@ -8,7 +8,7 @@ router.options '*', (req, res) ->
   res.status(200).end()
   next()
 
-
+LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
 router
   .get '/', (req, res) ->
     res.render 'static/index'
@@ -89,6 +89,20 @@ router
 
 
 
+  # LeanCloud API
+  .get '/leancloud/sendSMS/:mobile', (req, res) ->
+    console.log req.params.mobile
+    LeanCloud.User
+      .requestMobilePhoneVerify(req.params.mobile)
+      .then ->
+          res.send
+            message: "发送成功"
+            status: 200
+        , (err) ->
+          console.log err
+          res.send
+            message: "发送失败"
+            status: 500
 
 
 

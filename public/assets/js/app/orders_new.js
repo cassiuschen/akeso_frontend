@@ -1,4 +1,4 @@
-define(['jquery', 'underscore'], function($, _) {
+define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
   return {
     init: function() {
       $('body').addClass('orders new');
@@ -22,7 +22,10 @@ define(['jquery', 'underscore'], function($, _) {
           $(this).data('layoutValue', $('.price').data('price'));
           return setTimeout(function() {
             $('#step-2').removeClass('hide').fadeIn(600).addClass('show');
-            return that.selectionUI();
+            that.selectionUI();
+            return $('#sendCode').on('click', function() {
+              return that.sendSMS();
+            });
           }, 200);
         } else {
           $('#step-1').show();
@@ -70,6 +73,36 @@ define(['jquery', 'underscore'], function($, _) {
       return setTimeout(function() {
         return $('.price').removeClass('priceChange');
       }, 800);
+    },
+    sendSMS: function() {
+      var mobile, result;
+      $('#sendCode').attr('disabled', 'disabled');
+      mobile = $('input#mobile').val();
+      result = {};
+      return $.ajax({
+        type: 'GET',
+        url: "/leancloud/sendSMS/" + mobile,
+        params: {
+          mobile: mobile
+        },
+        data: {
+          mobile: mobile
+        },
+        contentType: "application/json",
+        dataType: "json",
+        async: false,
+        success: function(data, _) {
+          result = data;
+          console.log(result.message);
+          if (result.status === 200) {
+            return $('#submit').removeAttr('disabled');
+          } else {
+            return UIForm.getWarn('input#mobile', "手机号似乎有点问题哦，请重新填写。", function(el) {
+              return $('#sendCode').removeAttr('disabled');
+            });
+          }
+        }
+      });
     }
   };
 });
