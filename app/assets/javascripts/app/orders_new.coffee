@@ -14,7 +14,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
         $('.step').removeClass 'onStepOne'
         $('.step').addClass "on#{$('#next').data 'target'}"
         $('#next').data 'target', 'StepOne'
-        $(this).text '选择款式'
+        $(this).html ' <i class="fa fa-angle-left"> 填写信息'
         height = $('#step-1').height()
         $('#step-1').hide()
         $(this).data 'layoutValue', $('.price').data('price')
@@ -42,7 +42,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
         $('.step').removeClass 'onStepTwo'
         $('.step').addClass "on#{$('#next').data 'target'}"
         $('#next').data 'target', 'StepTwo'
-        $(this).text '填写信息'
+        $(this).html '填写信息 <i class="fa fa-angle-right">'
 
 
         

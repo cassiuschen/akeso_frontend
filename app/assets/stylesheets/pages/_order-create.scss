@@ -95,7 +95,7 @@ body.orders.new {
 						content: ' ';
 						width: 100%;
 						position: absolute;
-						bottom: -10px;
+						bottom: -15px;
 						left: 0;
 						opacity: .5;
 						height: 1px;
@@ -109,22 +109,27 @@ body.orders.new {
 					position: relative;
 					width: 85%;
 					margin: 0 auto;
-					margin-bottom: 30px;
+					padding-bottom: 30px;
 					margin-top: 15px;
+					border-bottom: 1px solid #eee;
 
 					&:after {
 						display: block;
 						content: ' ';
 						height: 100%;
 						position: absolute;
-						bottom: 0;
+						bottom: -15px;
+						left: 0;
 						height: 1px;
-						border: 1px solid #eee;
+						background-color: $black;
 					}
 
 					img {
+						margin: 0 auto;
+						display: block;
 						margin-top: -15px;
 						width: 100%;
+						max-width: 640px;
 						z-index: 10;
 					}
 					.type-name {

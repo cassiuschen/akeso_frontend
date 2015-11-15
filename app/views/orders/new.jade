@@ -25,11 +25,13 @@ block content
               data-target="StepTwo"
               disabled="disabled"
             )
-              | 填写信息
+              | 填写信息 
+              +fa('angle-right')
       .content#step-1
         h3.title
           span.count 1
-          | 选择款式
+          | 选择款式 
+          
         each type in types
           .type
             .type-name

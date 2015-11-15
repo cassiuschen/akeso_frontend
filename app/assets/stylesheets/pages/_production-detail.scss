@@ -31,8 +31,14 @@ body.productionDetail {
 					text-shadow: none;
 					border-color: #121b3c;
 
-					&.btn>span {
-						background-color: rgba(0,0,0,.2);
+					&.button {
+						text-align: center;
+						color: white !important;
+						border: none;
+						span {
+							color: white;
+							border: none !important;
+						}
 					}
 
 					&:hover, &:active {
