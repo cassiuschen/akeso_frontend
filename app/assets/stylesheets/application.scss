@@ -1,5 +1,11 @@
 @import "var";
 @import "components";
+@mixin linear-gradient-with-image($url, $startFrom, $startColor, $endColor) {
+  background-image: url($url), linear-gradient($startFrom,$startColor,$endColor);
+  background-image: url($url), -webkit-gradient(linear,$startFrom,right bottom,from($startColor), to($endColor));
+  background-image: url($url), -moz-linear-gradient($startFrom,$startColor,$endColor);
+  background-image: url($url), -o-linear-gradient($startFrom,$startColor,$endColor);
+}
 
 body, html {
 	margin: 0;
@@ -110,3 +116,5 @@ body.onepage-scroll-enabled {
   margin-top: -4px;
   left: 8px;
 }
+
+

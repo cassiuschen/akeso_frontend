@@ -53,11 +53,13 @@ body.productionDetail {
 			.version, .title {
 				color: #0c1534;
 				font-size: 48px;
+				text-align: center;
 			}
 
 			.title {
 				font-weight: 300;
 				margin:12px 0;
+
 			}
 
 			.version {
@@ -71,8 +73,9 @@ body.productionDetail {
 
 			.sub-title {
 				color: #666666;
-				font-size: 24px;
+				font-size: 18px;
 				font-weight: 200;
+				text-align: center;
 				line-height: 28px;
 			}
 		}
@@ -82,27 +85,42 @@ body.productionDetail {
 		}
 
 		#page-1 {
-			height: calc(100vh - 135px);
+			@extend .clearfix;
+			min-height: calc(100vh - 135px);
 			background-color: #fff;
 			min-height: 600px;
-			background-image: url('/assets/images/detail/index_2_03.jpg');
-			background-repeat: no-repeat;
-			background-position: 50% 70%;
-			background-size: 80% auto;
-			padding-top: 80px;
+			
 			.text {
-				
+				width: 70%;
 				text-align: center;
+				padding-top: 10%;
+				margin: 0 auto;
+
+				img {
+					width: 100%;
+				}
+
+				.glass {
+					margin: 30px auto;
+				}
+
+				.timeago {
+					font-size: 14px;
+					line-height: 2;
+				}
+				padding-bottom: 40px;
 			}
 		}
 
 		#page-2 {
+			@extend .clearfix;
 			background-color: #f4f4f6;
-			height: 100vh;
-			background-image: url('/assets/images/detail/index_2_07.jpg');
+			min-height: 100vh;
+			background-image: url('/assets/images/detail/index_2_07_03.png');
 			background-repeat: no-repeat;
-			background-position: 50% 80%;
+			background-position: 50% 85%;
 			background-size: 70% auto;
+			padding-top: 0%;
 			
 			.text {
 				margin: 0 auto;
@@ -113,69 +131,215 @@ body.productionDetail {
 				}
 			}
 		}
-		#page-3 {
+
+		#page-7, #page-8 {
+			@extend .clearfix;
+			background-color: #f4f4f6;
+			min-height: 100vh;
+			padding-top: 0%;
+
+			a {
+				color: $blue !important;
+				font-size: 24px !important;
+				margin-top: 30px !important;
+				border-sizing: border-box;
+				display: block;
+			}
+
+			.left {
+				float: left;
+				* {text-align: left !important;}
+			}
+
+			.right {
+				float: right;
+				* {text-align: left !important;}
+
+			}
+			
+			.text {
+				margin: 0 auto;
+				padding-top: 10%;
+				width: 40%;
+				img {
+					width: 100%;
+					display: block;
+					margin-bottom: 15px;
+				}
+				p {
+					margin: .5em 0;
+				}
+			}
+		}
+
+		#page-7 {
+			background-color: #fff;
+			.right {
+				padding-top: 25%;
+			}
+		}
+
+		#page-8 {
+			.right {
+				padding-top: 15%;
+			}
+		}
+
+		#page-3, #page-5 {
 			height: 100vh;
 			background-color: #fff;
-			background-image: url('');
-			background-repeat: no-repeat;
-			background-position: 0 100%;
-			background-size: 100% auto;
-		}
-	}
-}
-
-@media (max-width: 1200px) {
-	body.productionDetail {
-		.text {
-			width: 70% !important;
-			margin: 0 auto;
-			text-align: left;
-
 			
+			background-repeat: no-repeat;
+			
+			padding-top: 7%;
 
+			.text {
+				width: 70%;
+				margin: 0 auto;
+			}
 		}
 
-		.title {
-			font-size: 34px !important;
+		#page-3 {
+			background-image: url('/assets/images/detail/index_2_11.jpg');
+			background-size: 40% auto;
+			background-position: 50% 100%;
 		}
 
-		.sub-title {
-			font-size: 18px !important;
+		#page-5 {
+			background-image: url('/assets/images/detail/index-20151115-3_07.jpg');
+			background-size: 80% auto;
+			background-position: 50% 84%;
 		}
 
-		#page-1 {
-			.sub-title {
-				text-align: center !important;
+
+		#page-6{
+			min-height: 100vh;
+			@include linear-gradient-with-image('/assets/images/detail/people_02.png',to bottom, rgb(230, 230,230), #fff);
+			background-repeat: no-repeat;
+			background-position: 110% 100%, 0 0;
+			background-size: 60% auto, cover;
+			padding-top: 7%;
+
+			.text {
+				width: 50%;
+				margin: 0 8%;
+				padding-top: 10%;
+
+				* {
+					text-align: left !important;
+				}
+			}
+		}
+
+		#page-4 {
+			min-height: 100vh;
+			@include linear-gradient-with-image('/assets/images/detail/1_02.png',to bottom, rgb(230, 230,230), #fff);
+			background-repeat: no-repeat;
+			background-position: 100% 0, 0 0;
+			//background-size: 60% auto, cover;
+			padding-top: 7%;
+
+			.text {
+				width: 40%;
+				margin: 0 8%;
+
+				* {
+					text-align: left !important;
+				}
+			}
+
+			.icons {
+				display: flex;
+				justify-content: space-around;
+				width: 100%;
+				margin-top: 30px;
+				.icon {
+					text-align: center !important;
+					font-size: 14px;
+					width: 26%;
+					img {
+						width: 100%;
+						display: block;
+						margin-bottom: 10px;
+					    background-color: rgba(255,255,255,.8);
+					    border-radius: 8px;
+					}
+				}
 			}
 		}
 	}
 }
 
-@media (max-width: 460px) {
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
 	body.productionDetail {
 		.text {
 			width: 90% !important;
 			margin: 0 auto;
 			text-align: left;
-		}
-		.title {
-			font-size: 21px !important;
-			text-align: left !important;
-		}
-		.sub-title {
-			font-size: 16px !important;
-			text-align: left !important;
+			.title {
+				font-size: 21px !important;
+				text-align: left !important;
+			}
+			.sub-title {
+				font-size: 16px !important;
+				text-align: left !important;
 
+			}
+			.version {
+				text-align: left !important;
+			}
 		}
+		
 
 		#page-1 {
 			.sub-title {
-				text-align: center !important;
+				text-align: left !important;
 			}
 		}
 
 		#page-2 {
-			padding-top: 30%;
+			padding-top: 20% !important;
+			background-size:90% auto !important;
+			background-position: 50% 75% !important;
 		}
+		#page-3 {
+			padding-top: 20% !important;
+			background-size: 100% auto !important;
+		}
+		#page-4 {
+			background-position: 100% 100%, 0 0 !important;
+			background-size: auto 60%, cover !important;
+			padding-top: 15% !important;
+		}
+
+		#page-5 {
+			padding-top: 20% !important;
+			background-size: 90% auto !important;
+			background-position: 50% 75% !important;
+		}
+
+		#page-6 {
+			padding-top: 10% !important;
+			background-size: 86% auto, cover !important;
+			background-position: 130% 100%, 0 0 !important;
+			.text {
+				width: 80% !important;
+				margin: 0 5% !important;
+			}
+		}
+
+		#page-7, #page-8 {
+			padding-top: 15% !important;
+			.left, .right {
+				float: none !important;
+				margin-bottom: 30px !important;
+			}
+
+			.right {
+				padding-top: 0 !important;
+			}
+		}
+
 	}
 }
