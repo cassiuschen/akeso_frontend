@@ -31,3 +31,11 @@ footer {
 		}
 	}
 }
+
+@media (min-height: 600px) {
+	footer {
+		.left, .right {
+			float: none;
+		}
+	}
+}

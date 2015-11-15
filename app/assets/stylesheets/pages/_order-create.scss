@@ -1,0 +1,98 @@
+body.orders.new {
+	&>.container {
+		position: relative;
+		width: 100%;
+		.step {
+			position: relative;
+			width: 100%;
+			height: calc(100vh - 80px);
+			
+			.info-bar {
+				$infoBarHeight: 58px;
+				opacity: .8;
+				width: 100%;
+				background-color: #f2f2f5;
+				height: $infoBarHeight;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				box-shadow: 0px 0px 6px 0px rgba(46, 48, 81, 0.19);
+				z-index: 1000;
+
+				.right {
+					float: right;
+					&, * {
+						display: inline-block;
+						vertical-align: middle;
+
+					}
+				}
+
+				.button {
+					$btnHeight: 40px;
+					height: 40px;
+					text-align: center;
+					font-size: 18px;
+					line-height: 24px;
+					padding: 8px 0;
+					margin-top: (($infoBarHeight - $btnHeight) / 2);
+				}
+				
+				
+				.price {
+					$priceHeight: 32px;
+					display: inline-block;
+					vertical-align: middle;
+					span {
+						font-size: 14px;
+						color: #999;
+					}
+					color: $red;
+					font-size: 28px;
+					line-height: $priceHeight;
+					padding: (($infoBarHeight - $priceHeight) / 2) 0;
+				}
+			}
+
+			.content {
+				width: 90%;
+				margin: 0 auto;
+				padding-top: 25px;
+				.title {
+					margin: 0;
+					padding: 0;
+					font-size: 24px;
+					line-height: 28px;
+					color: $black;
+					vertical-align: middle;
+					width: 100%;
+					position: relative;
+					span {
+						font-size: 16px;
+						box-sizing: border-box;
+						vertical-align: middle;
+						padding: 4px 10px;
+						width: 28px;
+						line-height: 20px;
+						border-radius: 10000px;
+						border: 1px solid $black;
+						margin-right: 15px;
+					}
+
+					&:after {
+						display: block;
+						content: ' ';
+						width: 100%;
+						position: absolute;
+						bottom: -10px;
+						left: 0;
+						opacity: .5;
+						height: 1px;
+						border-bottom: 1px dashed $black;
+						opacity: .7; 
+					}
+				}
+			}
+		}
+	}
+}

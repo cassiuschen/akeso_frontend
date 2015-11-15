@@ -1,0 +1,28 @@
+extends ../layouts/responsive
+
+block title
+  title 预定产品 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/orders_new']);
+    | });
+
+block content
+  .container.margin-nav.page
+    .step#step-1
+      .info-bar
+        .container
+          .price
+            span 价格
+            | ￥699
+          .right
+            a.button.blue.inverted 填写信息
+      .content
+        h3.title
+          span.count 1
+          | 选择款式
+
+
+block footer

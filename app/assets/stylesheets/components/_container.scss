@@ -16,6 +16,10 @@
 		min-height: 500px;
 		height: calc(100vh - 80px - 126px);
 	}
+
+	&.page {
+		min-height: calc(100vh - 80px);
+	}
 }
 
 .margin-nav {
@@ -60,5 +64,11 @@
 	}
 	&.left {
 		text-align: left;
+	}
+}
+
+@media (min-height: 600px) {
+	.container {
+		width: 90%;
 	}
 }

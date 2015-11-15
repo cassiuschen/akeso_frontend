@@ -175,6 +175,21 @@ nav.navbar {
 			}
 		}
 	}
+}
 
-
+@media (max-width: 600px) {
+	nav.navbar {
+		.title-area {
+			width: 100%;
+			text-align: center;
+			padding: 25px 0;
+			.logo {
+				height: 30px;
+				width: 60%;
+			}
+		}
+		.navbar-section {
+			display: none;
+		}
+	}
 }

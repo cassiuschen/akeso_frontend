@@ -38,7 +38,8 @@
     "morgan": "^1.6.1",
     "node-webkit-builder": "^0.3.2",
     "pm2": "^0.15.10",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "scripts": {
