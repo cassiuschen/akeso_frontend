@@ -100,14 +100,14 @@ gulp.task('slim', function () {
 })
 
 gulp.task('image', function() {
-  gulp.src('./app/assets/images/*.*')
+  gulp.src(['./app/assets/images/*.*', './app/assets/images/**/*.*'])
     //.pipe(imagemin({
     //        progressive: true,
     //        svgoPlugins: [{removeViewBox: false}]
     //    }))
     .pipe(gulp.dest('public/assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
-  gulp.src(['./app/assets/images/*.jpg', './app/assets/images/*.png'])
+  gulp.src(['./app/assets/images/*.jpg', './app/assets/images/*.png','./app/assets/images/**/*.jpg', './app/assets/images/**/*.png'])
     .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]

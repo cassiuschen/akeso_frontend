@@ -1,3 +1,4 @@
+$infoBarHeight: 58px;
 body.orders.new {
 	&>.container {
 		position: relative;
@@ -8,7 +9,8 @@ body.orders.new {
 			height: calc(100vh - 80px);
 			
 			.info-bar {
-				$infoBarHeight: 58px;
+				@extend .clearfix;
+				transition: bottom .4s;
 				opacity: .8;
 				width: 100%;
 				background-color: #f2f2f5;
@@ -40,9 +42,17 @@ body.orders.new {
 				
 				
 				.price {
+					float: left;
 					$priceHeight: 32px;
 					display: inline-block;
 					vertical-align: middle;
+
+					&.priceChange {
+						animation-name: changingPrice;
+						animation-duration: 800ms;
+						animation-timing-function: ease;
+						animation-iteration-count: 1;
+					}
 					span {
 						font-size: 14px;
 						color: #999;
@@ -55,9 +65,11 @@ body.orders.new {
 			}
 
 			.content {
+				transition: transform .4s;
 				width: 90%;
 				margin: 0 auto;
 				padding-top: 25px;
+				padding-bottom: 80px;
 				.title {
 					margin: 0;
 					padding: 0;
@@ -92,7 +104,107 @@ body.orders.new {
 						opacity: .7; 
 					}
 				}
+
+				.type {
+					padding-top: 80px;
+					position: relative;
+					width: 85%;
+					margin: 0 auto;
+					margin-bottom: 30px;
+					margin-top: 15px;
+
+					&:after {
+						display: block;
+						content: ' ';
+						height: 100%;
+						position: absolute;
+						bottom: 0;
+						height: 1px;
+						border: 1px solid #eee;
+					}
+
+					img {
+						margin-top: -15px;
+						width: 100%;
+						z-index: 10;
+					}
+					.type-name {
+						position: absolute;
+						top:30px;
+						left: 0;
+						width: 100%;
+						text-align: center;
+						font-size: 24px;
+						color: $black;
+						z-index: 100;
+					}
+					.colors {
+						margin-top: 20px;
+						display: flex;
+						@extend .clearfix;
+						justify-content: center;
+						.color {
+							width: 5%;
+							margin: 0 10px;
+							width: 80px;
+							height: 80px;
+							border-radius: 5px;
+							border: 1px solid #eee;
+							padding: 9px 0;
+
+							&:hover, &:active, &.selected{
+								border-color: $blue;
+								cursor: pointer;
+							}
+
+							&.mute {
+								opacity: .2;
+							}
+
+							img {
+								width: 40px;
+								display: block;
+								margin: 0 auto;
+								border-radius: 10000px;
+								margin-bottom: 7px;
+							}
+							text-align: center;
+							font-size: 14px;
+							color: $black;
+						}
+					}
+				}
 			}
 		}
+	}
+
+	.step.onStepTwo {
+		.info-bar {
+			bottom: calc(100% - 80px - 58px);
+			.right {
+				float: left;
+			}
+			.price {
+				float: right;
+			}
+		}
+		.content#step-1 {
+			transform: translateY(-100%);
+		}
+	}
+}
+
+@keyframes 'changingPrice' {
+	0% {
+		transform: scale(1);
+		color: $red;
+	}
+	50% {
+		transform: scale(1.3);
+		color: red;
+	}
+	100% {
+		transform: scale(1);
+		color: $red;
 	}
 }

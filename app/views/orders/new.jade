@@ -5,24 +5,47 @@ block title
 
 block requirejs
   script
-    | requirejs(['/assets/js/application.js'], function(app){
-    |  requirejs(['app/orders_new']);
-    | });
+    :coffee-script
+      requirejs ['/assets/js/application.js'], (app) ->
+        requirejs ['app/orders_new'], (ui) ->
+          ui.init()
 
 block content
   .container.margin-nav.page
-    .step#step-1
+    .step
       .info-bar
         .container
-          .price
+          .price(
+            data-price="0"
+          )
             span 价格
-            | ￥699
+            | ￥0
           .right
-            a.button.blue.inverted 填写信息
-      .content
+            a.button.blue.inverted#next(
+              data-target="StepTwo"
+            )
+              | 填写信息
+      .content#step-1
         h3.title
           span.count 1
           | 选择款式
+        each type in types
+          .type
+            .type-name
+              = type.name
+            img(id="#{type.shortcut}" src="#{type.colors[0].photo.positive}")
+            .colors(
+              data-type="#{type.shortcut}"
+            )
+              each color in type.colors
+                a.color(
+                  data-price="#{color.price}"
+                  data-color="#{color.shortcut}"
+                  data-img="#{color.photo.positive}"
+                )
+                  img(src="#{color.photo.color}")
+                  = color.name 
+
 
 
 block footer
