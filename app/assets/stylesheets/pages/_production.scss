@@ -1,22 +1,22 @@
 #productionHeroArea {
+	@extend .clearfix;
 	padding: 70px 0;
 	text-align: center;
 	width: 100%;
 	position: relative;
-	min-height: 700px;
-	max-height: 1200px;
-	background-color: #ebecf1;
-	background-image: url(/assets/images/glass-1.png);
-	background-repeat: no-repeat;
-	background-position: 50% 100%;
-	background-size: 972px 325px;
+	background-color: #fff;
 	//background-attachment: fixed;
+	img {
+		width: 65%;
+		margin: 0 auto;
+	}
 
 	.title {
 		font-size: 46px;
 		line-height: 1.2;
 		margin: 0;
 		margin-top: 36px;
+		margin-bottom: 30px;
 		font-weight: normal;
 		position: relative;
 	}
@@ -41,6 +41,7 @@
 	.actions {
 		text-align: center;
 		position: relative;
+		margin-top: 60px;
 	}
 
 	.button {
@@ -49,9 +50,7 @@
 	}
 
 	.version {
-		position: absolute;
-		bottom: 95px;
-		left: calc(50% - 103px);
+		margin-top: 25px;
 		height: 36px;
 		width: 206px;
 		background-image: url(/assets/images/logo-dark.svg);
@@ -73,29 +72,10 @@
 	}
 }
 
-@media (min-height: 1280px) {
-	#productionHeroArea {
-		height: calc(100vh - 542px);
-	}
-}
 
-@media (min-height: 1100px) {
-	#productionHeroArea {
-		height: calc(100vh - 416px);
-	}
-}
-
-@media (max-height: 1100px) {
-	#productionHeroArea {
-		height: calc(100vh - 80px);
-	}
-}
 
 @media (min-width: 1280px) {
-	#productionHeroArea {
-		background-position: calc(50% + 48px) 100%;
-		background-size: 972px 325px;
-	}
+
 
 	.panel {
 		.video {
@@ -105,10 +85,7 @@
 }
 
 @media (min-width: 965px) {
-	#productionHeroArea {
-		background-position: calc(50% + 50px) 100%;
-		background-size: 960px 321px;
-	}
+
 
 	.panel {
 		.video {
