@@ -7,15 +7,15 @@ block requirejs
   script
     :coffee-script
       requirejs ['/assets/js/application.js'], (app) ->
-        requirejs ['app/production_detail']
+        requirejs ['app/registion']
         
 
 block content
   .container.small.margin-nav.footer-in-page
     .form-title.aligned.center
-    h1.title(style="font-size:60px;margin-bottom:0;")
-      +fa('check-circle-o')
-    h1.title#t1
-      | 提交成功
-    h3.sub-title
-      | 订单提交成功！感谢您的关注。
+      h1.title(style="font-size:60px;margin-bottom:0;")
+        +fa('check-circle-o')
+      h1.title#t1
+        | 提交成功
+      h3.sub-title
+        | 订单提交成功！感谢您的关注。

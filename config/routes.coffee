@@ -83,7 +83,8 @@ router
             user.save null,
               success: (order) ->
                 # Send SMS to notice
-                res.redirect '/orders/success'
+                res.send
+                  success: 0
               error: (usr, err) ->
                 console.log err.message
           error: (oder, err) ->
@@ -123,10 +124,10 @@ router
 
   # 内测登记
   .get '/users/registion', (req, res) ->
-    if req.params.success == 1
-      res.render 'users/registion/success'
+    if req.query.success == "1"
+      res.render 'users/registions/success'
     else
-      res.render 'users/registion/create'
+      res.render 'users/registions/create'
 
 
 module.exports = router

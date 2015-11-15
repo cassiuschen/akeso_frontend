@@ -135,7 +135,6 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
         JSON.stringify(that.getFormData())
       contentType: "application/json"
       dataType: "json"
-      async: false
       success: (data, _) ->
         window.location = '/orders/success'
       error: (err) ->

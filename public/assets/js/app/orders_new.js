@@ -136,7 +136,6 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
         data: JSON.stringify(that.getFormData()),
         contentType: "application/json",
         dataType: "json",
-        async: false,
         success: function(data, _) {
           return window.location = '/orders/success';
         },
