@@ -56,28 +56,42 @@ router
   # 新建订单
   # {smsCode: xxx, mobilePhoneNumber: xxx, username: xxx, gender: xxx, email: xxx, orders:{ type:xxx, color:xxx }}
   .post '/orders', (req, res) ->
-    user = LeanCloud.User()
-    console.log req.params
+    console.log 'TEST FIRST'
+    user = new LeanCloud.User()
+    console.log 'TEST'
+    
     user.signUpOrlogInWithMobilePhone
-      smsCode: req.params.smsCode
-      mobilePhoneNumber: req.params.mobilePhoneNumber
-      username: req.params.username
-      email: req.params.email
+      smsCode: req.body.smsCode
+      mobilePhoneNumber: req.body.mobilePhoneNumber
+      username: req.body.username
+      email: req.body.email
     ,
-      success: (user) ->
+      success: (user_req) ->
+        console.log user_req
+        console.log "********************************************************"
         user.logIn()
-        order = new LeanCloud.Orders()
-        order.set 'author', user
-        order.set 'type', req.params.orders.type
-        order.set 'color', req.params.orders.color
-        order.set 'glass', req.params.orders.glass
+        Orders = LeanCloud.Object.extend("Orders")
+        
+        order = new Orders()
+        order.set 'type', req.body.orders.type
+        order.set 'color', req.body.orders.color
+        order.set 'glass', req.body.orders.glass
         order.save null,
-          success: (order) ->
-            # Send SMS to notice
-            res.redirect '/orders/success'
+          success: (order_saved) ->
+            user.relation("orders").add order_saved
+            console.log "============================"
+            user.save null,
+              success: (order) ->
+                # Send SMS to notice
+                res.redirect '/orders/success'
+              error: (usr, err) ->
+                console.log err.message
+          error: (oder, err) ->
+            console.log err.message
           
-      error: (err) ->
-        console.dir err
+      error: (usr, err) ->
+        console.log "ERROR!!!!!"
+        console.log err.message
         res.send
           message: "登录失败，请重试！"
           status: 500

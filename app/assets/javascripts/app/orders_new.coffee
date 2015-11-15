@@ -125,17 +125,20 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
 
   submit: ->
     that = @
+    console.log @getFormData()
     $.ajax
       type: 'POST'
       url: "/orders"
       params:
         that.getFormData()
       data: 
-        that.getFormData()
+        JSON.stringify(that.getFormData())
       contentType: "application/json"
       dataType: "json"
       async: false
       success: (data, _) ->
-        alert data.message
+        window.location = '/orders/success'
+      error: (err) ->
+        console.log err
 
 

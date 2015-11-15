@@ -128,16 +128,20 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
     submit: function() {
       var that;
       that = this;
+      console.log(this.getFormData());
       return $.ajax({
         type: 'POST',
         url: "/orders",
         params: that.getFormData(),
-        data: that.getFormData(),
+        data: JSON.stringify(that.getFormData()),
         contentType: "application/json",
         dataType: "json",
         async: false,
         success: function(data, _) {
-          return alert(data.message);
+          return window.location = '/orders/success';
+        },
+        error: function(err) {
+          return console.log(err);
         }
       });
     }
