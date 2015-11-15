@@ -91,6 +91,9 @@ body.productionDetail {
 			min-height: 600px;
 			
 			.text {
+				p {
+					margin: .5em 0;
+				}
 				width: 70%;
 				text-align: center;
 				padding-top: 10%;
@@ -175,7 +178,7 @@ body.productionDetail {
 		#page-7 {
 			background-color: #fff;
 			.right {
-				padding-top: 25%;
+				padding-top: 150px;
 			}
 		}
 
@@ -201,14 +204,17 @@ body.productionDetail {
 
 		#page-3 {
 			background-image: url('/assets/images/detail/index_2_11.jpg');
-			background-size: 40% auto;
+			background-size: 30% auto;
 			background-position: 50% 100%;
 		}
 
 		#page-5 {
 			background-image: url('/assets/images/detail/index-20151115-3_07.jpg');
-			background-size: 80% auto;
+			background-size: 60% auto;
 			background-position: 50% 84%;
+			.text {
+				width: 60% !important;
+			}
 		}
 
 
@@ -221,7 +227,7 @@ body.productionDetail {
 			padding-top: 7%;
 
 			.text {
-				width: 50%;
+				width: 40%;
 				margin: 0 8%;
 				padding-top: 10%;
 
