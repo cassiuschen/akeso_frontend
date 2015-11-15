@@ -57,12 +57,12 @@ router
   # {smsCode: xxx, mobilePhoneNumber: xxx, username: xxx, gender: xxx, email: xxx, orders:{ type:xxx, color:xxx }}
   .post '/orders', (req, res) ->
     user = LeanCloud.User()
+    console.log req.params
     user.signUpOrlogInWithMobilePhone
       smsCode: req.params.smsCode
       mobilePhoneNumber: req.params.mobilePhoneNumber
       username: req.params.username
       email: req.params.email
-      gender: req.params.gender
     ,
       success: (user) ->
         user.logIn()
@@ -70,6 +70,7 @@ router
         order.set 'author', user
         order.set 'type', req.params.orders.type
         order.set 'color', req.params.orders.color
+        order.set 'glass', req.params.orders.glass
         order.save null,
           success: (order) ->
             # Send SMS to notice
@@ -92,8 +93,7 @@ router
   # LeanCloud API
   .get '/leancloud/sendSMS/:mobile', (req, res) ->
     console.log req.params.mobile
-    LeanCloud.User
-      .requestMobilePhoneVerify(req.params.mobile)
+    LeanCloud.Cloud.requestSmsCode(req.params.mobile)
       .then ->
           res.send
             message: "发送成功"

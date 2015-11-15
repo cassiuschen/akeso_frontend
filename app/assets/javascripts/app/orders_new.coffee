@@ -3,6 +3,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
     $('body').addClass 'orders new'
     @handleNextBtn()
     @handleColorSelect()
+    window.UI = @
 
   handleNextBtn: ->
     that = @
@@ -25,6 +26,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
               that.selectionUI()
               $('#sendCode').on 'click', ->
                 that.sendSMS()
+              
               #.css "-webkit-transform", "translateY(-#{height}px)"
               #.css "transform", "translateY(-#{height}px)"
           , 200
@@ -57,6 +59,9 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
       that.updatePrice $(@).data('price')
       type = $(@).parent().data 'type'
       $('.typeInput').text "已选款式：#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
+      $('.typeInput').data 'type', $(@).parent().data 'typename'
+      $('.typeInput').data 'color', $(@).data 'name'
+
       $("##{type}").attr 'src', $(@).data('img')
       $("#preview").attr 'src', $(@).data('preview')
 
@@ -80,6 +85,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
       , 800
 
   sendSMS: ->
+    that = @
     $('#sendCode').attr 'disabled', 'disabled'
     mobile = $('input#mobile').val()
     result = {}
@@ -98,6 +104,38 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
         console.log result.message
         if result.status == 200
           $('#submit').removeAttr 'disabled'
+          $('#submit').on 'click', ->
+            that.submit()
         else
           UIForm.getWarn 'input#mobile', "手机号似乎有点问题哦，请重新填写。", (el) ->
             $('#sendCode').removeAttr 'disabled'
+
+  getFormData: ->
+    # {smsCode: xxx, mobilePhoneNumber: xxx, username: xxx, gender: xxx, email: xxx, orders:{ type:xxx, color:xxx }}
+    data = {}
+    data.username = $('input#name').val()
+    data.smsCode = $('input#code').val()
+    data.mobilePhoneNumber = $('input#mobile').val()
+    data.email = $('input#email').val()
+    data.orders = 
+      type: $('.typeInput').data 'type'
+      color: $('.typeInput').data 'color'
+      glass: $('input#glass').val()
+    return data
+
+  submit: ->
+    that = @
+    $.ajax
+      type: 'POST'
+      url: "/orders"
+      params:
+        that.getFormData()
+      data: 
+        that.getFormData()
+      contentType: "application/json"
+      dataType: "json"
+      async: false
+      success: (data, _) ->
+        alert data.message
+
+

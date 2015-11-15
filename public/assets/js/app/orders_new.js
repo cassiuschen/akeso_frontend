@@ -3,7 +3,8 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
     init: function() {
       $('body').addClass('orders new');
       this.handleNextBtn();
-      return this.handleColorSelect();
+      this.handleColorSelect();
+      return window.UI = this;
     },
     handleNextBtn: function() {
       var that;
@@ -50,6 +51,8 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
         that.updatePrice($(this).data('price'));
         type = $(this).parent().data('type');
         $('.typeInput').text("已选款式：" + ($(this).data('name')) + ($(this).parent().data('typename')));
+        $('.typeInput').data('type', $(this).parent().data('typename'));
+        $('.typeInput').data('color', $(this).data('name'));
         $("#" + type).attr('src', $(this).data('img'));
         return $("#preview").attr('src', $(this).data('preview'));
       });
@@ -75,7 +78,8 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
       }, 800);
     },
     sendSMS: function() {
-      var mobile, result;
+      var mobile, result, that;
+      that = this;
       $('#sendCode').attr('disabled', 'disabled');
       mobile = $('input#mobile').val();
       result = {};
@@ -95,12 +99,45 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
           result = data;
           console.log(result.message);
           if (result.status === 200) {
-            return $('#submit').removeAttr('disabled');
+            $('#submit').removeAttr('disabled');
+            return $('#submit').on('click', function() {
+              return that.submit();
+            });
           } else {
             return UIForm.getWarn('input#mobile', "手机号似乎有点问题哦，请重新填写。", function(el) {
               return $('#sendCode').removeAttr('disabled');
             });
           }
+        }
+      });
+    },
+    getFormData: function() {
+      var data;
+      data = {};
+      data.username = $('input#name').val();
+      data.smsCode = $('input#code').val();
+      data.mobilePhoneNumber = $('input#mobile').val();
+      data.email = $('input#email').val();
+      data.orders = {
+        type: $('.typeInput').data('type'),
+        color: $('.typeInput').data('color'),
+        glass: $('input#glass').val()
+      };
+      return data;
+    },
+    submit: function() {
+      var that;
+      that = this;
+      return $.ajax({
+        type: 'POST',
+        url: "/orders",
+        params: that.getFormData(),
+        data: that.getFormData(),
+        contentType: "application/json",
+        dataType: "json",
+        async: false,
+        success: function(data, _) {
+          return alert(data.message);
         }
       });
     }
