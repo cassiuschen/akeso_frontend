@@ -50,25 +50,7 @@
 	}
 
 	.version {
-		margin-top: 25px;
 		height: 36px;
-		width: 206px;
-		background-image: url(/assets/images/logo-dark.svg);
-		background-position: 0 center;
-		background-size: contain;
-		background-repeat: no-repeat;
-		margin: 0 auto;
-
-		span {
-			margin-top: 5px;
-			background-color: $red;
-			font-size: 24px;
-			padding: 0 10px;
-			color: #fff;
-			border-radius: 2px;
-			float: right;
-			line-height: 26px;
-		}
 	}
 }
 
