@@ -17,7 +17,7 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
           $('.step').removeClass('onStepOne');
           $('.step').addClass("on" + ($('#next').data('target')));
           $('#next').data('target', 'StepOne');
-          $(this).html(' <i class="fa fa-angle-left"> 填写信息');
+          $(this).html(' <i class="fa fa-angle-left"> 选择款式');
           height = $('#step-1').height();
           $('#step-1').hide();
           $(this).data('layoutValue', $('.price').data('price'));
