@@ -219,7 +219,7 @@ body.productionDetail {
 			background-size: 60% auto;
 			background-position: 50% 84%;
 			.text {
-				width: 60% !important;
+				width: 60%;
 			}
 		}
 
@@ -323,15 +323,19 @@ body.productionDetail {
 			background-position: 100% 100%, 0 0 !important;
 			background-size: auto 60%, cover !important;
 			padding-top: 15% !important;
+			.text {
+				margin: 0 auto !important;
+			}
 		}
 
 		#page-5 {
 			padding-top: 20% !important;
 			background-size: 90% auto !important;
 			background-position: 50% 75% !important;
+
 			.text {
-				width: 80% !important;
-				margin: 0 5% !important;
+				width: 90% !important;
+				margin: 0 auto !important;
 			}
 		}
 
