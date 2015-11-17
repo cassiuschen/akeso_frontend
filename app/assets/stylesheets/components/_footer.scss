@@ -30,6 +30,14 @@ footer {
 			cursor: pointer;
 		}
 	}
+
+	#cnzz {
+		display: block;
+		opacity: 0 !important;
+		position: fixed;
+		bottom: -100px;
+		left: -100px;
+	}
 }
 
 @media (max-width: 600px) {
