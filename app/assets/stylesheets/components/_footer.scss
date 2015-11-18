@@ -8,6 +8,11 @@ footer {
 
 	.right {
 		float: right;
+		text-align: right;
+	}
+
+	.mute {
+		color: #8e8e8e;
 	}
 
 	.info {
@@ -15,6 +20,25 @@ footer {
 		font-size: 12px;
 		display: inline-block;
 		vertical-align: top;
+
+		.tab {
+			display: inline-block;
+			vertical-align: top;
+			width: 80px;
+
+
+			.title {
+				font-size: 14px;
+				margin-bottom: 7px;
+				display: block;
+			}
+
+			.subtitle {
+				display: block;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
 		
 		a, p {
 			line-height: 23px;

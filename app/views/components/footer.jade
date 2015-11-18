@@ -1,23 +1,42 @@
 footer
   .container.clearfix
     .left.info
-      p 
+        .tab
+          .title 关于公司
+          a.subtitle(href="/about") 公司简介
+          a.subtitle(href="/contact") 联系我们
+        .tab
+          .title 关注我们
+          a.subtitle(href="http://weibo.com/akesoeyecare") 新浪微博
+          a.subtitle.has_modal(data-modal="wechat_qrcode") 官方微信
+        .tab
+          .title 媒体中心
+          a.subtitle.mute(href="http://weibo.com/akesoeyecare") 新浪微博
+          a.subtitle.mute.has_modal(data-modal="wechat_qrcode") 官方微信
+        .tab
+          .title 服务支持
+          a.subtitle.mute(href="/about") 售后服务
+          a.subtitle.mute(href="/contact") 常见问题
+
+    .right.info
+      p.mute
         | © 2014 - 2015 AKESO Eyecare Ltd. All rights reserved.
-      p
+      p.mute
         | 京 ICP 备 15054163 号
       p
-        a(href="/about") 关于艾索
+        a(href="/about") 法律声明
         |  ｜ 
-        a 艾索新闻
-        |  ｜ 
-        a 加入艾索
-        |  ｜ 
-        a(href="/contact") 联系我们
-    .right.info
-      .actions
-        a.action 艾索健康官方微博
-        a.action 艾索健康官方微信
-      img.qrcode(src="/assets/images/qrcode.jpg")
+        a 隐私条款
+    
+  .modal#wechat_qrcode
+    a.close
+      +fa('close')
+    .container
+      .qrcode
+        img(src="/assets/images/qrcode.jpg")
+        | 扫描上方二维码，订阅 AKESO 艾索科技 微信公众号
+
+    
 
 
       
