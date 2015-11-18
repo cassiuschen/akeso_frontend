@@ -91,13 +91,14 @@ router
             user.save null,
               success: (order) ->
                 # Send SMS to notice
-                LeanCloud.Cloud.requestSmsCode(
+                params =
                     mobilePhoneNumber: req.body.mobilePhoneNumber
                     template: "order-success"
                     name: req.body.username
                     gender: ''
-                    type: "#{req.body.orders.color}#{eq.body.orders.type}"
-                  ).then ->
+                    type: "#{req.body.orders.color}#{req.body.orders.type}"
+                console.log params
+                LeanCloud.Cloud.requestSmsCode(params).then ->
                       console.log '已发送短信'  
                     , (err) ->
                       console.log err.message
