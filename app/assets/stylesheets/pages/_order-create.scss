@@ -186,6 +186,21 @@ body.orders.new {
 				&.show {
 					//transform: translateY(-100%);
 				}
+				.des {
+					display: none;
+					&.show {
+						display: block;
+					}
+
+					font-size: 14px;
+					color: #8e8e8e;
+					margin-bottom: 20px;
+
+					b {
+						color: $blue;
+					}
+
+				}
 				.form {
 					padding-top: 35px;
 					width: 500px;
@@ -193,6 +208,13 @@ body.orders.new {
 
 					img {
 						width: 100%;
+						margin-top: 15px;
+						margin-bottom: 15px;
+					}
+
+					.text {
+						display: block;
+						font-size: 18px;
 					}
 				}
 			}
@@ -217,6 +239,46 @@ body.orders.new {
 
 .hide {
 	display: none !important;
+}
+
+.submit-success {
+	width: 460px;
+	margin: 0 auto;
+	box-shadow: 0 0px 12px #eee;
+	border-radius: 15px;
+	margin-top: 10%;
+	padding: 60px 0;
+	.green {
+		color: $green !important;
+	}
+
+	.title {
+		font-weight: 200;
+		font-size: 24px;
+		margin: 0;
+	}
+
+	.sub-title {
+		margin-top: 45px;
+		font-size: 20px;
+		font-weight: 200;
+	}
+	.follow {
+		margin-top: 60px;
+
+		img {
+			width: 80px;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 8px;
+		}
+		a {
+			text-align: center;
+			color: $blue;
+			font-size: 16px;
+			padding-bottom: 80px;
+		}
+	}
 }
 
 @keyframes 'changingPrice' {
@@ -244,6 +306,16 @@ body.orders.new {
 					}
 				}
 			}
+		}
+	}
+
+	.submit-success {
+		width: 100%;
+		margin: 0;
+		margin-top: 0;
+		box-shadow: none;
+		.sub-title {
+			font-size: 16px;
 		}
 	}
 }

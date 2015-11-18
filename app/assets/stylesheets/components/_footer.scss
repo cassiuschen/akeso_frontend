@@ -99,5 +99,21 @@ footer {
 		.left, .right {
 			float: none;
 		}
+
+		.info.list {
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 30px;
+
+			* {
+				text-align: center;
+			}
+		}
+
+		.info {
+			* {
+				text-align: center !important;
+			}
+		}
 	}
 }

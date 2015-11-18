@@ -56,8 +56,17 @@ block content
           span.count 2
           | 填写信息
         .form
+          .text 已选款式：
           img#preview
-          .typeInput(style="font-size:18px;margin-bottom:15px") 已选款式：
+          .typeInput(style="font-size:18px;margin-bottom:15px")
+          .des
+            | 为了能为您定制更好的镜片，需要您提供专业的
+            b 验光处方
+            | ;
+            br
+            | 为了更好地呵护您的眼睛，我们推荐您进行
+            b 医学验光
+            | ;
           .selections
             input#glass(type="hidden" value="无")
             each g in glass
@@ -68,6 +77,7 @@ block content
           input#name(type="text" placeholder="姓名")
           input#mobile(type="tel" placeholder="手机")
           input#email(type="email" placeholder="电子邮箱")
+          input#province(type="text" placeholder="所在省份")
           .input-group
             input#code(type="text" placeholder="手机验证码")
             a.button.blue#sendCode 发送验证码

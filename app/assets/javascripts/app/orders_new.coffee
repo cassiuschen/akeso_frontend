@@ -58,7 +58,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
         .addClass 'selected'
       that.updatePrice $(@).data('price')
       type = $(@).parent().data 'type'
-      $('.typeInput').text "已选款式：#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
+      $('.typeInput').text "#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
       $('.typeInput').data 'type', $(@).parent().data 'typename'
       $('.typeInput').data 'color', $(@).data 'name'
 
@@ -73,6 +73,14 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
       $(this).addClass 'selected'
       oldPrice = Number($('#next').data 'layoutValue')
       that.updatePrice(oldPrice + Number($(this).data 'value'))
+      rawType = "#{$('.colors .color.selected').data 'name'}#{$('.colors .color.selected').parent().data 'typename'}"
+      unless $(@).data('value') == 0
+        rawType += " + " + $(@).text()
+        $('.des').addClass 'show'
+      else
+        $('.des').removeClass 'show'
+       $('.typeInput').text rawType
+
 
 
       
@@ -121,6 +129,7 @@ define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
       type: $('.typeInput').data 'type'
       color: $('.typeInput').data 'color'
       glass: $('input#glass').val()
+      province: $('input#province').val()
     return data
 
   submit: ->

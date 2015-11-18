@@ -50,7 +50,7 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
         $(this).removeClass('mute').addClass('selected');
         that.updatePrice($(this).data('price'));
         type = $(this).parent().data('type');
-        $('.typeInput').text("已选款式：" + ($(this).data('name')) + ($(this).parent().data('typename')));
+        $('.typeInput').text("" + ($(this).data('name')) + ($(this).parent().data('typename')));
         $('.typeInput').data('type', $(this).parent().data('typename'));
         $('.typeInput').data('color', $(this).data('name'));
         $("#" + type).attr('src', $(this).data('img'));
@@ -61,12 +61,20 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
       var that;
       that = this;
       return $('.selections .selection').on('click', function() {
-        var oldPrice;
+        var oldPrice, rawType;
         $('.selections input').val($(this).text());
         $('.selection.selected').removeClass('selected');
         $(this).addClass('selected');
         oldPrice = Number($('#next').data('layoutValue'));
-        return that.updatePrice(oldPrice + Number($(this).data('value')));
+        that.updatePrice(oldPrice + Number($(this).data('value')));
+        rawType = "" + ($('.colors .color.selected').data('name')) + ($('.colors .color.selected').parent().data('typename'));
+        if ($(this).data('value') !== 0) {
+          rawType += " + " + $(this).text();
+          $('.des').addClass('show');
+        } else {
+          $('.des').removeClass('show');
+        }
+        return $('.typeInput').text(rawType);
       });
     },
     updatePrice: function(newPrice) {
@@ -121,7 +129,8 @@ define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
       data.orders = {
         type: $('.typeInput').data('type'),
         color: $('.typeInput').data('color'),
-        glass: $('input#glass').val()
+        glass: $('input#glass').val(),
+        province: $('input#province').val()
       };
       return data;
     },
