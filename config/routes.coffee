@@ -14,6 +14,12 @@ router
     res.render 'static/index'
   .get '/detail', (req, res) ->
     res.render 'static/detail'
+  .get '/about', (req, res) ->
+    res.render 'static/about'
+  .get '/contact', (req, res) ->
+    res.render 'static/contact'
+  .get '/stories', (req, res) ->
+    res.render 'stories/index'
 
   
 

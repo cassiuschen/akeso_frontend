@@ -1,0 +1,22 @@
+extends ../layouts/responsive
+
+block title
+  title 联系我们 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/about_us']);
+    | });
+
+block content
+  article.container.margin-nav
+    h3 联系我们
+    p
+      | 公司地址：北京市东城区崇文门外大街3号新世界A座804(地铁5号线崇文门D口)
+      br
+      | 邮政编码：100102
+    p 公司邮箱：
+      a(href="mailto:akeso@akeso.cn") akeso@akeso.cn
+
+    

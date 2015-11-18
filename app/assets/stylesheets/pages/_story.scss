@@ -1,0 +1,17 @@
+body.story {
+	.container.stories {
+		padding-top: 50px;
+	}
+
+	.stories {
+		.story {
+			width: 100%;
+			display: block;
+			border-radius: 5px;
+			margin-bottom: 35px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

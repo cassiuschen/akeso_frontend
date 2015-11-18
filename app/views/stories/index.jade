@@ -1,0 +1,19 @@
+extends ../layouts/responsive
+
+block title
+  title 故事 | AKESO 
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['app/story']);
+    | });
+
+block content
+  .container.margin-nav.stories
+    a.story
+      img(src="/assets/images/stories/rectangle-33.png")
+    a.story
+      img(src="/assets/images/stories/rectangle-33-copy.png")
+    a.story
+      img(src="/assets/images/stories/rectangle-33-copy-2.png")
