@@ -126,7 +126,7 @@ router
     res.render 'orders/new', 
       types: AkesoData.types
       glass: AkesoData.glass
-      controller: "order"
+      controller: "orders"
       action: "new"
 
   .get '/orders/success', (req, res) ->
