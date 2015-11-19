@@ -1,6 +1,5 @@
 define ['jquery', 'navbar', 'pin', 'onePage'], ($, NavBar, pin, onePage) ->
   NavBar.setActive("production")
-  $('body').addClass 'productionDetail'
   $(".detail-nav").pin
     containerSelector: ".page"
   #$('.detail-page').onepage_scroll

@@ -1,6 +1,5 @@
 define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
   init: ->
-    $('body').addClass 'orders new'
     @handleNextBtn()
     @handleColorSelect()
     window.UI = @

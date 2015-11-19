@@ -13,7 +13,8 @@ html
     script(src="/assets/js/lib/require.js")
     meta(name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no")
     block requirejs
-  body
+  - var bodyClass = [controller, action].join(" ")
+  body(class= bodyClass)
     block navbar
         include ../components/navbar
     block content
