@@ -1,0 +1,125 @@
+include ../mixin
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    block title
+      title
+        | AKESO | 后台管理
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    link(rel="stylesheet" href="/assets/css/admin/bootstrap.min.css")
+    link(rel="stylesheet" href="/assets/css/admin/font-awesome.min.css")
+    link(rel="stylesheet" href="/assets/css/admin/ionicons.min.css")
+    link(rel="stylesheet" href="/assets/css/admin/morris/morris.css")
+    link(rel="stylesheet" href="/assets/css/admin/jvectormap/jquery-jvectormap-1.2.2.css")
+    link(rel="stylesheet" href="/assets/css/admin/datepicker/datepicker3.css")
+    link(rel="stylesheet" href="/assets/css/admin/daterangepicker/daterangepicker-bs3.css")
+    link(rel="stylesheet" href="/assets/css/admin/iCheck/all.css")
+    link(rel="stylesheet" href="/assets/css/admin/style.css")
+    
+    
+  body.skin-black
+    header.header
+      a.logo(href="/admin")
+        img(src="/assets/images/logo-white.svg", alt="", style="height:25px")
+      nav.navbar.navbar-static-top(role="navigation")
+        a.navbar-btn.sidebar-toggle(href="#" data-toggle="offcanvas" role="button")
+          span.sr-only 显示菜单
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        .navbar-right
+            ul.nav.navbar-nav
+              li.dropdown.user.user-menu
+                a.dropdown-toggle(href="#" data-toogle="dropdown")
+                  +fa("user")
+                  span(style="padding: 0 5px;")
+                    |   Cassius Chen 
+                  +fa("sort-down")
+                ul.dropdown-menu.dropdown-custom.dropdown-menu-right
+                  li.dropdown-header.text-center
+                    | 用户操作
+                  li
+                    a(href="")
+                      | 退出登录
+                      i.fa.fa-sign-out.pull-right
+    .wrapper.row-offcanvas.row-offcanvas-left
+      aside.left-side.sidebar-offcanvas
+        section.sidebar
+          .user-panel
+            .info
+              p
+                | 欢迎，Cassius Chen
+              a#data
+                i.fa.fa-circle.text-warning
+                span 数据更新中
+          ul.sidebar-menu
+            li(class= controller == "Index" ? "active" : "")
+              a(href="/admin")
+                +fa("dashboard")
+                |  概况
+            li(class= controller == "Users" ? "active" : "")
+              a(href="/admin/users")
+                +fa("users")
+                |  用户数据
+            li(class= controller == "Orders" ? "active" : "")
+              a(href="/admin/orders")
+                +fa("file-text-o")
+                |  订单数据
+      aside.right-side
+        section.content
+          block content
+        //.footer-main
+            | 技术支持：@小紫
+
+    script(src="/assets/js/lib/jquery.min.js")
+    script(src="/assets/js/lib/underscore.js")
+    script(src="/assets/js/admin/jquery-ui-1.10.3.min.js")
+    script(src="/assets/js/admin/bootstrap.min.js")
+    script(src="/assets/js/admin/plugins/daterangepicker/daterangepicker.js")
+    script(src="/assets/js/admin/plugins/chart.js")
+    script(src="/assets/js/admin/plugins/datepicker/bootstrap-datepicker.js")
+    script(src="/assets/js/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")
+    script(src="/assets/js/admin/plugins/iCheck/icheck.min.js")
+    script(src="/assets/js/admin/plugins/fullcalendar/fullcalendar.js")
+    script(src="/assets/js/admin/Director/app.js")
+    script(src="/assets/js/admin/Director/dashboard.js")
+    
+    script
+      :coffee-script
+        $(document).ready ->
+          $('.dropdown').on 'click', ->
+            $(this).toggleClass 'open'
+          
+          console.log 'run here'
+
+    script
+      :uglify-js
+        $('input').on('ifChecked', function(event) {
+              // var element = $(this).parent().find('input:checkbox:first');
+              // element.parent().parent().parent().addClass('highlight');
+              $(this).parents('li').addClass("task-done");
+              console.log('ok');
+          });
+          $('input').on('ifUnchecked', function(event) {
+              // var element = $(this).parent().find('input:checkbox:first');
+              // element.parent().parent().parent().removeClass('highlight');
+              $(this).parents('li').removeClass("task-done");
+              console.log('not');
+          });
+    script
+      :uglify-js
+        $('#noti-box').slimScroll({
+            height: '400px',
+            size: '5px',
+            BorderRadius: '5px'
+        });
+
+        $('input[type="checkbox"].flat-grey, input[type="radio"].flat-grey').iCheck({
+            checkboxClass: 'icheckbox_flat-grey',
+            radioClass: 'iradio_flat-grey'
+        });
+    block script
+    

@@ -1,0 +1,52 @@
+extends ../layouts/admin     
+
+block content
+  .row
+    .col-md-12
+      .sm-st.clearfix
+        span.sm-st-icon.st-blue
+          +fa("file-text-o")
+        .sm-st-info
+          span#orderCount= orders.length
+          | 预售订单
+  .row
+    .col-xs-12
+      .panel
+        header.panel-heading
+          | 订单数据
+        .panel-body.table-responsive
+          .box-tools.m-b-15
+            a.btn.btn-default.pull-right(href="/admin/excel/orders.xlsx")
+              +fa("download")
+              | 下载数据表格(.xlsx)
+          table.table.table-hover
+            thead
+              tr
+                th ID
+                th 款式
+                th 颜色
+                th 镜片
+                th 预订人姓名
+                th 预订人手机
+                th 所在省份
+            tbody
+              each order in orders
+                tr
+                  th= order.id
+                  th= order.attributes.type
+                  th= order.attributes.color
+                  th= order.attributes.glass
+                  th= order.attributes.author.attributes.username
+                  th= order.attributes.author.attributes.mobilePhoneNumber
+                  th= order.attributes.province
+block script
+  script
+    :coffee-script
+      $ ->
+        $('#data i')
+          .removeClass "text-warning"
+          .addClass "text-success"
+        $('#data span').text "数据更新成功"
+        $('a.navbar-btn.sidebar-toggle').click ->
+            $('.left-side').toggleClass 'collapse-left'
+            $('.right-side').toggleClass 'strech'
