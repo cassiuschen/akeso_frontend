@@ -1,4 +1,3 @@
 define(['jquery', 'navbar'], function($, NavBar) {
-  NavBar.setActive("home");
-  return $('body').addClass('Index');
+  return NavBar.setActive("home");
 });

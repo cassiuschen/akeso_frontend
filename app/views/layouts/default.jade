@@ -12,7 +12,8 @@ html
     script(src="/assets/js/lib/require.js")
     meta(name="viewport" content="width=1020, user-scalable=yes")
     block requirejs
-  body
+  - var bodyClass = [controller, action].join(" ")
+  body(class= bodyClass)
     include ../components/navbar
     block content
     include ../components/footer

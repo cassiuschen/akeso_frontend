@@ -11,15 +11,20 @@ router.options '*', (req, res) ->
 LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
 router
   .get '/', (req, res) ->
-    res.render 'static/index'
+    res.render 'static/index',
+      controller: "Index"
   .get '/detail', (req, res) ->
-    res.render 'static/detail'
+    res.render 'static/detail',
+      controller: "productionDetail"
   .get '/about', (req, res) ->
-    res.render 'static/about'
+    res.render 'static/about',
+      controller: "about"
   .get '/contact', (req, res) ->
-    res.render 'static/contact'
+    res.render 'static/contact',
+      controller: "about"
   .get '/stories', (req, res) ->
-    res.render 'stories/index'
+    res.render 'stories/index',
+      controller: "story"
 
   
 
@@ -118,10 +123,15 @@ router
           status: 500
 
   .get '/orders/new', (req, res) ->
-    res.render 'orders/new', {types: AkesoData.types, glass: AkesoData.glass}
+    res.render 'orders/new', 
+      types: AkesoData.types
+      glass: AkesoData.glass
+      controller: "order"
+      action: "new"
 
   .get '/orders/success', (req, res) ->
-    res.render 'orders/success'
+    res.render 'orders/success',
+      controller: "'users registion'"
 
 
 

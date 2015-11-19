@@ -1,7 +1,6 @@
 define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
   return {
     init: function() {
-      $('body').addClass('orders new');
       this.handleNextBtn();
       this.handleColorSelect();
       return window.UI = this;
