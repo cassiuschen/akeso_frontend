@@ -1,0 +1,50 @@
+extends ../layouts/admin     
+
+block content
+  .row
+    .col-md-12
+      .sm-st.clearfix
+        span.sm-st-icon.st-red
+          +fa("users")
+        .sm-st-info
+          span= users.length
+          | 登记用户
+  .row
+    .col-xs-12
+      .panel
+        header.panel-heading
+          | 用户数据
+        .panel-body.table-responsive
+          .box-tools.m-b-15
+            a.btn.btn-default.pull-right(href="/admin/excel/user.xlsx")
+              +fa(download)
+              | 下载数据表格(.xlsx)
+          table.table.table-hover
+            thead
+              tr
+                th ID
+                th 姓名
+                th 手机号
+                th 电子邮箱地址
+            tbody
+              each user in users
+                tr
+                  th= user.id
+                  th= user.attributes.username
+                  th= user.attributes.mobilePhoneNumber
+                  th= user.attributes.email
+block script
+  script
+    :coffee-script
+      $ ->
+        $('#data i')
+          .removeClass "text-warning"
+          .addClass "text-success"
+        $('#data span').text "数据更新成功"
+        $('a.navbar-btn.sidebar-toggle').click ->
+            $('.left-side').toggleClass 'collapse-left'
+            $('.right-side').toggleClass 'strech'
+
+
+
+

@@ -1,0 +1,159 @@
+extends ../layouts/admin     
+
+block content
+  .row
+    .col-md-4
+      .sm-st.clearfix
+        span.sm-st-icon.st-red
+          +fa("users")
+        .sm-st-info
+          span#userCount ---
+          | 登记用户
+    .col-md-4
+      .sm-st.clearfix
+        span.sm-st-icon.st-blue
+          +fa("file-text-o")
+        .sm-st-info
+          span#orderCount ---
+          | 预售订单
+    .col-md-4
+      .sm-st.clearfix
+        span.sm-st-icon.st-green
+          +fa("commenting-o")
+        .sm-st-info
+          span 0
+          | 客服消息
+  .row
+    .col-md-12
+      section.panel
+        header.panel-heading
+          | 数据图表
+        .panel-body
+          canvas#chart(width="500" height="330")
+
+
+block script
+  script
+    :coffee-script
+      $ ->
+        done = 0
+        $.ajax
+          type: "GET"
+          url: "/admin/query/users"
+          contentType: "application/json"
+          dataType: "json"
+          success: (data, _) ->
+            $('#userCount').text data.length
+            done += 1
+        $.ajax
+          type: "GET"
+          url: "/admin/query/orders"
+          contentType: "application/json"
+          dataType: "json"
+          success: (data, _) ->
+            $('#orderCount').text data.length
+            done += 1
+        userData = {}
+        orderData = {}
+        $.ajax
+          type: "GET"
+          url: "/admin/query/orders?groupBy=createdAt"
+          contentType: "application/json"
+          dataType: "json"
+          async: false
+          success: (dat, msg) ->
+            console.log dat
+            orderData = dat
+            done += 1
+            $.ajax
+              type: "GET"
+              url: "/admin/query/users?groupBy=createdAt"
+              contentType: "application/json"
+              dataType: "json"
+              async: false
+              success: (da, msg) ->
+                console.log da
+                userData = da
+                done += 1
+                keys = _.keys orderData
+                now = new Date()
+                day = 24 * 60 * 60 * 1000
+                rawLabels = [
+                  new Date(now.getTime() - 7 * day),
+                  new Date(now.getTime() - 6 * day),
+                  new Date(now.getTime() - 5 * day),
+                  new Date(now.getTime() - 4 * day),
+                  new Date(now.getTime() - 3 * day),
+                  new Date(now.getTime() - 2 * day),
+                  new Date(now.getTime() - 1 * day)
+                ]
+
+                dataLabels = _.map(rawLabels, (d) ->
+                  d.getDate()
+                )
+
+
+                labels = _.map(rawLabels, (d) ->
+                  "#{d.getMonth()}月#{d.getDate()}日"
+                )
+                clearInterval @
+
+                getLength = (arr) ->
+                  if !!(arr)
+                    arr.length
+                  else
+                    0
+                datasets = [{
+                  label: "新增用户数量"
+                  fillColor: "rgba(220,220,220,0.2)"
+                  strokeColor: "rgba(220,220,220,1)"
+                  pointColor: "rgba(220,220,220,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(220,220,220,1)"
+                  data: [
+                    getLength(userData[dataLabels[0]]),
+                    getLength(userData[dataLabels[1]]),
+                    getLength(userData[dataLabels[2]]),
+                    getLength(userData[dataLabels[3]]),
+                    getLength(userData[dataLabels[4]]),
+                    getLength(userData[dataLabels[5]]),
+                    getLength(userData[dataLabels[6]])
+                  ]
+                },{
+                  label: "新增订单数量"
+                  fillColor: "rgba(151,187,205,0.2)"
+                  strokeColor: "rgba(151,187,205,1)"
+                  pointColor: "rgba(151,187,205,1)"
+                  pointStrokeColor: "#fff"
+                  pointHighlightFill: "#fff"
+                  pointHighlightStroke: "rgba(151,187,205,1)"
+                  data: [
+                    getLength(orderData[dataLabels[0]]),
+                    getLength(orderData[dataLabels[1]]),
+                    getLength(orderData[dataLabels[2]]),
+                    getLength(orderData[dataLabels[3]]),
+                    getLength(orderData[dataLabels[4]]),
+                    getLength(orderData[dataLabels[5]]),
+                    getLength(orderData[dataLabels[6]])
+                  ]
+                }]
+
+                data =
+                  labels: labels
+                  datasets: datasets
+
+                new Chart(document.getElementById("chart").getContext("2d")).Line data,
+                  responsive : true
+                  maintainAspectRatio: false
+
+                $('#data i')
+                  .removeClass "text-warning"
+                  .addClass "text-success"
+                $('#data span').text "数据更新成功"
+                $('a.navbar-btn.sidebar-toggle').click ->
+                  $('.left-side').toggleClass 'collapse-left'
+                  $('.right-side').toggleClass 'strech'
+
+        
+        

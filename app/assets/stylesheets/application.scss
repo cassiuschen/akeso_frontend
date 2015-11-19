@@ -117,4 +117,41 @@ body.onepage-scroll-enabled {
   left: 8px;
 }
 
+body.signin {
+  width: 100%;
+  height: 100%;
+  background-color: $ak-blue;
+
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+    }
+  }
+
+  form {
+    width: 340px;
+    margin: 0 auto;
+
+    .error {
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+      margin: 10px 0;
+      text-align: center;
+      background-color: #f9f9f9;
+      font-size: 16px;
+      color: $red;
+      padding: 15px 0;
+    }
+
+    .submit {
+      width: 100%;
+    }
+  }
+}
+
 

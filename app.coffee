@@ -4,6 +4,7 @@ app            = express()
 
 favicon        = require 'serve-favicon'
 routes         = require './config/routes'
+adminRoutes    = require './config/admin_routes'
 
 path           = require 'path'
 logger         = require 'morgan'
@@ -49,6 +50,7 @@ app.use expressSession secret: 'secret key'
 
 
 app.use('/', routes)
+app.use('/admin', adminRoutes)
 
 # catch 404 and forward to error handler
 app.use (req, res, next) ->

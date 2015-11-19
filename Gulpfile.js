@@ -51,7 +51,7 @@ gulp.task('scss', function() {
     .pipe(notify({ message: 'Stylesheets task complete!' }));
 });
 gulp.task('css', function() {
-  gulp.src('app/assets/stylesheets/*.css')
+  gulp.src(['app/assets/stylesheets/*.css', 'app/assets/stylesheets/**/*.css'])
     //.pipe(uncss({html: ['public/*.html']}))
     .pipe(gulp.dest('public/assets/css'))
     .pipe(notify({ message: 'CSS Stylesheets task complete!' }));
@@ -85,9 +85,6 @@ gulp.task('cjsx', function() {
 
 gulp.task('js', function() {
   gulp.src(['./app/assets/javascripts/*.js', './app/assets/javascripts/**/*.js'])
-    .pipe(gulp.dest('public/assets/js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
     .pipe(gulp.dest('public/assets/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
