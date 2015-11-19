@@ -36,13 +36,13 @@ html
                 a.dropdown-toggle(href="#" data-toogle="dropdown")
                   +fa("user")
                   span(style="padding: 0 5px;")
-                    |   Cassius Chen 
+                    |   #{user.attributes.username + " "}
                   +fa("sort-down")
                 ul.dropdown-menu.dropdown-custom.dropdown-menu-right
                   li.dropdown-header.text-center
                     | 用户操作
                   li
-                    a(href="")
+                    a(href="/admin/signout")
                       | 退出登录
                       i.fa.fa-sign-out.pull-right
     .wrapper.row-offcanvas.row-offcanvas-left
@@ -51,7 +51,7 @@ html
           .user-panel
             .info
               p
-                | 欢迎，Cassius Chen
+                | 欢迎，#{user.attributes.username}
               a#data
                 i.fa.fa-circle.text-warning
                 span 数据更新中
