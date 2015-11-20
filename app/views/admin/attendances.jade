@@ -1,0 +1,53 @@
+extends ../layouts/admin     
+
+block content
+  .row
+    .col-md-12
+      .sm-st.clearfix
+        span.sm-st-icon.st-blue
+          +fa("user-secret")
+        .sm-st-info
+          span#orderCount= attendances.length
+          | 内测用户
+  .row
+    .col-xs-12
+      .panel
+        header.panel-heading
+          | 内测用户数据
+        .panel-body.table-responsive
+
+          table.table.table-hover
+            thead
+              tr
+                //th ID
+                th 姓名
+                th 手机号
+                th 电子邮箱
+                th 职业
+                th 年龄
+                th 性别
+                th 病症
+                th 
+            tbody
+              each attendance in attendances
+                tr(class= attendance.attributes.isSigned ? '' : "danger")
+                  //th= attendance.id
+                  th= attendance.attributes.name
+                  th= attendance.attributes.mobile
+                  th= attendance.attributes.email
+                  th= attendance.attributes.job
+                  th= attendance.attributes.age < 100 ? attendance.attributes.age : "未填写"
+                  th= attendance.attributes.gender
+                  th= attendance.attributes.illness
+                  th= attendance.attributes.isSigned
+block script
+  script
+    :coffee-script
+      $ ->
+        $('#data i')
+          .removeClass "text-warning"
+          .addClass "text-success"
+        $('#data span').text "数据更新成功"
+        $('a.navbar-btn.sidebar-toggle').click ->
+            $('.left-side').toggleClass 'collapse-left'
+            $('.right-side').toggleClass 'strech'

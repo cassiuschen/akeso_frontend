@@ -68,6 +68,10 @@ html
               a(href="/admin/orders")
                 +fa("file-text-o")
                 |  订单数据
+            li(class= controller == "Attendances" ? "active" : "")
+              a(href="/admin/attendances")
+                +fa("user-secret")
+                |  内测用户数据
       aside.right-side
         section.content
           block content

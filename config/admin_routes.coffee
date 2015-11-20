@@ -16,6 +16,7 @@ LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
 
 Orders    = LeanCloud.Object.extend "Orders"
 Users     = LeanCloud.User
+Attendances = LeanCloud.Object.extend "Attendances"
 
 router.get '*', (req, res, next) ->
   unless req.path == '/signin'
@@ -59,6 +60,32 @@ router
           controller: "Orders"
           orders: results
           user: user
+  .get '/attendances', (req, res) ->
+    user = LeanCloud.User.current()
+    usersQuery = new LeanCloud.Query(Users)
+    usersQuery
+      .limit(1000)
+      .find
+        success: (results) ->
+          users = _.map results, (u) ->
+            u.attributes.mobilePhoneNumber
+          console.log users
+          attendancesQuery = new LeanCloud.Query(Attendances)
+          attendancesQuery
+            .limit(1000)
+            .find
+              success: (data) ->
+                attendances = data
+                _.each attendances, (a) ->
+
+                  if _.contains users, a.attributes.mobile
+                    a.attributes.isSigned = true
+                  else
+                    a.attributes.isSigned = false
+                res.render 'admin/attendances',
+                  controller: "Attendances"
+                  attendances: attendances
+                  user: user
   
   .get '/query/users', (req, res) ->
     query = new LeanCloud.Query(Users)
