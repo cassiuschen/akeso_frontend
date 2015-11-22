@@ -6,11 +6,9 @@ define(['jquery'], function($) {
         this.underline();
       }
       this.hoverMenu();
-      console.log(document.width);
-      if (document.width < 900) {
-        this.mobileNavInit();
+      if ($(document).width() < 900) {
+        return this.mobileNavInit();
       }
-      return window.onresize = this.setActive();
     },
     underline: function() {
       var $active, $line, itemLeft, margin, spanPaddingLeft, width;

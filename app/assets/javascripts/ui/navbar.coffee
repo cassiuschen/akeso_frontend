@@ -5,10 +5,8 @@ define ['jquery'], ($) ->
 		if $('.items.underline').size()
 			@underline()
 		@hoverMenu()
-		console.log document.width
-		if document.width < 900
+		if $(document).width() < 900
 			@mobileNavInit()
-		window.onresize = @setActive()
 
 	underline: ->
 		if $('.underline .animated-line').size()

@@ -1,6 +1,4 @@
-define(['jquery', 'navbar', 'modal', 'leancloud'], function($, NavBar, M, LC) {
+define(['jquery', 'navbar', 'modal'], function($, NavBar, M) {
   NavBar.setActive("home");
-  $('body').addClass('Index');
-  M.init();
-  return window.LC = LC;
+  return M.init();
 });
