@@ -9,9 +9,11 @@ define(['jquery', 'navbar'], function($, NavBar) {
       el.toggleClass('show');
       if (el.hasClass('show')) {
         showMenu.children('i').attr('class', 'fa fa-close');
+        showMenu.children('.mobile').children('i').attr('class', 'fa fa-sort-up');
         return el.css('opacity', '1');
       } else {
         showMenu.children('i').attr('class', 'fa fa-th-large');
+        showMenu.children('.mobile').children('i').attr('class', 'fa fa-sort-down');
         return el.css('opacity', '0');
       }
     });

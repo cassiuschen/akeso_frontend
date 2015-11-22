@@ -31,7 +31,7 @@ body.story {
 			.action {
 				display: inline-block;
 				vertical-align: middle;
-				opacity: .6;
+				opacity: .5;
 				transition: opacity .4s;
 				padding-top: 10px;
 
@@ -52,11 +52,16 @@ body.story {
 					vertical-align: middle;
 					font-size: 18px;
 				}
+
+				.mobile {
+					display: none;
+				}
 			}
 
 			.list {
+				z-index: 1000;
 				position: absolute;
-				bottom: -260px;
+				top: 100%;
 				height: 260px;
 				width: 100%;
 				background-color: rgba(255,255,255,.9);
@@ -116,6 +121,58 @@ body.story {
 
 			p+h2 {
 				margin-top: 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	body.story {
+		.story {
+			.header {
+				margin-bottom: 20px;
+				padding-top: 10px;
+				.title {
+					font-size: 20px;
+					text-align: center;
+					display: block;
+				}
+
+				.action {
+					font-size: 18px;
+					float: none !important;
+					display: block;
+					text-align: center;
+					margin-bottom: 10px;
+					span {
+						font-size: 14px;
+					}
+
+					i {
+						font-size: 14px;
+						display: none;
+					}
+
+					.mobile {
+						display: block;
+						i {
+							display: block;
+						}
+					}
+				}
+				.list {
+					height: auto;
+					padding-bottom: 30px;
+					&.show {
+						display: block;
+					}
+
+					.item {
+						width: 90%;
+						display: block;
+						margin: 0 auto;
+					}
+				}
 			}
 		}
 	}

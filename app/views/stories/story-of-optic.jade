@@ -12,18 +12,20 @@ block requirejs
 block content
   .container.margin-nav.story
     .header
-      .title 追求最佳的佩戴舒适性及视觉质量
       a.action.floated.right
         span 故事
         +fa("th-large")
+        .mobile
+          +fa("sort-down")
+      .title 追求最佳的佩戴舒适性及视觉质量
       .list
-          a.item
+          a.item(href="/stories/better-feel")
             img(src="/assets/images/stories/rectangle-33.png")
             span 追求最佳的佩戴
-          a.item
+          a.item(href="/stories/best-skill")
             img(src="/assets/images/stories/rectangle-33-copy.png")
             span 追求最极致的工艺
-          a.item
+          a.item(href="/stories/story-of-optic")
             img(src="/assets/images/stories/rectangle-33-copy-2.png")
             span 顶级的光学镜片
     article
