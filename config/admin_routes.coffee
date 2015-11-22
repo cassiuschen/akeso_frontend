@@ -86,6 +86,7 @@ router
                   controller: "Attendances"
                   attendances: attendances
                   user: user
+                  underscore: require 'underscore'
   
   .get '/query/users', (req, res) ->
     query = new LeanCloud.Query(Users)

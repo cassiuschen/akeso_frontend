@@ -2,13 +2,29 @@ extends ../layouts/admin
 
 block content
   .row
-    .col-md-12
+    .col-md-4
       .sm-st.clearfix
         span.sm-st-icon.st-blue
           +fa("user-secret")
         .sm-st-info
           span#orderCount= attendances.length
           | 内测用户
+    - signedData = underscore.groupBy(attendances, function(a){a.attributes.isSigned})
+    //= signedData
+    .col-md-4
+      .sm-st.clearfix
+        span.sm-st-icon.st-green
+          +fa("user-secret")
+        .sm-st-info
+          span#orderCount= signedData["true"]
+          | 已参与预售
+    //.col-md-4
+      .sm-st.clearfix
+        span.sm-st-icon.st-red
+          +fa("user-secret")
+        .sm-st-info
+          span#orderCount= signedData["false"].length
+          | 未参与预售
   .row
     .col-xs-12
       .panel
