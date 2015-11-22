@@ -1,0 +1,23 @@
+extends ../layouts/responsive
+
+block title
+  title 服务与支持 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['aside', 'app/service'], function(Aside, App){Aside.init();});
+    | });
+
+block content
+  .container.margin-nav
+    aside.left.sidenav
+      h3.title 服务与支持
+      .divider
+      .selects
+        a.select.active(data-target="service") 售后服务
+        a.select(data-target="faq") 常见问题
+    aside.right.contents
+      section.show#service
+        include service/p1
+      section#faq

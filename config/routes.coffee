@@ -28,6 +28,9 @@ router
   .get '/health', (req, res) ->
     res.render 'static/health',
       controller: 'health'
+  .get '/service', (req, res) ->
+    res.render 'static/service',
+      controller: 'service'
 
   
 
