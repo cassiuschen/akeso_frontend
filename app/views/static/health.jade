@@ -14,10 +14,11 @@ block content
     aside.left.sidenav
       h3.title 健康中心
       .divider
-      a.select.active(data-target="center") 健康中心
-      a.select(data-target="medically") 医学验光
-      a.select(data-target="order") 验光处方
-      a.select(data-target="good") 验光推荐
+      .selects
+        a.select.active(data-target="center") 健康中心
+        a.select(data-target="medically") 医学验光
+        a.select(data-target="order") 验光处方
+        a.select(data-target="good") 验光推荐
     aside.right.contents
       section.show#center
         include health/p1

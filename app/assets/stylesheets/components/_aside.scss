@@ -168,3 +168,79 @@ aside {
 
 	}
 }
+
+@media (max-width: 600px) {
+	aside {
+		display: block;
+		float: none;
+		width: 100% !important;
+		margin-top: 20px;
+
+		&.sidenav {
+			padding-bottom: 10px;
+			.title {
+				text-align: center;
+			}
+			.selects {
+				display: flex;
+				justify-content: space-around;
+				.select {
+					display: inline-block;
+				}
+			}
+		}
+
+		&.contents {
+			section {
+				img {
+					width: 100%;
+				}
+
+				.title {
+					font-size: 20px;
+				}
+
+				p {
+					font-size: 18px;
+					&.sub {
+						font-size: 14px;
+					}
+				}
+
+				ol {
+					li {
+						font-size: 12px;
+					}
+				}
+
+				.qrcode {
+					display: block;
+					margin-bottom: 25px;
+					&>img {
+						margin: 0 auto;
+					}
+
+					.inline {
+						width: 160px;
+						margin: 0 auto;
+						img {
+							max-width: 45px;
+						}
+					}
+				}
+
+				.img-group {
+					.text {
+						.main {
+							font-size: 18px;
+							margin-bottom: 0;
+						}
+						.sub {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
