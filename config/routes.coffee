@@ -22,9 +22,8 @@ router
   .get '/contact', (req, res) ->
     res.render 'static/contact',
       controller: "about"
-  .get '/stories', (req, res) ->
-    res.render 'stories/index',
-      controller: "story"
+
+      
   .get '/health', (req, res) ->
     res.render 'static/health',
       controller: 'health'
@@ -32,7 +31,17 @@ router
     res.render 'static/service',
       controller: 'service'
 
-  
+  .get '/stories', (req, res) ->
+    res.render 'stories/index',
+      controller: "story"
+  .get '/stories/:name', (req, res) ->
+    try
+      res.render "stories/#{req.params.name}",
+        controller: "story"
+    catch e
+      res.render 'error',
+        message: "404 Not Found"
+        error: "404 Not Found"
 
   # User System
 
