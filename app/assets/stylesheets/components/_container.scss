@@ -1,8 +1,10 @@
 .container {
+	@extend .clearfix;
 	transition: left .6s, right .6s;
 	display: block;
 	margin: 0 auto;
 	z-index: 100;
+	//min-height: calc(100vh - 80px - 70px);
 
 	&.small {
 		width: 420px;

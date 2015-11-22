@@ -9,6 +9,7 @@ requirejs.config({
     cookie: 'lib/CCSession',
     leancloud: 'data/leancloud',
     underscore: 'lib/underscore',
-    onePage: 'ui/onePageScroll'
+    onePage: 'ui/onePageScroll',
+    aside: 'ui/aside'
   }
 });

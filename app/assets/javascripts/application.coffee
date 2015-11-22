@@ -10,4 +10,5 @@ requirejs.config
 		leancloud  : 'data/leancloud'
 		underscore : 'lib/underscore'
 		onePage    : 'ui/onePageScroll'
+		aside      : 'ui/aside'
 

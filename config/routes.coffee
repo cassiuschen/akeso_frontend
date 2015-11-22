@@ -25,6 +25,9 @@ router
   .get '/stories', (req, res) ->
     res.render 'stories/index',
       controller: "story"
+  .get '/health', (req, res) ->
+    res.render 'static/health',
+      controller: 'health'
 
   
 

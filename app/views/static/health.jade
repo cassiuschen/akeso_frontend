@@ -1,0 +1,27 @@
+extends ../layouts/responsive
+
+block title
+  title 健康中心 | AKESO
+
+block requirejs
+  script
+    | requirejs(['/assets/js/application.js'], function(app){
+    |  requirejs(['aside', 'app/health'], function(Aside, App){Aside.init();});
+    | });
+
+block content
+  .container.margin-nav
+    aside.left.sidenav
+      h3.title 健康中心
+      .divider
+      a.select.active(data-target="center") 健康中心
+      a.select(data-target="medically") 医学验光
+      a.select(data-target="order") 验光处方
+      a.select(data-target="good") 验光推荐
+    aside.right.contents
+      section.show#center
+        include health/p1
+      section.show#medically
+        include health/p2
+      section.show#order
+        include health/p3
