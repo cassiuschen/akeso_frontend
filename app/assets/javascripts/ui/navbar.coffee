@@ -8,6 +8,7 @@ define ['jquery'], ($) ->
 		console.log document.width
 		if document.width < 900
 			@mobileNavInit()
+		window.onresize = @setActive()
 
 	underline: ->
 		if $('.underline .animated-line').size()

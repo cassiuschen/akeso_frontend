@@ -108,3 +108,25 @@
 
 	}
 }
+
+@media (max-width: 900px) {
+	#productionHeroArea {
+		.title {
+			font-size: 30px;
+		}
+	}
+
+	.panel {
+		&.videos {
+			.container {
+				display: block;
+
+				.video {
+					display: block;
+					width: 80%;
+					margin: 20px auto;
+				}
+			}
+		}
+	}
+}
