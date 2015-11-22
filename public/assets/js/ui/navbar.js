@@ -5,7 +5,11 @@ define(['jquery'], function($) {
       if ($('.items.underline').size()) {
         this.underline();
       }
-      return this.hoverMenu();
+      this.hoverMenu();
+      console.log(document.width);
+      if (document.width < 900) {
+        return this.mobileNavInit();
+      }
     },
     underline: function() {
       var $active, $line, itemLeft, margin, spanPaddingLeft, width;
@@ -61,6 +65,25 @@ define(['jquery'], function($) {
       });
       return $('body').on('click', function() {
         return $('nav.navbar .hover-menu.show').removeClass('show');
+      });
+    },
+    mobileNavInit: function() {
+      return $('.mobile-menu-button').on('click', function() {
+        if ($('.navbar-section').hasClass('showOnMobile')) {
+          $('.navbar-section').removeClass('showOnMobile');
+          return $('.mobile-menu-button .mask').css('height', 0).queue(function() {
+            $('.navbar-section').css('opacity', 0);
+            return $(this).dequeue();
+          });
+        } else {
+          return $('.navbar-section').addClass('showOnMobile').queue(function() {
+            $('.mobile-menu-button .mask').css('height', $('.navbar-section .items').height() + 10);
+            return $(this).dequeue();
+          }).queue(function() {
+            $('.navbar-section').css('opacity', 1);
+            return $(this).dequeue();
+          });
+        }
       });
     }
   };

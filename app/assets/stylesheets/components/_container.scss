@@ -23,8 +23,10 @@
 	}
 }
 
-.margin-nav {
-	margin-top: 80px;
+@media (min-width: 900px) {
+	.margin-nav {
+		margin-top: 80px;
+	}
 }
 
 

@@ -1,5 +1,6 @@
-define ['jquery', 'underscore', 'form'], ($, _, UIForm) ->
+define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
   init: ->
+    NavBar.setActive 'production'
     @handleNextBtn()
     @handleColorSelect()
     window.UI = @

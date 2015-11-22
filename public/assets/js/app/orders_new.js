@@ -1,6 +1,7 @@
-define(['jquery', 'underscore', 'form'], function($, _, UIForm) {
+define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar) {
   return {
     init: function() {
+      NavBar.setActive('production');
       this.handleNextBtn();
       this.handleColorSelect();
       return window.UI = this;

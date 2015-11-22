@@ -1,10 +1,10 @@
 nav.navbar
   .container
     .title-area
-      a.logo
-      .mobile-menu-button
-        a(href="#")
-          span Menu
+      a.logo(href="/")
+      a.mobile-menu-button
+        +fa("navicon")
+        .mask
     section.navbar-section
       .items.left.underline
         a.item(data-active="home" href="/")

@@ -94,6 +94,7 @@ body.story {
 		}
 
 		article {
+			min-height: calc(100vh - 364px) !important;
 			padding-bottom: 60px;
 			h1, h2 {
 				font-size: 18px;
