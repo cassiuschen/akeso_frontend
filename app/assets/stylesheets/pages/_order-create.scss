@@ -309,6 +309,12 @@ body.orders.new {
 		}
 	}
 
+	.step.onStepTwo {
+		.info-bar {
+			bottom: calc(100% - 60px - 58px);
+		}
+	}
+
 	.submit-success {
 		width: 100%;
 		margin: 0;
