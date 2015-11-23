@@ -15,7 +15,7 @@ aside {
 		width: 25%;
 		background-color: #fafafa;
 		border: 1px solid #f0f0f0;
-		padding: 21px 14px;
+		padding: 21px 20px;
 		padding-bottom: 40px;
 
 		.title {
@@ -33,9 +33,9 @@ aside {
 		}
 
 		.select {
-			margin: 8px 0;
+			margin: 12px 0;
 			display: block;
-			font-size: 14px;
+			font-size: 16px;
 			color: #8e8e8e;
 			transition: color .4s;
 
@@ -65,6 +65,38 @@ aside {
 		section {
 			display: none;
 			padding-bottom: 40px;
+
+			h5 {
+				font-size: 18px;
+				margin: 10px 0;
+				padding: 0;
+			}
+
+			question {
+				&:before {
+					content: 'Q: '
+				}
+				font-size: 16px;
+				margin-top: 25px;
+				color: $blue;
+				display: block;
+				padding:  5px 0;
+				//border-bottom: 1px dashed $blue;
+			}
+			answer {
+				&:before {
+					content: 'A: '
+				}
+				font-size: 16px;
+				color: $black;
+				opacity: .7;
+
+				&+h5 {
+					margin-top: 30px;
+				}
+			}
+
+
 
 			&.show {
 				display: block;
