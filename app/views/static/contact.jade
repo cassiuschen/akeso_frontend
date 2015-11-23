@@ -10,36 +10,39 @@ block requirejs
     | });
 
 block content
-  article.container.margin-nav.footer-in-page
+  article.container.margin-nav.clearfix
 
+   
+   .left 
+      h3 联系我们
+      p
+        | 公司地址：北京市东城区崇文门外大街3号新世界A座804(地铁5号线崇文门D口)
+        br
+        | 邮政编码：100102
+      p 公司邮箱：
+        a(href="mailto:akeso@akeso.cn") akeso@akeso.cn
+
+      img(src="/assets/images/mask-bitmap.png", alt="")
+    
     .group.right
-      .logo
+      .logo.weibbo
         img(src="/assets/images/bitmap@2x.png", alt="")
       .code
         a(href="http://weibo.com/akesoeyecare")
           img(src="/assets/images/1117.png", alt="")
           | AKESO_eyecare
     .group.right
-      .logo
+      .logo.wx
         img(src="/assets/images/update-logo@2x.png", alt="")
         |  官方微信
       .code
         img(src="/assets/images/qrcode.jpg", alt="")
-      .logo
+      .logo.wx
         img(src="/assets/images/update-logo@2x.png", alt="")
         |  艾索健康顾问
       .code
         img(src="/assets/images/doctor.png", alt="")
-    .divider.right
-    h3 联系我们
-    p
-      | 公司地址：北京市东城区崇文门外大街3号新世界A座804(地铁5号线崇文门D口)
-      br
-      | 邮政编码：100102
-    p 公司邮箱：
-      a(href="mailto:akeso@akeso.cn") akeso@akeso.cn
-
-    img(src="/assets/images/mask-bitmap.png", alt="")
+      .divider.right
     
 
 
