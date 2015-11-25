@@ -72,6 +72,26 @@ aside {
 				padding: 0;
 			}
 
+			.vs {
+				display: flex;
+				justify-content: space-between;
+				.player {
+					border: 1px solid $blue;
+					padding: 14px;
+					width: 48%;
+					.name {
+						background-color: $blue;
+						padding: 7px;
+						font-size: 14px;
+						color: #fff;
+						line-height: 1;
+						width: auto;
+						box-sizing: border-box;
+						display: inline-block;
+					}
+				}
+			}
+
 			question {
 				&:before {
 					content: 'Q: '
