@@ -68,8 +68,11 @@ aside {
 
 			h5 {
 				font-size: 18px;
-				margin: 10px 0;
+				margin: 25px 0 10px 0;
 				padding: 0;
+				&+p {
+					margin-top: 10px;
+				}
 			}
 
 			.vs {
@@ -89,6 +92,15 @@ aside {
 						box-sizing: border-box;
 						display: inline-block;
 					}
+
+					p {
+						margin: 0;
+						margin-top: 10px;
+						font-size: 14px;
+						line-height: 24px;
+						width: 100%;
+					}
+
 				}
 			}
 
@@ -132,9 +144,9 @@ aside {
 			}
 
 			p {
-				font-size: 20px;
+				font-size: 16px;
 				line-height: 33px;
-				margin-top: 40px;
+				margin-top: 10px;
 				margin-bottom: 20px;
 				&.sub {
 					font-size: 14px;
@@ -251,6 +263,14 @@ aside {
 
 				.title {
 					font-size: 20px;
+				}
+
+				.vs {
+					display: block;
+					.player {
+						width: 100%;
+						margin-bottom: 15px;
+					}
 				}
 
 				p {
