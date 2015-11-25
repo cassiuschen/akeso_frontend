@@ -1,7 +1,7 @@
 define(["jquery"], function($) {
   return {
     init: function() {
-      window.onhashchange = (function() {});
+      window.onhashchange = this.parseURI;
       this.parseURI();
       return this.handleClick();
     },

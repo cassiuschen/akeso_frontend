@@ -1,6 +1,6 @@
 define ["jquery"], ($) ->
 	init: ->
-		window.onhashchange = (->)
+		window.onhashchange = @parseURI
 		@parseURI()
 		@handleClick()
 	
