@@ -125,7 +125,7 @@ body.productionDetail {
 			@extend .clearfix;
 			background-color: #f4f4f6;
 			min-height: 100vh;
-			background-image: url('/assets/images/detail/index_2_07_03.png');
+			background-image: url('//assets.akeso.cn/images/detail/index_2_07_03.png');
 			background-repeat: no-repeat;
 			background-position: 50% 85%;
 			background-size: 70% auto;
@@ -209,13 +209,13 @@ body.productionDetail {
 		}
 
 		#page-3 {
-			background-image: url('/assets/images/detail/index_2_11.jpg');
+			background-image: url('//assets.akeso.cn/images/detail/index_2_11.jpg');
 			background-size: 30% auto;
 			background-position: 50% 100%;
 		}
 
 		#page-5 {
-			background-image: url('/assets/images/detail/index-20151115-3_07.jpg');
+			background-image: url('//assets.akeso.cn/images/detail/index-20151115-3_07.jpg');
 			background-size: 60% auto;
 			background-position: 50% 84%;
 			.text {
@@ -226,7 +226,7 @@ body.productionDetail {
 
 		#page-6{
 			min-height: 100vh;
-			@include linear-gradient-with-image('/assets/images/detail/people_02.png',to bottom, rgb(230, 230,230), #fff);
+			@include linear-gradient-with-image('//assets.akeso.cn/images/detail/people_02.png',to bottom, rgb(230, 230,230), #fff);
 			background-repeat: no-repeat;
 			background-position: 110% 100%, 0 0;
 			background-size: 60% auto, cover;
@@ -245,7 +245,7 @@ body.productionDetail {
 
 		#page-4 {
 			min-height: 100vh;
-			@include linear-gradient-with-image('/assets/images/detail/1_02.png',to bottom, rgb(230, 230,230), #f9f9f9);
+			@include linear-gradient-with-image('//assets.akeso.cn/images/detail/1_02.png',to bottom, rgb(230, 230,230), #f9f9f9);
 			background-repeat: no-repeat;
 			background-position: 100% 0, 0 0;
 			//background-size: 60% auto, cover;

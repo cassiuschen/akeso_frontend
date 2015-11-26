@@ -12,6 +12,7 @@
     "del": "^1.2.1",
     "express": "^4.13.3",
     "express-session": "^1.12.1",
+    "express-simple-cdn": "^1.0.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-bower-normalize": "^1.0.6",

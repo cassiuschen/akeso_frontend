@@ -7,10 +7,10 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     block title
       title AKESO | 艾索健康科技
-    link(rel="stylesheet" href="/assets/css/vendor.css")
-    link(rel="stylesheet" href="/assets/css/application.css")
-    script(src="/assets/js/lib/modernizr.js")
-    script(src="/assets/js/lib/require.js")
+    link(rel="stylesheet" href=CDN("/assets/css/vendor.css"))
+    link(rel="stylesheet" href=CDN("/assets/css/application.css"))
+    script(src=CDN("/assets/js/lib/modernizr.js"))
+    script(src=CDN("/assets/js/lib/require.js"))
     meta(name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no")
     block requirejs
   - var bodyClass = [controller, action].join(" ")

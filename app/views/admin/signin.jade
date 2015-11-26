@@ -7,15 +7,15 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     block title
       title 需要登录 | AKESO 后台管理
-    link(rel="stylesheet" href="/assets/css/vendor.css")
-    link(rel="stylesheet" href="/assets/css/application.css")
-    script(src="/assets/js/lib/modernizr.js")
-    script(src="/assets/js/lib/jquery.min.js")
+    link(rel="stylesheet" href=CDN("/assets/css/vendor.css"))
+    link(rel="stylesheet" href=CDN("/assets/css/application.css"))
+    script(src=CDN("/assets/js/lib/modernizr.js"))
+    script(src=CDN("/assets/js/lib/jquery.min.js"))
     meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
     
   body.signin
     .logo
-      img(src="/assets/images/logo-white.svg", alt="")
+      img(src=CDN("/assets/images/logo-white.svg"))
     form.form(action="/admin/signin" method="post")
       if error
         .error

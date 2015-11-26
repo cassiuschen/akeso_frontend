@@ -1,4 +1,4 @@
-ASSETS_URL = '/assets'
+ASSETS_URL = '//assets.akeso.cn'
 data = 
 	glass: [
 		{

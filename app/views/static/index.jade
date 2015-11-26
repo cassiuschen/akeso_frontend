@@ -10,7 +10,7 @@ block content
   #productionHeroArea.margin-nav
     .container
       h1.title 眼镜，从未如此创新。
-      img.version(src="/assets/images/detail/akeso_1.svg")
+      img.version(src=CDN("/assets/images/detail/akeso_1.svg"))
 
       .actions
         a.button.blue(href="/detail")
@@ -18,19 +18,19 @@ block content
           +fa('angle-right')
         a.button.blue.inverted(href="/orders/new")
           | 立即预定
-      img.banner(src="/assets/images/detail/index_03.png")
+      img.banner(src=CDN("/assets/images/detail/index_03.png"))
       
 
   .panel.videos
     .container
       a.video.has-modal(data-modal="video-1")
-        img(src="/assets/images/prod-v-1.png" alt="")
+        img(src=CDN("/assets/images/prod-v-1.png"))
         | 艾索的生活态度
       a.video.disabled
-        img(src="/assets/images/prod-v-2.png" alt="")
+        img(src=CDN("/assets/images/prod-v-2.png"))
         | 一副好眼镜背后的故事
       a.video.disabled
-        img(src="/assets/images/prod-v-3.png" alt="")
+        img(src=CDN("/assets/images/prod-v-3.png"))
         | 艾索与眼健康
 
   .modal#video-1

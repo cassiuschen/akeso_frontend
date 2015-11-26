@@ -17,6 +17,7 @@ jade           = require 'jade'
 fs             = require 'fs'
 
 leancloud      = require 'avoscloud-sdk'
+CDN            = require 'express-simple-cdn'
 
 # uncomment after placing your favicon in /public
 # app.use favicon(__dirname + '/public/favicon.ico')
@@ -40,13 +41,20 @@ app.all '*', (req, res, next) ->
 app.engine('jade', require('jade').__express);
 app.set 'view engine', 'jade'
 app.set 'views', __dirname + '/app/views'
-app.use express.static __dirname + '/public'
+
+app.use '/assets', express.static __dirname + '/public/assets'
 app.use bodyParser.json()
 app.use methodOverride()
 app.use bodyParser.urlencoded extended: false
 app.use cookieParser()
 app.use expressSession secret: 'secret key'
 
+if app.get('env') == 'production'
+	app.locals.CDN = (path) ->
+		CDN(path, '//assets.akeso.cn')
+else
+	app.locals.CDN = (path) ->
+		path
 
 
 app.use('/', routes)
@@ -72,6 +80,7 @@ if app.get('env') == 'development'
 
 app.use (err, req, res, next) ->
 	res.status(err.status || 500)
+	console.log err.message
 	res.render 'error', 
 		message: err.message,
 		error: {}
