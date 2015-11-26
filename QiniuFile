@@ -1,5 +1,5 @@
 {
   "src": "/var/app/akeso_frontend/public",
-  "dest": "qiniu:access_key=aCKeeCad9S81_UlywwI9AUVI3NO2MFIIorNRm0Bd&secret_key=dvmh1nGS7J3nFvQWzV7lOz1KA2tTMutNKgdwUd9O&bucket=akeso&key_prefix=?&threshold=?",
+  "dest": "qiniu:access_key=aCKeeCad9S81_UlywwI9AUVI3NO2MFIIorNRm0Bd&secret_key=dvmh1nGS7J3nFvQWzV7lOz1KA2tTMutNKgdwUd9O&bucket=akeso&key_prefix=?&threshold=2",
   "debug_level": 0
 }
