@@ -95,7 +95,7 @@ router
       success: (user_req) ->
         console.log user_req
         console.log "********************************************************"
-        user.logIn()
+        #user.logIn()
         Orders = LeanCloud.Object.extend("Orders")
         
         order = new Orders()

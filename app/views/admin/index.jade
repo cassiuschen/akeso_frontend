@@ -94,9 +94,8 @@ block script
 
 
                 labels = _.map(rawLabels, (d) ->
-                  "#{d.getMonth()}月#{d.getDate()}日"
+                  "#{d.getMonth() + 1}月#{d.getDate()}日"
                 )
-                clearInterval @
 
                 getLength = (arr) ->
                   if !!(arr)
