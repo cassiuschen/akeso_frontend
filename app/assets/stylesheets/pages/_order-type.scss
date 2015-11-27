@@ -1,0 +1,162 @@
+body.orders.selectColor {
+	&>.container {
+		padding-top: 30px;
+		@extend .clearfix;
+		.gt {
+			font-size: 20px;
+			width: 100%;
+			display: block;
+			margin: 0;
+		}
+
+		.info {
+			float: right;
+			width: 450px;
+			display: block;
+			padding-top: 30px;
+			padding-bottom: 60px;
+
+			.title {
+				display: block;
+				padding: 10px 0;
+				margin: 0;
+				font-size: 36px;
+				line-height: 38px;
+				font-weight: normal;
+				width: 100%;
+				text-align: left;
+				border-bottom: 1px solid #f0f0f0;
+			}
+			.group {
+				display: block;
+				border-bottom: 1px solid #f0f0f0;
+
+				&.total-price {
+					padding-top: 20px;
+					border-bottom: none;
+					.data {
+						margin-bottom: 40px;
+						.right {
+							color: $red;
+						}
+					}
+					.submit {
+						width: 100% !important;
+						display: block;
+						text-align: center;
+					}
+				}
+				.label {
+					font-size: 18px;
+					line-height: 26px;
+					padding: 17px 0;
+				}
+
+				.data {
+					font-size: 24px;
+					line-height: 26px;
+					margin-bottom: 30px;
+					a {
+						color: $blue;
+					}
+					.floated.right {
+						float: right;
+						font-size: inherit;
+						line-height: inherit;
+					}
+				}
+
+				.colors {
+					display: flex;
+					@extend .clearfix;
+					justify-content: center;
+					margin-bottom: 20px;
+					.color {
+						width: 5%;
+						margin: 0 10px;
+						width: 80px;
+						height: 80px;
+						border-radius: 5px;
+						border: 1px solid #eee;
+						padding: 9px 0;
+
+						&:hover, &:active, &.selected{
+							border-color: $blue;
+							cursor: pointer;
+						}
+
+						&.mute {
+							opacity: .2;
+						}
+
+						img {
+							width: 40px;
+							display: block;
+							margin: 0 auto;
+							border-radius: 10000px;
+							margin-bottom: 7px;
+						}
+						text-align: center;
+						font-size: 14px;
+						color: $black;
+					}
+				}
+
+				.glasses {
+					margin-bottom: 15px;
+					.glass {
+						display: block;
+						box-sizing: border-box;
+						transition: border .3s, position .3s;
+						border: 1px solid #eee;
+						border-radius: 5px;
+						padding: 23px 14px;
+						margin-top: 30px;
+						&.selected {
+							border: 1px solid $blue;
+							&:hover {
+								cursor: pointer;
+								border: 1px solid $blue;
+							}
+						}
+
+						&:hover {
+							cursor: pointer;
+							border: 1px solid #999999;
+						}
+						.name, .price {
+							font-size: 24px;
+							line-height: 26px;
+							color: $black;
+						}
+						.des {
+							margin: 15px 0;
+							color: #999;
+							font-size: 18px;
+						}
+					}
+					.message {
+						margin-top: 20px;
+						padding: 15px;
+						background-color: #f7f7f7;
+						border-radius: 3px;
+						border: 1px solid #f0f0f0;
+						font-size: 14px;
+						line-height: 24px;
+						color: $black;
+						&+.glass {
+							margin-top: 20px;
+						}
+						red {
+							color: $red;
+						}
+						a {
+							color: $blue;
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

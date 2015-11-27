@@ -1,19 +1,20 @@
-ASSETS_URL = '//assets.akeso.cn'
+ASSETS_URL = '/assets'
 data = 
 	glass: [
 		{
-			name: "无镜片"
-			value: 0
-		}, {
-			name: "蔡司A系列非球面莲花膜镜片"
+			name: "蔡司Aplus非球面树脂镜片"
+			des: "卡尔蔡司Aplus非球面树脂镜片"
+			message: "此镜片为非卖品，仅为艾索健康会员的眼健康呵护服务"
 			value: 699
 		}, {
-			name: "蔡司抗疲劳数码型防蓝光镜片"
+			name: "卡尔蔡司数码型防疲劳镜片"
+			des: "BP钻立方防蓝光图层"
+			message: "此镜片为非卖品，仅为艾索健康会员的眼健康呵护服务"
 			value: 1299
 		}
 	]
 	types:
-		akesoSheet: 
+		sheet: 
 			name: "板材款"
 			shortcut: "sheet"
 			price: 699
@@ -36,7 +37,7 @@ data =
 						color: "#{ASSETS_URL}/images/orders/colors/photo_sheet_red.png"
 				}
 			]
-		akesoTi:
+		ti:
 			name: "钛架款"
 			shortcut: "ti"
 			price: 899
@@ -75,13 +76,13 @@ data =
 						color: "#{ASSETS_URL}/images/orders/colors/photo_white.png"
 				}
 			]
-		akesoWood:
+		wood:
 			name: "檀木款(全框)"
 			shortcut: 'wood'
 			price: 1699
 			colors: [
 				{
-					name: "黑檀木"
+					name: "花梨木"
 					shortcut: 'black'
 					price: 1699
 					photo:
@@ -106,13 +107,13 @@ data =
 						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_green.png"
 				}
 			]
-		akesoWoodHald:
+		woodHalf:
 			name: "檀木款(半框)"
 			shortcut: 'woodHalf'
 			price: 1699
 			colors: [
 				{
-					name: "黑檀木"
+					name: "花梨木"
 					shortcut: 'black'
 					price: 1699
 					photo:

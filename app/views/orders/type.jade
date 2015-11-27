@@ -1,0 +1,59 @@
+extends ../layouts/responsive
+
+block title
+  title
+    | #{data.name} | 商品详情
+
+block requirejs
+  script
+    :coffee-script
+      requirejs ['/assets/js/application.js'], (app) ->
+        requirejs ['app/orders_type'], (ui) ->
+          ui.init()
+
+block content
+  .container.margin-nav.page
+    .gt 商品详情
+    .info
+      h1.title AKESO - 1 成长版
+      .group
+        .label 款式
+        .data
+          != data.name
+          a.floated.right(href="/orders/new") 修改
+      .group
+        .label 颜色
+        .data.colors
+          each color in data.colors
+            a.color
+              img(src=CDN(color.photo.color))
+              != color.name
+      .group
+        .data.glasses
+          a.glass.selected(
+              data-price="0"
+            )
+            .name
+              | 不选配镜片
+              .price.floated.right
+                | +#{data.price}元
+
+          each g in glass
+            a.glass(
+              data-price= g.value
+            )
+              .name= g.name
+              .des
+                != g.des
+                .price.floated.right
+                  | +
+                  span= g.value
+                  | 元
+              .message= g.message
+      .group.total-price
+        .data
+          | 总价格
+          .floated.right
+            span#total #{data.price}
+            | 元
+        a.button.inverted.blue.submit 免费预订

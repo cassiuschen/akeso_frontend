@@ -1,20 +1,22 @@
 define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
   init: ->
     NavBar.setActive 'production'
-    @handleNextBtn()
-    @handleColorSelect()
+    #@handleStep2Init()
+    @handleTypeSelect()
     window.UI = @
+    window.totalPrice = 0
+    window.formData = {}
 
-  handleNextBtn: ->
+  handleStep2Init: ->
     that = @
-    $('#next').on 'click', ->
+    $('#nextToStep2').on 'click', ->
       console.log 'click!'
-      if $('#next').data('target') == "StepTwo"
+      if $('#nextToStep2').data('target') == "StepTwo"
         console.log 'toStepTwo'
         $('.step').removeClass 'onStepOne'
-        $('.step').addClass "on#{$('#next').data 'target'}"
-        $('#next').data 'target', 'StepOne'
-        $(this).html ' <i class="fa fa-angle-left"> 选择款式'
+        $('.step').addClass "on#{$('#nextToStep2').data 'target'}"
+        $('#nextToStep2').data 'target', 'StepOne'
+        $(this).html '<i class="fa fa-angle-left"> 选择款式'
         height = $('#step-1').height()
         $('#step-1').hide()
         $(this).data 'layoutValue', $('.price').data('price')
@@ -40,30 +42,28 @@ define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
           #.css "transform", "translateY(0)"
         console.log 'toStepOne'
         $('.step').removeClass 'onStepTwo'
-        $('.step').addClass "on#{$('#next').data 'target'}"
-        $('#next').data 'target', 'StepTwo'
+        $('.step').addClass "on#{$('#nextToStep2').data 'target'}"
+        $('#nextToStep2').data 'target', 'StepTwo'
         $(this).html '填写信息 <i class="fa fa-angle-right">'
 
 
         
 
-  handleColorSelect: ->
+  handleTypeSelect: ->
     that = @
-    $('.colors .color').on 'click', (el) ->
-      $('.color').addClass 'mute'
-      $('.color.selected').removeClass 'selected'
-      $('#next').removeAttr 'disabled'
+    $('.type').on 'click', (el) ->
+      $('.type').addClass 'mute'
+      $('.type.selected').removeClass 'selected'
+      $('#nextToStep2').removeAttr 'disabled'
+
       $(this)
         .removeClass 'mute'
         .addClass 'selected'
       that.updatePrice $(@).data('price')
-      type = $(@).parent().data 'type'
-      $('.typeInput').text "#{$(@).data 'name'}#{$(@).parent().data 'typename'}"
-      $('.typeInput').data 'type', $(@).parent().data 'typename'
-      $('.typeInput').data 'color', $(@).data 'name'
 
-      $("##{type}").attr 'src', $(@).data('img')
-      $("#preview").attr 'src', $(@).data('preview')
+      type = $(@).data 'type'
+      window.formData.type = type
+      $('#nextToStep2').attr 'href', "/orders/new/#{type}"
 
   selectionUI: ->
     that = @
@@ -71,7 +71,7 @@ define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
       $('.selections input').val $(this).text()
       $('.selection.selected').removeClass 'selected'
       $(this).addClass 'selected'
-      oldPrice = Number($('#next').data 'layoutValue')
+      oldPrice = Number($('#nextToStep2').data 'layoutValue')
       that.updatePrice(oldPrice + Number($(this).data 'value'))
       rawType = "#{$('.colors .color.selected').data 'name'}#{$('.colors .color.selected').parent().data 'typename'}"
       unless $(@).data('value') == 0
@@ -85,6 +85,7 @@ define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
 
       
   updatePrice: (newPrice) ->
+    window.totalPrice = newPrice
     $('.price').data 'price', newPrice
     $('.price').html "<span>价格</span>￥#{newPrice}"
     $('.price').addClass 'priceChange'

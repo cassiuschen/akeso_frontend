@@ -143,6 +143,13 @@ router
       glass: AkesoData.glass
       controller: "orders"
       action: "new"
+  .get '/orders/new/:type', (req, res) ->
+    console.log req.params.type
+    res.render "orders/type",
+      data: AkesoData.types[req.params.type]
+      glass: AkesoData.glass
+      controller: "orders"
+      action: "selectColor"
 
   .get '/orders/success', (req, res) ->
     res.render 'orders/success',

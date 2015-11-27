@@ -2,22 +2,23 @@ define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar
   return {
     init: function() {
       NavBar.setActive('production');
-      this.handleNextBtn();
-      this.handleColorSelect();
-      return window.UI = this;
+      this.handleTypeSelect();
+      window.UI = this;
+      window.totalPrice = 0;
+      return window.formData = {};
     },
-    handleNextBtn: function() {
+    handleStep2Init: function() {
       var that;
       that = this;
-      return $('#next').on('click', function() {
+      return $('#nextToStep2').on('click', function() {
         var height;
         console.log('click!');
-        if ($('#next').data('target') === "StepTwo") {
+        if ($('#nextToStep2').data('target') === "StepTwo") {
           console.log('toStepTwo');
           $('.step').removeClass('onStepOne');
-          $('.step').addClass("on" + ($('#next').data('target')));
-          $('#next').data('target', 'StepOne');
-          $(this).html(' <i class="fa fa-angle-left"> 选择款式');
+          $('.step').addClass("on" + ($('#nextToStep2').data('target')));
+          $('#nextToStep2').data('target', 'StepOne');
+          $(this).html('<i class="fa fa-angle-left"> 选择款式');
           height = $('#step-1').height();
           $('#step-1').hide();
           $(this).data('layoutValue', $('.price').data('price'));
@@ -33,28 +34,25 @@ define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar
           $('#step-2').fadeOut(600).addClass('hide').removeClass('show');
           console.log('toStepOne');
           $('.step').removeClass('onStepTwo');
-          $('.step').addClass("on" + ($('#next').data('target')));
-          $('#next').data('target', 'StepTwo');
+          $('.step').addClass("on" + ($('#nextToStep2').data('target')));
+          $('#nextToStep2').data('target', 'StepTwo');
           return $(this).html('填写信息 <i class="fa fa-angle-right">');
         }
       });
     },
-    handleColorSelect: function() {
+    handleTypeSelect: function() {
       var that;
       that = this;
-      return $('.colors .color').on('click', function(el) {
+      return $('.type').on('click', function(el) {
         var type;
-        $('.color').addClass('mute');
-        $('.color.selected').removeClass('selected');
-        $('#next').removeAttr('disabled');
+        $('.type').addClass('mute');
+        $('.type.selected').removeClass('selected');
+        $('#nextToStep2').removeAttr('disabled');
         $(this).removeClass('mute').addClass('selected');
         that.updatePrice($(this).data('price'));
-        type = $(this).parent().data('type');
-        $('.typeInput').text("" + ($(this).data('name')) + ($(this).parent().data('typename')));
-        $('.typeInput').data('type', $(this).parent().data('typename'));
-        $('.typeInput').data('color', $(this).data('name'));
-        $("#" + type).attr('src', $(this).data('img'));
-        return $("#preview").attr('src', $(this).data('preview'));
+        type = $(this).data('type');
+        window.formData.type = type;
+        return $('#nextToStep2').attr('href', "/orders/new/" + type);
       });
     },
     selectionUI: function() {
@@ -65,7 +63,7 @@ define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar
         $('.selections input').val($(this).text());
         $('.selection.selected').removeClass('selected');
         $(this).addClass('selected');
-        oldPrice = Number($('#next').data('layoutValue'));
+        oldPrice = Number($('#nextToStep2').data('layoutValue'));
         that.updatePrice(oldPrice + Number($(this).data('value')));
         rawType = "" + ($('.colors .color.selected').data('name')) + ($('.colors .color.selected').parent().data('typename'));
         if ($(this).data('value') !== 0) {
@@ -78,6 +76,7 @@ define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar
       });
     },
     updatePrice: function(newPrice) {
+      window.totalPrice = newPrice;
       $('.price').data('price', newPrice);
       $('.price').html("<span>价格</span>￥" + newPrice);
       $('.price').addClass('priceChange');
