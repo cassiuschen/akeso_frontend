@@ -8,10 +8,28 @@ body.orders.selectColor {
 			display: block;
 			margin: 0;
 		}
+		.img {
+			margin-top: 120px;
+			display: inline-block;
+			width: 40%;
+			margin-left: 5%;
+			img {
+				width: 100%;
+			}
+
+			.divider {
+				height: 1px;
+				width: 100%;
+				background-color: #f0f0f0;
+				margin: 25px 0;
+			}
+		}
+
 
 		.info {
+			display: inline-block;
 			float: right;
-			width: 450px;
+			width: 45%;
 			display: block;
 			padding-top: 30px;
 			padding-bottom: 60px;
@@ -69,7 +87,7 @@ body.orders.selectColor {
 				.colors {
 					display: flex;
 					@extend .clearfix;
-					justify-content: center;
+					justify-content: space-around;
 					margin-bottom: 20px;
 					.color {
 						width: 5%;
@@ -156,6 +174,53 @@ body.orders.selectColor {
 					}
 				}
 
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	body.orders.selectColor {
+		&>.container {
+			.info, .img {
+				display: block !important;
+				width: 100% !important;
+			}
+
+			.img {
+				margin-left: 0 !important;
+				margin-top: 20px;
+				img {
+					width: 100% !important;
+					
+				}
+			}
+			.info {
+				.title {
+					font-size: 18px;
+				}
+
+				.group {
+					.label {
+						font-size: 18px;
+					}
+					.data {
+						font-size: 14px;
+					}
+				}
+				.glasses {
+					.glass {
+						.name {
+							font-size: 18px !important;
+						}
+						.des {
+							font-size: 14px !important;
+						}
+						.price {
+							font-size: 18px !important;
+						}
+					}
+				}
 			}
 		}
 	}

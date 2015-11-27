@@ -9,6 +9,7 @@ router.options '*', (req, res) ->
   next()
 
 LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
+
 router
   .get '/', (req, res) ->
     res.render 'static/index',

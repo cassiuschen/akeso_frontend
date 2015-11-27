@@ -1,76 +1,11 @@
-extends ../layouts/responsive
-
-block title
-  title 预定产品 | AKESO
-
-block requirejs
-  script
-    :coffee-script
-      requirejs ['/assets/js/application.js'], (app) ->
-        requirejs ['app/orders_new'], (ui) ->
-          ui.init()
-
-block content
-  .container.margin-nav.page
-    .step.container
-      .info-bar
-        .container
-          .price(
-            data-price="0"
-          )
-            span 价格
-            | ￥0
-          .right
-            a.button.blue.inverted#nextToStep2(
-              data-target="StepTwo"
-              disabled="disabled"
-            )
-              | 填写信息 
-              +fa('angle-right')
-      .content#step-1
-        h3.title
-          span.count 1
-          | 选择款式 
-          
-        each type in types
-          a.type(
-            data-price= type.price
-            data-type= type.shortcut
-          )
-            .type-name
-              = type.name
-            img(id="#{type.shortcut}" src="#{type.colors[0].photo.positive}")
-
-      .content.hide#step-2
-        h3.title
-          span.count 2
-          | 填写信息
-        .form
-          .text 已选款式：
-          img#preview
-          .typeInput(style="font-size:18px;margin-bottom:15px")
-          .des
-            | 为了能为您定制更好的镜片，需要您提供专业的
-            b 验光处方
-            | ;
-            br
-            | 为了更好地呵护您的眼睛，我们推荐您进行
-            b 医学验光
-            | ;
-          .selections
-            input#glass(type="hidden" value="无")
-            each g in glass
-              if g == glass[0]
-                a.selection.selected(data-value="#{g.value}")= g.name
-              else
-                a.selection(data-value="#{g.value}")= g.name
-          input#name(type="text" placeholder="姓名")
-          input#mobile(type="tel" placeholder="手机")
-          input#email(type="email" placeholder="电子邮箱")
-          input#province(type="text" placeholder="所在省份")
-          .input-group
-            input#code(type="text" placeholder="手机验证码")
-            a.button.blue#sendCode 发送验证码
-          .actions
-            a.button.blue.inverted#submit(disabled="disabled") 提交订单
-block footer
+.form
+  .title 预订信息
+  input#name(type="text" placeholder="姓名")
+  input#mobile(type="tel" placeholder="手机")
+  input#email(type="email" placeholder="电子邮箱")
+  input#province(type="text" placeholder="所在省份")
+  .input-group
+    input#code(type="text" placeholder="手机验证码")
+    a.button.blue#sendCode 发送验证码
+  .actions
+    a.button.blue.full-width.inverted#submit(disabled="disabled") 提交订单

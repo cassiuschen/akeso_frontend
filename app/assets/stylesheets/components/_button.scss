@@ -64,6 +64,13 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 		cursor: pointer;
 	}
 
+	&.full-width {
+		width: 100% !important;
+		text-align: center !important;
+		display: block;
+		margin-left: 0 !important;
+	}
+
 	&.disabled, &[disabled] {
 		opacity: .2;
 		color: #fff;

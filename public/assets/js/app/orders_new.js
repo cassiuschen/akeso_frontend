@@ -136,21 +136,7 @@ define(['jquery', 'underscore', 'form', 'navbar'], function($, _, UIForm, NavBar
     submit: function() {
       var that;
       that = this;
-      console.log(this.getFormData());
-      return $.ajax({
-        type: 'POST',
-        url: "/orders",
-        params: that.getFormData(),
-        data: JSON.stringify(that.getFormData()),
-        contentType: "application/json",
-        dataType: "json",
-        success: function(data, _) {
-          return window.location = '/orders/success';
-        },
-        error: function(err) {
-          return console.log(err);
-        }
-      });
+      return console.log(this.getFormData());
     }
   };
 });

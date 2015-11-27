@@ -1,34 +1,30 @@
 define(['jquery'], function($) {
-  return {
-    init: function() {
-      return $('.has-modal').on('click', function(evt) {
-        var body, closeBtn, customCloseBtn, target, targetName;
-        targetName = $(this).data('modal');
-        target = $(".modal#" + targetName);
-        closeBtn = $(".modal#" + targetName + ">.close");
-        customCloseBtn = $(".modal#" + targetName + " *[data-close-modal='true']");
-        body = $('body');
-        target.fadeIn(400).addClass('open');
-        body.css({
-          "overflow": "hidden"
-        });
-        closeBtn.on('click', function() {
-          target.fadeOut(600, function() {
-            return target.removeClass('open');
-          });
-          return body.css({
-            "overflow": "auto"
-          });
-        });
-        return customCloseBtn.on('click', function() {
-          target.fadeOut(600, function() {
-            return target.removeClass('open');
-          });
-          return body.css({
-            "overflow": "auto"
-          });
-        });
-      });
+  this.UIModal = (function() {
+    function UIModal(element) {
+      this.element = element;
     }
-  };
+
+    UIModal.prototype.show = function() {
+      var el;
+      el = $(this.element);
+      $('body').append('<<div class="modal-dimmer"></div>>').css('overflow', 'hidden');
+      el.addClass('open');
+      return el.children(".close-btn").on('click', function() {
+        $('.modal-dimmer').fadeOut(1000).remove();
+        el.removeClass('open');
+        return $('body').css('overflow', 'auto');
+      });
+    };
+
+    UIModal.prototype.hidden = function() {
+      var el;
+      el = $(this.element);
+      el.removeClass('open');
+      return $('body').css('overflow', 'auto');
+    };
+
+    return UIModal;
+
+  })();
+  return this.UIModal;
 });

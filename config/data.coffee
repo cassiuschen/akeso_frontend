@@ -18,6 +18,9 @@ data =
 			name: "板材款"
 			shortcut: "sheet"
 			price: 699
+			layout:
+				main: "#{ASSETS_URL}/images/orders/pro/sheet_1.png"
+				side: "#{ASSETS_URL}/images/orders/pro/sheet_2.png"
 			colors: [
 				{
 					name: "黑色"
@@ -41,6 +44,9 @@ data =
 			name: "钛架款"
 			shortcut: "ti"
 			price: 899
+			layout:
+				main: "#{ASSETS_URL}/images/orders/pro/titanium_1.png"
+				side: "#{ASSETS_URL}/images/orders/pro/titanium_2.png"
 			colors: [
 				{
 					name: "黑色"
@@ -80,6 +86,9 @@ data =
 			name: "檀木款(全框)"
 			shortcut: 'wood'
 			price: 1699
+			layout:
+				main: "#{ASSETS_URL}/images/orders/pro/wood_1.png"
+				side: "#{ASSETS_URL}/images/orders/pro/wood_2.png"
 			colors: [
 				{
 					name: "花梨木"
@@ -111,6 +120,9 @@ data =
 			name: "檀木款(半框)"
 			shortcut: 'woodHalf'
 			price: 1699
+			layout:
+				main: "#{ASSETS_URL}/images/orders/pro/wood_half_1.png"
+				side: "#{ASSETS_URL}/images/orders/pro/wood_half_2.png"
 			colors: [
 				{
 					name: "花梨木"

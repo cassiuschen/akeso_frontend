@@ -13,7 +13,12 @@ block requirejs
 
 block content
   .container.margin-nav.page
-    .gt 商品详情
+    .gt(data-type= data.name) 商品详情
+    .img
+      img#colorImg(src= data.colors[0].photo.positive)
+      .divider
+      img(src= data.layout.side)
+      img(src= data.layout.main)
     .info
       h1.title AKESO - 1 成长版
       .group
@@ -25,7 +30,9 @@ block content
         .label 颜色
         .data.colors
           each color in data.colors
-            a.color
+            a.color(
+              data-img= color.photo.positive
+            )
               img(src=CDN(color.photo.color))
               != color.name
       .group
@@ -36,7 +43,7 @@ block content
             .name
               | 不选配镜片
               .price.floated.right
-                | +#{data.price}元
+                | #{data.price}元
 
           each g in glass
             a.glass(
@@ -56,4 +63,8 @@ block content
           .floated.right
             span#total #{data.price}
             | 元
-        a.button.inverted.blue.submit 免费预订
+        a.button.inverted.blue.submit(disabled="disabled") 免费预订
+  .modal.flex#info-modal
+    a.close-btn
+      +fa("close")
+    include info

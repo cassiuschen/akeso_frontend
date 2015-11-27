@@ -1,25 +1,24 @@
 define ['jquery'], ($) ->
-	init: ->
-		$('.has-modal').on 'click', (evt) ->
-			targetName = $(this).data 'modal'
-			target = $(".modal##{targetName}")
-			closeBtn = $(".modal##{targetName}>.close")
-			customCloseBtn = $(".modal##{targetName} *[data-close-modal='true']")
-			body = $('body')
-			target
-				.fadeIn 400
-				.addClass 'open'
-			body.css
-				"overflow": "hidden"
-			closeBtn.on 'click', ->
-				target
-					.fadeOut 600, ->
-						target.removeClass 'open'
-				body.css
-					"overflow": "auto"
-			customCloseBtn.on 'click', ->
-				target
-					.fadeOut 600, ->
-						target.removeClass 'open'
-				body.css
-					"overflow": "auto"
+	class @UIModal
+		constructor: (@element) ->
+
+		show: ->
+			el = $(@element)
+			$('body')
+				.append '<<div class="modal-dimmer"></div>>'
+				.css 'overflow', 'hidden'
+			el.addClass 'open'
+			el.children(".close-btn").on 'click', ->
+				$('.modal-dimmer')
+					.fadeOut(1000)
+					.remove()
+				el.removeClass 'open'
+				$('body').css 'overflow', 'auto'
+		hidden: ->
+			el = $(@element)
+			el.removeClass 'open'
+			$('body').css 'overflow', 'auto'
+
+
+	@UIModal
+		

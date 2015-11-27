@@ -136,18 +136,18 @@ define ['jquery', 'underscore', 'form', 'navbar'], ($, _, UIForm, NavBar) ->
   submit: ->
     that = @
     console.log @getFormData()
-    $.ajax
-      type: 'POST'
-      url: "/orders"
-      params:
-        that.getFormData()
-      data: 
-        JSON.stringify(that.getFormData())
-      contentType: "application/json"
-      dataType: "json"
-      success: (data, _) ->
-        window.location = '/orders/success'
-      error: (err) ->
-        console.log err
+    #$.ajax
+#      type: 'POST'
+#      url: "/orders"
+#      params:
+#        that.getFormData()
+#      data: 
+#        JSON.stringify(that.getFormData())
+#      contentType: "application/json"
+#      dataType: "json"
+#      success: (data, _) ->
+#        window.location = '/orders/success'
+#      error: (err) ->
+#        console.log err
 
 

@@ -70,6 +70,13 @@
 	.container {
 		width: 90%;
 	}
+
+}
+
+@media (max-width: 900px) {
+	.margin-nav {
+		margin-top: 10px;
+	}
 }
 
 body>.container {

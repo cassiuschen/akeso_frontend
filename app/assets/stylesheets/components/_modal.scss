@@ -1,12 +1,9 @@
 .modal {
 	&.open {
 		display: block;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		
 	}
+
 	display: none;
 	background-color: #fff;
 	z-index: 10000000;
@@ -52,8 +49,63 @@
 		max-height: 600px;
 		margin: 0 auto;
 	}
+
+
+
+	&.flex {
+		position: fixed;
+		z-index: 100000;
+		top: 240px;
+		padding: 45px 30px;
+		width: 500px;
+		left: calc(50% - 250px);
+		background-color: #fafafa;
+		border: 1px solid #f0f0f0;
+		border-radius: 5px;
+
+		.close-btn {
+			font-size: 14px;
+			color: black;
+			opacity: .54;
+			position: absolute;
+			top: 12px;
+			right: 12px;
+
+
+			&:hover {
+				opacity: .8;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.modal-dimmer {
+	position: fixed;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: .2;
 }
 
 .has-modal:hover, .has-modal:active {
 	cursor: pointer;
 }
+
+@media (max-width: 900px) {
+	.modal {
+		&.flex {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			left: 0;
+			right: 0;
+
+		}
+	}
+}
+
+
