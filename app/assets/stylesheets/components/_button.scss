@@ -8,7 +8,6 @@ $btn-color: (("blue", $blue, $darker_blue), ("ak-blue", $ak_blue, $darker_blue))
 	}
 }
 
-
 @mixin btnColor($list) {
 	@each $data in $list {
 		$name: nth($data, 1);
