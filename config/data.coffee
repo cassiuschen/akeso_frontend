@@ -8,7 +8,7 @@ data =
 			value: 699
 		}, {
 			name: "卡尔蔡司数码型防疲劳镜片"
-			des: "非球面钻立方防蓝光镀膜"
+			des: "非球面钻立方防蓝光镀膜·"
 			message: "此镜片为非卖品，仅为艾索健康会员的眼健康呵护服务"
 			value: 1299
 		}
@@ -121,7 +121,7 @@ data =
 			shortcut: 'woodHalf'
 			price: 1699
 			layout:
-				main: "#{ASSETS_URL}/images/orders/pro/wood_half_1.png"
+				main: "#{ASSETS_URL}/images/orders/pro/wood_half.png"
 				side: "#{ASSETS_URL}/images/orders/pro/wood_half_2.png"
 			colors: [
 				{
