@@ -23,14 +23,6 @@ data =
 				side: "#{ASSETS_URL}/images/orders/pro/sheet_2.png"
 			colors: [
 				{
-					name: "黑色"
-					price: 699
-					shortcut: 'black'
-					photo:
-						positive: "#{ASSETS_URL}/images/orders/positive/photo_sheet_black.jpg"
-						side: "#{ASSETS_URL}/images/orders/45/photo_sheet_black.jpg"
-						color: "#{ASSETS_URL}/images/orders/colors/photo_sheet_black.png"
-				},{
 					name: "拼色"
 					shortcut: 'mix'
 					price: 699
@@ -38,6 +30,14 @@ data =
 						positive: "#{ASSETS_URL}/images/orders/positive/photo_sheet_red.jpg"
 						side: "#{ASSETS_URL}/images/orders/45/photo_sheet_red.jpg"
 						color: "#{ASSETS_URL}/images/orders/colors/photo_sheet_red.png"
+				}, {
+					name: "黑色"
+					price: 699
+					shortcut: 'black'
+					photo:
+						positive: "#{ASSETS_URL}/images/orders/positive/photo_sheet_black.jpg"
+						side: "#{ASSETS_URL}/images/orders/45/photo_sheet_black.jpg"
+						color: "#{ASSETS_URL}/images/orders/colors/photo_sheet_black.png"
 				}
 			]
 		ti:
@@ -49,6 +49,14 @@ data =
 				side: "#{ASSETS_URL}/images/orders/pro/titanium_2.png"
 			colors: [
 				{
+					name: "灰色"
+					shortcut: 'grey'
+					price: 899
+					photo:
+						positive: "#{ASSETS_URL}/images/orders/positive/photo_hui.jpg"
+						side: "#{ASSETS_URL}/images/orders/45/photo_hui.jpg"
+						color: "#{ASSETS_URL}/images/orders/colors/photo_gray.png"
+				}, {
 					name: "黑色"
 					shortcut: 'black'
 					price: 899
@@ -64,14 +72,6 @@ data =
 						positive: "#{ASSETS_URL}/images/orders/positive/photo_blue.jpg"
 						side: "#{ASSETS_URL}/images/orders/45/photo_blue.jpg"
 						color: "#{ASSETS_URL}/images/orders/colors/photo_blue.png"
-				}, {
-					name: "灰色"
-					shortcut: 'grey'
-					price: 899
-					photo:
-						positive: "#{ASSETS_URL}/images/orders/positive/photo_hui.jpg"
-						side: "#{ASSETS_URL}/images/orders/45/photo_hui.jpg"
-						color: "#{ASSETS_URL}/images/orders/colors/photo_gray.png"
 				}, {
 					name: "白色"
 					shortcut: 'white'
@@ -91,14 +91,6 @@ data =
 				side: "#{ASSETS_URL}/images/orders/pro/wood_2.png"
 			colors: [
 				{
-					name: "花梨木"
-					shortcut: 'black'
-					price: 1699
-					photo:
-						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_black.jpg"
-						side: "#{ASSETS_URL}/images/orders/45/photo_wood_black.jpg"
-						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_black.png"
-				}, {
 					name: "红檀木"
 					shortcut: 'red'
 					price: 1699
@@ -106,6 +98,14 @@ data =
 						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_red.jpg"
 						side: "#{ASSETS_URL}/images/orders/45/photo_wood_red.jpg"
 						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_red.png"
+				}, {
+					name: "花梨木"
+					shortcut: 'black'
+					price: 1699
+					photo:
+						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_black.jpg"
+						side: "#{ASSETS_URL}/images/orders/45/photo_wood_black.jpg"
+						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_black.png"
 				}, {
 					name: "绿檀木"
 					shortcut: 'green'
@@ -125,14 +125,6 @@ data =
 				side: "#{ASSETS_URL}/images/orders/pro/wood_half_2.png"
 			colors: [
 				{
-					name: "花梨木"
-					shortcut: 'black'
-					price: 1699
-					photo:
-						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_black_half.jpg"
-						side: "#{ASSETS_URL}/images/orders/45/photo_wood_black_half.jpg"
-						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_black.png"
-				}, {
 					name: "红檀木"
 					shortcut: 'red'
 					price: 1699
@@ -140,6 +132,14 @@ data =
 						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_red_half.jpg"
 						side: "#{ASSETS_URL}/images/orders/45/photo_wood_red_half.jpg"
 						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_red.png"
+				}, {
+					name: "花梨木"
+					shortcut: 'black'
+					price: 1699
+					photo:
+						positive: "#{ASSETS_URL}/images/orders/positive/photo_wood_black_half.jpg"
+						side: "#{ASSETS_URL}/images/orders/45/photo_wood_black_half.jpg"
+						color: "#{ASSETS_URL}/images/orders/colors/photo_wood_black.png"
 				}, {
 					name: "绿檀木"
 					shortcut: 'green'
