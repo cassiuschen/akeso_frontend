@@ -49,7 +49,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "NODE_ENV=production PORT=8080 pm2 start bin/start.coffee --name Akeso -i 4 -e /var/app/log/akeso.err.log -o /var/app/log/akeso.log",
+    "start": "NODE_ENV=staging PORT=8081 sudo pm2 start bin/start.coffee --name Akeso_Staging -i 4 -e /var/app/log/akeso-staging.err.log -o /var/app/log/akeso-staging.log",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
