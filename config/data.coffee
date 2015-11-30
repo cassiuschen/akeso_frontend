@@ -18,6 +18,7 @@ data =
 			name: "板材款"
 			shortcut: "sheet"
 			price: 699
+			des: "意大利Mazzucchelli板材"
 			real: "#{ASSETS_URL}/images/orders/sheet@2x.png"
 			layout:
 				main: "#{ASSETS_URL}/images/orders/pro/sheet_1.png"
@@ -45,6 +46,7 @@ data =
 			name: "钛架款"
 			shortcut: "ti"
 			price: 899
+			des: "军工级纯钛"
 			real: "#{ASSETS_URL}/images/orders/ti@2x.png"
 			layout:
 				main: "#{ASSETS_URL}/images/orders/pro/titanium_1.png"
@@ -88,6 +90,7 @@ data =
 			name: "檀木款(全框)"
 			shortcut: 'wood'
 			price: 1699
+			des: "百年檀木"
 			real: "#{ASSETS_URL}/images/orders/wood@2x.png"
 			layout:
 				main: "#{ASSETS_URL}/images/orders/pro/wood_1.png"
@@ -123,6 +126,7 @@ data =
 			name: "檀木款(半框)"
 			shortcut: 'woodHalf'
 			price: 1699
+			des: "百年檀木"
 			real: "#{ASSETS_URL}/images/orders/wood_half@2x.png"
 			layout:
 				main: "#{ASSETS_URL}/images/orders/pro/wood_half.png"

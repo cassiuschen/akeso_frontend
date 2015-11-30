@@ -36,13 +36,15 @@ block content
             data-price= type.price
             data-type= type.shortcut
           )
+            .img
+              img.origin(id="#{type.shortcut}" src="#{type.colors[0].photo.positive}")
+              img.real(src= type.real)
             .type-name
               = type.name
+              p.des= type.des
               span.number
                 = type.price
                 |  元
-            img(id="#{type.shortcut}" src="#{type.colors[0].photo.positive}")
-            img.real(src= type.real)
 
      
 block footer
