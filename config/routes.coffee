@@ -8,10 +8,10 @@ router.options '*', (req, res) ->
   res.status(200).end()
   next()
 
-if process.env.NODE_ENV == 'production' || process.env.NODE_ENV == 'staging'
-  LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
-else
-  LeanCloud.initialize('aLFJqize9puIjxGu7Q9jWd9q', '4nIIMFQFjAv0asjOr2yJ4DrU')
+#if process.env.NODE_ENV == 'production' || process.env.NODE_ENV == 'staging'
+LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
+#else
+#  LeanCloud.initialize('aLFJqize9puIjxGu7Q9jWd9q', '4nIIMFQFjAv0asjOr2yJ4DrU')
 
 router
   .get '/', (req, res) ->
