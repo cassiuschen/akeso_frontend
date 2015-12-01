@@ -126,7 +126,6 @@ router
                       console.log '已发送短信'  
                     , (err) ->
                       console.log err.message
-                user.logOut()
                 res.send
                   success: 0
               error: (usr, err) ->
