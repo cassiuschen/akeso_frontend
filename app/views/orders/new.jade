@@ -15,12 +15,14 @@ block content
     .step.container
       .info-bar
         .container
-          .price(
-            data-price="0"
-          )
-            span 价格
-            | ￥0
+          
           .right
+            .price(
+              data-price="0"
+              style="margin-right:25px"
+            )
+              span 价格
+              | ￥0
             a.button.blue.inverted#nextToStep2(
               data-target="StepTwo"
               disabled="disabled"
