@@ -20,7 +20,9 @@ block content
       img(src= data.layout.side)
       img(src= data.layout.main)
     .info
-      h1.title AKESO - 1 成长版
+      h1.title 
+        | AKESO - 1 成长版
+        span.red 半年内将可免费升级至AKESO下一代智能眼镜产品。
       .group
         .label 款式
         .data
@@ -56,7 +58,11 @@ block content
             a.glass(
               data-price= g.value
             )
-              .name= g.name
+              .name
+                = g.name
+                .origin-price.floated.right
+                  = g.origin
+                  | 元
               .des
                 != g.des
                 .price.floated.right
