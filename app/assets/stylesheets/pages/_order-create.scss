@@ -270,12 +270,13 @@ body.orders.new {
 }
 
 .submit-success {
-	width: 460px;
+	width: 520px;
 	margin: 0 auto;
+	margin-bottom: 50px;
 	box-shadow: 0 0px 12px #eee;
 	border-radius: 15px;
 	margin-top: 10%;
-	padding: 60px 0;
+	padding: 60px 30px;
 	.green {
 		color: $green !important;
 	}
@@ -284,12 +285,16 @@ body.orders.new {
 		font-weight: 200;
 		font-size: 24px;
 		margin: 0;
+		color: $black;
 	}
 
 	.sub-title {
 		margin-top: 45px;
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 200;
+		&.mute  {
+			color: #999;
+		}
 	}
 	.follow {
 		margin-top: 60px;
