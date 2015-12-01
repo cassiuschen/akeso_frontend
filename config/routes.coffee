@@ -94,7 +94,7 @@ router
       smsCode: req.body.smsCode
       mobilePhoneNumber: req.body.mobilePhoneNumber
       username: req.body.username
-      email: req.body.email
+      email: req.body.email || "#{req.body.mobilePhoneNumber}@default.akeso.cn"
     ,
       success: (user_req) ->
         console.log user_req
