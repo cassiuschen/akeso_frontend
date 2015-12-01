@@ -5,6 +5,7 @@ define ['jquery', 'underscore', 'form', 'navbar', 'modal'], ($, _, UIForm, NavBa
     window.formData.type = $(".gt").data 'type'
     window.formData.totalPrice = Number($('#total').text())
     window.formData.originPrice = Number($('#total').text())
+    window.formData.color = $('.color.selected').text()
     that = @
     window.app = @
     @handleSelectGlass()

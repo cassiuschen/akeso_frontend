@@ -7,6 +7,7 @@ define(['jquery', 'underscore', 'form', 'navbar', 'modal'], function($, _, UIFor
       window.formData.type = $(".gt").data('type');
       window.formData.totalPrice = Number($('#total').text());
       window.formData.originPrice = Number($('#total').text());
+      window.formData.color = $('.color.selected').text();
       that = this;
       window.app = this;
       this.handleSelectGlass();

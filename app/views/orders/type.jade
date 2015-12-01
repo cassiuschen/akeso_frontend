@@ -30,11 +30,18 @@ block content
         .label 颜色
         .data.colors
           each color in data.colors
-            a.color(
-              data-img= color.photo.positive
-            )
-              img(src=CDN(color.photo.color))
-              != color.name
+            if color == data.colors[0]
+              a.color.selected(
+                data-img= color.photo.positive
+              )
+                img(src=CDN(color.photo.color))
+                != color.name
+            else
+              a.color(
+                data-img= color.photo.positive
+              )
+                img(src=CDN(color.photo.color))
+                != color.name
       .group
         .data.glasses
           a.glass.selected(
@@ -63,7 +70,7 @@ block content
           .floated.right
             span#total #{data.price}
             | 元
-        a.button.inverted.blue.submit(disabled="disabled") 免费预订
+        a.button.inverted.blue.submit 免费预订
   .modal.flex#info-modal
     a.close-btn
       +fa("close")

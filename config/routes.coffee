@@ -8,7 +8,10 @@ router.options '*', (req, res) ->
   res.status(200).end()
   next()
 
-LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
+if process.env.NODE_ENV == 'production' || process.env.NODE_ENV == 'staging'
+  LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
+else
+  LeanCloud.initialize('aLFJqize9puIjxGu7Q9jWd9q', '4nIIMFQFjAv0asjOr2yJ4DrU')
 
 router
   .get '/', (req, res) ->
@@ -123,7 +126,7 @@ router
                       console.log '已发送短信'  
                     , (err) ->
                       console.log err.message
-
+                user.logOut()
                 res.send
                   success: 0
               error: (usr, err) ->
