@@ -1,0 +1,2923 @@
+Express server listening on port 8080
+================ production MODE ===================
+Transformers.coffee-script is deprecated, to continue using the :coffee-script jade filter after jade@2.0.0, you will need to install jstransformer-coffee-script.
+[0mGET /orders/new [32m200 [0m303.265 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m5.933 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m3.140 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.966 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.124 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.240 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.967 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.856 ms - 340[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.846 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.992 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.799 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m2.546 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.408 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.700 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.810 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m2.139 ms - 870839[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m210.626 ms - 6052[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m2.414 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m3.791 ms - 53027[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.986 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.482 ms - 41383[0m
+[0mGET /assets/js/application.js [36m304 [0m0.784 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.069 ms - 4054[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m1.396 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m10.334 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m1.056 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.336 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.562 ms - 775[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [32m200 [0m0.833 ms - 148882[0m
+[0mGET /orders/new [32m200 [0m2.602 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.961 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.985 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.360 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.517 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m3.505 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.987 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.087 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.779 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.644 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.094 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.288 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.103 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.765 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.815 ms - 796154[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.996 ms - 870839[0m
+[0mGET /orders/new [32m200 [0m2.296 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.826 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.788 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.586 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m3.528 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.843 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.168 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m2.022 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.878 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m3.511 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.790 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.041 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.709 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.490 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.725 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.646 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.795 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.135 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.569 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.576 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.128 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.176 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.787 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.698 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.536 ms - 167906[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.648 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.458 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.597 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.867 ms - 1706[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.888 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.100 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.956 ms - 870839[0m
+[0mGET /orders/new [32m200 [0m2.133 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.868 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.784 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.693 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.963 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.752 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m3.001 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.934 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.754 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.808 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.747 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.064 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.840 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.791 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.892 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.470 ms - 84380[0m
+[0mGET /detail [32m200 [0m108.172 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.898 ms - 30443[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m70.372 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m2.538 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m2.286 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.091 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.575 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.858 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m1.593 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.798 ms - 101931[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.688 ms - 4991[0m
+[0mGET /assets/js/application.js [32m200 [0m0.787 ms - 340[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.992 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.491 ms - 84380[0m
+[0mGET /orders/new [32m200 [0m1.781 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.218 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.947 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.127 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.521 ms - 101931[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.391 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m2.916 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m3.059 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m2.229 ms - 14818[0m
+[0mGET /assets/js/application.js [32m200 [0m0.844 ms - 340[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.688 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.901 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.534 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.624 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.576 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.013 ms - 1706[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m3.137 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.222 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.783 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.904 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m2.526 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.237 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.257 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.425 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m6.384 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.210 ms - 167906[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.295 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.470 ms - 870284[0m
+[0mGET /orders/new [32m200 [0m1.175 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.821 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.746 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.167 ms - 101931[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.787 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.132 ms - 237115[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.599 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m3.120 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m6.103 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.125 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.942 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.152 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.724 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.484 ms - 1706[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.561 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.909 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.180 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.909 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.843 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.745 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.518 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.658 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.061 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.118 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.662 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.946 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.658 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.719 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.941 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.605 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.519 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.628 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [0m- [0m- ms - -[0m
+[0mGET /orders/new [32m200 [0m1.126 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.838 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.760 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.512 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.523 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.176 ms - 101931[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.852 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.769 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.822 ms - 796154[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.251 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.939 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.801 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.607 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.693 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.598 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.529 ms - 3138[0m
+Not Found
+[0mGET //assets.akeso.cn/assets/js/lib/require.js [33m404 [0m1.879 ms - 3338[0m
+Not Found
+[0mGET //assets.akeso.cn/assets/js/lib/modernizr.js [33m404 [0m1.117 ms - 3338[0m
+[0mGET / [32m200 [0m72.762 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.822 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.906 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.928 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m2.454 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.690 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.686 ms - 775[0m
+[0mGET /orders/new [32m200 [0m1.509 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.772 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.284 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.002 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m2.530 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.794 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.774 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.852 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.737 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.721 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.814 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m3.063 ms - 4991[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m2.952 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m3.382 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m3.239 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m3.624 ms - 84380[0m
+[0mGET /orders/new [32m200 [0m1.688 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.859 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.041 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.575 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.677 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.806 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.059 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.051 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.202 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.140 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m1.018 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.191 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.913 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.008 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.858 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.839 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.234 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.047 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.272 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.830 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.422 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.181 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.394 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.735 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.923 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.015 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.728 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.719 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.525 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.655 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.043 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m2.195 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.907 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.968 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.006 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.860 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.499 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.509 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.365 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.902 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.992 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.037 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m1.268 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.917 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.944 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.814 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.612 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.822 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m3.246 ms - 3892[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m1.507 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m1.504 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.336 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.392 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.361 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m1.249 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.452 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.400 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.279 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.304 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.715 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.736 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.366 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.566 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.406 ms - -[0m
+wood
+[0mGET /orders/new/wood [32m200 [0m1.464 ms - 6246[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.687 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.675 ms - -[0m
+[0mGET /assets/images/orders/pro/wood_1.png [32m200 [0m1.331 ms - 37588[0m
+[0mGET /assets/images/orders/pro/wood_2.png [32m200 [0m1.363 ms - 56431[0m
+[0mGET /assets/js/application.js [36m304 [0m0.385 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.966 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.614 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.331 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.361 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.360 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.588 ms - 775[0m
+[0mGET /orders/new [32m200 [0m1.239 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.842 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.605 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.459 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.946 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.121 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.847 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m1.075 ms - 340[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.974 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m2.708 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.971 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.749 ms - 796154[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.140 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.673 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.728 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.877 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.262 ms - 3338[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.781 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.176 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.973 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m4.697 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.769 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.585 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.786 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.735 ms - 796154[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.015 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.804 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.065 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.764 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.961 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.792 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.766 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.548 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.361 ms - 3138[0m
+[0mGET /admin/orders [36m302 [0m5.651 ms - 70[0m
+[0mGET /admin/signin [32m200 [0m28.536 ms - 881[0m
+{ email: 'caixiaogu@akeso.cn', password: '888888' }
+[0mPOST /admin/signin [36m302 [0m280.715 ms - 56[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c1',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m323.551 ms - 9467[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m327.126 ms - 74469[0m
+[0mGET /admin/query/users [32m200 [0m434.942 ms - 137459[0m
+[0mGET /admin/query/orders [32m200 [0m448.199 ms - 74358[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m401.426 ms - 137622[0m
+[0mGET /orders/new [32m200 [0m4.294 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.216 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.991 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.564 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.546 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.965 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.588 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.872 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.921 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.744 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.715 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.761 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m2.600 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m3.271 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.701 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.996 ms - 3138[0m
+[0mGET / [32m200 [0m1.429 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.977 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.643 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.803 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.321 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.244 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.844 ms - 775[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.064 ms - 3338[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m2.100 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.506 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.799 ms - 41383[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.906 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.551 ms - 53027[0m
+[0mGET /assets/js/application.js [36m304 [0m0.503 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.976 ms - 4054[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.483 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.376 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.441 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.320 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.776 ms - 775[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [32m200 [0m0.899 ms - 148882[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.508 ms - -[0m
+[0mGET / [32m200 [0m1.286 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.028 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.862 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.710 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.871 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.814 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.824 ms - 775[0m
+[0mGET /orders/new [32m200 [0m1.100 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.919 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.521 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.071 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.142 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.630 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.751 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m1.318 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.860 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.742 ms - 796154[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m2.711 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.199 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m2.081 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m3.638 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.744 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.237 ms - 1706[0m
+[0mGET /orders/new [32m200 [0m3.642 ms - 3892[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.094 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m3.355 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.621 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.147 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.956 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.765 ms - 870284[0m
+[0mGET /assets/js/application.js [36m304 [0m0.664 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.929 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.007 ms - 167906[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.503 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m1.212 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.380 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m1.469 ms - 41383[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m1.412 ms - 53027[0m
+[0mGET /assets/js/application.js [36m304 [0m0.537 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.218 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.541 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.300 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.514 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.294 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.602 ms - 775[0m
+[0mGET / [32m200 [0m5.713 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.945 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.522 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.204 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.625 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.306 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.429 ms - -[0m
+[0mGET /orders/new [32m200 [0m2.060 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.908 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.880 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.059 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.762 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.762 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.654 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.869 ms - 870839[0m
+[0mGET / [32m200 [0m1.794 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.654 ms - -[0m
+[0mGET /orders/new [32m200 [0m2.185 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.848 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.376 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.524 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.714 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.382 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.722 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.659 ms - 167906[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.758 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.934 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.718 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.762 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.917 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m7.084 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.762 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.628 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.751 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.675 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.394 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.027 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.049 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.416 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.069 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.736 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.058 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.634 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.871 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.701 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.798 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.652 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.779 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.870 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.768 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.016 ms - 3138[0m
+[0mGET /assets/js/application.js [36m304 [0m0.507 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.548 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.974 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.615 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.484 ms - -[0m
+[0mGET /detail [32m200 [0m1.266 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.545 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.587 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.944 ms - 190[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.539 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.093 ms - -[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m1.501 ms - 6343[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m1.378 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.376 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m0.553 ms - 55588[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m0.535 ms - 44427[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m0.795 ms - 3414[0m
+[0mGET /assets/js/application.js [36m304 [0m1.097 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.433 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.668 ms - 4054[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.382 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.312 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.383 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.542 ms - 775[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.067 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.697 ms - 3892[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m1.566 ms - 14818[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.738 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.324 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.483 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m1.561 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.604 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.280 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.372 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m1.366 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.329 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.289 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.003 ms - 4991[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.482 ms - -[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.512 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.577 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.317 ms - -[0m
+[0mGET /admin/orders [32m200 [0m631.936 ms - 46485[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m3.134 ms - 6343[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m1.065 ms - 55588[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m0.567 ms - 44427[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.554 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.298 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m2.067 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.000 ms - 4054[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.837 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m2.482 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.306 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.458 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.444 ms - -[0m
+[0mGET / [32m200 [0m1.795 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.611 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.602 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.568 ms - 3338[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.656 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.794 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.530 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.517 ms - 775[0m
+[0mGET /orders/new [32m200 [0m1.273 ms - 3892[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.766 ms - 125346[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.582 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.442 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.695 ms - 237115[0m
+[0mGET /assets/js/application.js [36m304 [0m0.531 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.760 ms - 167906[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.999 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.183 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.598 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.569 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.913 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.578 ms - -[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m3.199 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.919 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.794 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.691 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.998 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.059 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.940 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.822 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.337 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.160 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.377 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.210 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m3.645 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m3.000 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.484 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.838 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.683 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.827 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.600 ms - 3138[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m2.530 ms - 6052[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.827 ms - 53027[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.347 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.345 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.412 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.759 ms - 4054[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.782 ms - 41383[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.500 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.492 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.511 ms - 775[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.499 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.974 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.268 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.742 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.107 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.762 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.153 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.764 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.078 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.027 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.643 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.753 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.841 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.808 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.979 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.839 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.672 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.646 ms - 3138[0m
+[0mGET / [32m200 [0m1.538 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.868 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.527 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.858 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.481 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.470 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.394 ms - -[0m
+[0mGET /detail [32m200 [0m1.941 ms - 9191[0m
+[0mGET /assets/js/application.js [36m304 [0m0.677 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.426 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.678 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.592 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m0.825 ms - 3414[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.278 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.474 ms - 14818[0m
+[0mGET / [32m200 [0m2.016 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.821 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.486 ms - -[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c1',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m3.830 ms - 9467[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m352.644 ms - 74469[0m
+[0mGET /admin/query/orders [32m200 [0m420.017 ms - 74358[0m
+[0mGET /admin/query/users [32m200 [0m571.207 ms - 137459[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m436.214 ms - 137622[0m
+[0mGET /admin/orders [32m200 [0m430.042 ms - 46485[0m
+[0mGET /orders/new [32m200 [0m1.263 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.123 ms - 30443[0m
+[0mGET /detail [32m200 [0m1.140 ms - 9191[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.351 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.800 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.465 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.364 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.850 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.154 ms - 870284[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.795 ms - 796154[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.534 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.704 ms - 340[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.795 ms - 30443[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.798 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.658 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.624 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.731 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.735 ms - 3138[0m
+[0mGET /assets/js/application.js [32m200 [0m0.806 ms - 340[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.545 ms - 3338[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m2.798 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.728 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.487 ms - 3138[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.512 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m0.572 ms - 3414[0m
+[0mGET / [32m200 [0m1.098 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m0.978 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.504 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.721 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.420 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.124 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.831 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.584 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.736 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.780 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.825 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.780 ms - 870839[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.320 ms - 6052[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m4.151 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.318 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m1.693 ms - 53027[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m1.008 ms - 41383[0m
+[0mGET /assets/js/application.js [36m304 [0m0.310 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.693 ms - 4991[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.552 ms - 4054[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.395 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.422 ms - 84380[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.459 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.361 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.271 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.415 ms - 775[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.833 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.364 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.610 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [32m200 [0m1.141 ms - 148882[0m
+[0mGET /orders/new [32m200 [0m1.822 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.778 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.769 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.768 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.655 ms - 101931[0m
+[0mGET /orders/new [32m200 [0m1.989 ms - 3892[0m
+[0mGET /assets/js/application.js [36m304 [0m0.591 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.645 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.646 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m5.326 ms - 101931[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.525 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.749 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.817 ms - 125346[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.699 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.774 ms - 167906[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.772 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.967 ms - 1706[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.499 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.485 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.520 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.674 ms - 870839[0m
+[0mGET /detail [32m200 [0m2.160 ms - 9191[0m
+[0mGET / [32m200 [0m1.052 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.822 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.812 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.856 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.751 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.530 ms - 775[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.040 ms - 84380[0m
+[0mGET /orders/new [32m200 [0m1.577 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.610 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.961 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.860 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.794 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.523 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.555 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.640 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.484 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.867 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.980 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.785 ms - 4991[0m
+[0mGET /orders/new [32m200 [0m1.197 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.859 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.533 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.205 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.279 ms - 742617[0m
+[0mGET /assets/js/application.js [32m200 [0m1.396 ms - 340[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.696 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.764 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.269 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.848 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.411 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.750 ms - 1706[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.729 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.866 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.667 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.773 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m1.131 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.489 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.490 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m2.115 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.265 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.297 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.310 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.355 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.340 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.289 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.281 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.424 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.484 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.270 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.268 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.257 ms - -[0m
+[0mGET /orders/new [32m200 [0m0.958 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m4.386 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.858 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.591 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.588 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.922 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.947 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.867 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.906 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.724 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.789 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.038 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.739 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.546 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.641 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.492 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.081 ms - 3892[0m
+[0mGET /orders/new [32m200 [0m1.656 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.750 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.530 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.983 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.055 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.674 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.416 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.556 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m2.498 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.591 ms - 167906[0m
+[0mGET /assets/js/application.js [36m304 [0m0.616 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.749 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.733 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.069 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.667 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.414 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.640 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.547 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.019 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.493 ms - 125346[0m
+[0mGET /orders/new [32m200 [0m1.137 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.673 ms - 30443[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.831 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.690 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.473 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.405 ms - 237115[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.605 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.633 ms - 870839[0m
+wood
+[0mGET /orders/new/wood [32m200 [0m1.314 ms - 6246[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.950 ms - -[0m
+[0mGET /assets/images/orders/pro/wood_2.png [32m200 [0m1.079 ms - 56431[0m
+[0mGET /assets/images/orders/pro/wood_1.png [32m200 [0m0.446 ms - 37588[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.366 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.627 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.535 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.731 ms - 796154[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.983 ms - 4054[0m
+[0mGET /assets/js/application.js [32m200 [0m0.540 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.786 ms - 237115[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.482 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.402 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m1.581 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.257 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.273 ms - -[0m
+[0mGET /assets/js/application.js [32m200 [0m0.782 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.936 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.600 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.638 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.442 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.413 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_black.jpg [32m200 [0m0.998 ms - 119205[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.964 ms - 167906[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.484 ms - 3338[0m
+[0mGET /assets/images/orders/positive/photo_wood_green.jpg [32m200 [0m0.850 ms - 180459[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.593 ms - 870284[0m
+[0mGET /orders/new [32m200 [0m2.651 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.763 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.147 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.596 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.569 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.622 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.684 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m1.417 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.560 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.653 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.669 ms - 84380[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.755 ms - 167906[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.651 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.555 ms - 237115[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.928 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.382 ms - 3138[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.728 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_black.jpg [36m304 [0m0.466 ms - -[0m
+[0mGET /orders/new [32m200 [0m3.509 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.785 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.989 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.519 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.499 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.400 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.442 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.730 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.769 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.658 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.669 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.676 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.664 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.984 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.980 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.454 ms - 3138[0m
+13021145557
+[0mGET /leancloud/sendSMS/13021145557?mobile=13021145557 [32m200 [0m229.858 ms - 39[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.449 ms - 3338[0m
+[0mGET / [32m200 [0m1.894 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.725 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.863 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.818 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.365 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.319 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.658 ms - 775[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.983 ms - 3338[0m
+TEST FIRST
+TEST
+ERROR!!!!!
+Cannot sign up or login user by mobilePhoneNumber  with an empty smsCode.
+[0mPOST /orders [32m200 [0m5.058 ms - 54[0m
+[0mGET /orders/success [32m200 [0m41.206 ms - 3761[0m
+[0mGET /assets/images/bitmap@2x.png [32m200 [0m0.814 ms - 5824[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.385 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.082 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.832 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.588 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.709 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.447 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.454 ms - 870284[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.830 ms - 742617[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.678 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.450 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.054 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.689 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.685 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.725 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.428 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.772 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.694 ms - 237115[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.738 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.490 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.676 ms - 167906[0m
+[0mGET /orders/new [32m200 [0m1.307 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.660 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.405 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.647 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m4.616 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.589 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.839 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.695 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m1.282 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.035 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.632 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.672 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.608 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.716 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.510 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.747 ms - 3138[0m
+[0mGET /admin/excel/orders.xlsx [32m200 [0m539.264 ms - 116814[0m
+[0mGET /orders/new [32m200 [0m1.248 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.022 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.654 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.601 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.619 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.994 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.180 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.800 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m1.012 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.006 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.895 ms - 870839[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.520 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.711 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.291 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.401 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.776 ms - 1706[0m
+[0mGET / [32m200 [0m1.445 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.519 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.581 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.736 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.594 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.468 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.009 ms - 775[0m
+[0mGET /orders/new [32m200 [0m1.806 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.658 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m4.231 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.950 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.714 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.555 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.552 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.441 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.495 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.855 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.985 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.970 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.527 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.856 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.748 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.716 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.821 ms - 3338[0m
+[0mGET /detail [32m200 [0m1.217 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.774 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.444 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m1.091 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.562 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.062 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.722 ms - 14818[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.560 ms - -[0m
+[0mGET / [32m200 [0m1.183 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.715 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m1.036 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.025 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.953 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.350 ms - 775[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.548 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.721 ms - 3338[0m
+[0mGET /detail [32m200 [0m1.329 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.578 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.684 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.918 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.480 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.474 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m0.587 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.595 ms - 14818[0m
+[0mGET /orders/new [32m200 [0m1.421 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.856 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.497 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.277 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.631 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.789 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.999 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.725 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.198 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.128 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.433 ms - 3138[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.685 ms - 870284[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.562 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.800 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.112 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.753 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m1.784 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.470 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.201 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.543 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m2.591 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.647 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.212 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.675 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.759 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.059 ms - 796154[0m
+[0mGET /assets/js/application.js [36m304 [0m0.657 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.716 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.620 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.635 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.654 ms - -[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.501 ms - 1706[0m
+[0mGET /orders/new [32m200 [0m1.267 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.664 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.932 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.082 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.888 ms - 101931[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.717 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.673 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.788 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.761 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.083 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.600 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.056 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.432 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.252 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.582 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.531 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.125 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.654 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.717 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.855 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.243 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.808 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.689 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.983 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.724 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.034 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m1.620 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.746 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.855 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.776 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.683 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.752 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.369 ms - 3338[0m
+[0mGET /detail [32m200 [0m1.316 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.637 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.542 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m0.667 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.482 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.730 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.321 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m0.297 ms - -[0m
+[0mGET /orders/new [32m200 [0m3.077 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.049 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.771 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.938 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.981 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.975 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.601 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.598 ms - 167906[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.601 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.809 ms - 796154[0m
+[0mGET /service [32m200 [0m71.841 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.574 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.422 ms - -[0m
+[0mGET /assets/js/app/service.js [32m200 [0m1.603 ms - 93[0m
+[0mGET /assets/js/ui/aside.js [32m200 [0m1.291 ms - 1205[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.419 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.385 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.532 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.787 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.845 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.160 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.228 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.487 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.223 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.995 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.823 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.049 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.925 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.093 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.964 ms - 84380[0m
+[0mGET /orders/new [32m200 [0m1.752 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.842 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.365 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.080 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.330 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.715 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.646 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.681 ms - 340[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.826 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.677 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.766 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.746 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.571 ms - 167906[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.749 ms - 3138[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.573 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.622 ms - 237115[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.782 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.580 ms - 3138[0m
+[0mGET /detail [32m200 [0m1.359 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.623 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.559 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m0.545 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.612 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.384 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m2.195 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.294 ms - -[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m1.687 ms - 6343[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.690 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.462 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m2.445 ms - 44427[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m1.264 ms - 55588[0m
+[0mGET /assets/js/application.js [36m304 [0m0.663 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.755 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.691 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.528 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.309 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.324 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.028 ms - 775[0m
+[0mGET / [32m200 [0m3.818 ms - 4536[0m
+[0mGET / [32m200 [0m1.243 ms - 4536[0m
+[0mGET /admin/signin [32m200 [0m0.965 ms - 881[0m
+{ email: 'caixiaogu@akeso.cn', password: '888888' }
+Not Found
+[0mGET /favicon.ico [33m404 [0m4.345 ms - 3338[0m
+[0mPOST /admin/signin [36m302 [0m198.329 ms - 56[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c4831',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m4.199 ms - 9467[0m
+[0mGET /admin/query/users [32m200 [0m504.763 ms - 137459[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m398.492 ms - 74469[0m
+[0mGET /admin/query/orders [32m200 [0m526.820 ms - 74358[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m475.611 ms - 137622[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.626 ms - 3338[0m
+[0mGET /detail [32m200 [0m1.838 ms - 9191[0m
+[0mGET /detail [32m200 [0m1.472 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.188 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.712 ms - 340[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.682 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.035 ms - 84380[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.021 ms - 3414[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.439 ms - 3138[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.425 ms - 14818[0m
+[0mGET /stories [32m200 [0m70.367 ms - 3733[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.733 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.884 ms - -[0m
+[0mGET /assets/js/app/story.js [32m200 [0m1.246 ms - 755[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.420 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.487 ms - -[0m
+[0mGET /health [32m200 [0m81.398 ms - 9781[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.525 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.741 ms - -[0m
+[0mGET /assets/js/ui/aside.js [36m304 [0m0.658 ms - -[0m
+[0mGET /assets/js/app/health.js [32m200 [0m1.073 ms - 92[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.607 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m1.338 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.379 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m5.425 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.842 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.712 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.793 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.803 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m1.012 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.172 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.597 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.782 ms - 237115[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.740 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.928 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.926 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.610 ms - 1706[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.235 ms - 870839[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.628 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m4.062 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.848 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.753 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.483 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.021 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.952 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.698 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.725 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.028 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.816 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.899 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.926 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.532 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.706 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.820 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.894 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m1.943 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.719 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.715 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.511 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.552 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.858 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.684 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.692 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.738 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.257 ms - 167906[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.721 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.754 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.931 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.429 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.762 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.655 ms - 796154[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.728 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.654 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.412 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.537 ms - 53027[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.460 ms - 41383[0m
+[0mGET /assets/js/application.js [36m304 [0m0.505 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.132 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.458 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.492 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.495 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.615 ms - 775[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.321 ms - -[0m
+[0mGET / [32m200 [0m1.292 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.855 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.695 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.858 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.735 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.705 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.029 ms - 775[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.982 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m2.991 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m1.023 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.492 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.547 ms - 742617[0m
+[0mGET /assets/js/application.js [36m304 [0m0.420 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.544 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.601 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.426 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.680 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.986 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.985 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.791 ms - 4991[0m
+[0mGET / [32m200 [0m2.271 ms - 4536[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.392 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.869 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.616 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.733 ms - -[0m
+[0mGET /stories [32m200 [0m1.509 ms - 3733[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.660 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.527 ms - -[0m
+[0mGET /assets/js/app/story.js [36m304 [0m0.611 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.678 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.645 ms - -[0m
+[0mGET /detail [32m200 [0m1.041 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.403 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.606 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m1.665 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.400 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m2.665 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m0.335 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.077 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.510 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.414 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.540 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.505 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.289 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.340 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.578 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.308 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.293 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.435 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.525 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.448 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.440 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.606 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.419 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.470 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.598 ms - -[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m3.888 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.628 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.443 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.718 ms - 41383[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.932 ms - 53027[0m
+[0mGET /assets/js/application.js [36m304 [0m0.758 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.032 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.517 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.398 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.479 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.292 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.437 ms - -[0m
+[0mGET /service [32m200 [0m1.585 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.723 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.280 ms - -[0m
+[0mGET /assets/js/app/service.js [32m200 [0m0.843 ms - 93[0m
+[0mGET /assets/js/ui/aside.js [32m200 [0m0.449 ms - 1205[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.362 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.273 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.433 ms - 3338[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [32m200 [0m1.283 ms - 148882[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.546 ms - -[0m
+[0mGET / [32m200 [0m2.046 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.735 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.584 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.477 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.313 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.472 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.137 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.585 ms - 3338[0m
+[0mGET /detail [32m200 [0m3.045 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.601 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.794 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m1.984 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.746 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.482 ms - 14818[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.087 ms - 3414[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m1.010 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.419 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.845 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.625 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.985 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.711 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m1.039 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.333 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.556 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.533 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.452 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.600 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.687 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.996 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.764 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.094 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.728 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.482 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.969 ms - 3338[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.727 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.614 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m1.003 ms - 53027[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m1.040 ms - 41383[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.439 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.438 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.154 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.147 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.686 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.484 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.578 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.266 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.456 ms - 3338[0m
+[0mGET /stories [32m200 [0m1.506 ms - 3733[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.478 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.719 ms - -[0m
+[0mGET /assets/js/app/story.js [32m200 [0m0.745 ms - 755[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.664 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.667 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.834 ms - 3338[0m
+[0mGET /service [32m200 [0m1.178 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.521 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.741 ms - -[0m
+[0mGET /assets/js/ui/aside.js [36m304 [0m0.664 ms - -[0m
+[0mGET /assets/js/app/service.js [36m304 [0m0.432 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.650 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.338 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.477 ms - 3338[0m
+[0mGET /admin/orders [32m200 [0m469.086 ms - 46485[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.261 ms - 3338[0m
+Not Found
+[0mGET //assets.akeso.cn/assets/js/lib/modernizr.js [33m404 [0m1.633 ms - 3338[0m
+Not Found
+[0mGET //assets.akeso.cn/assets/js/lib/require.js [33m404 [0m1.393 ms - 3338[0m
+[0mGET / [32m200 [0m1.208 ms - 4536[0m
+[0mGET / [32m200 [0m1.173 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m1.529 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.586 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.929 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.600 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.594 ms - 742617[0m
+[0mGET /assets/js/application.js [36m304 [0m0.238 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.552 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.458 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.457 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.269 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.885 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.704 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.592 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.798 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.729 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.770 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m1.396 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.736 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.714 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.619 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.395 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.102 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.660 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.204 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.616 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.968 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.898 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.737 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.240 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.648 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.443 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.863 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m2.863 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.693 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.897 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.466 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.641 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.874 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.570 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.911 ms - 237115[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.868 ms - 4991[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.054 ms - 870839[0m
+[0mGET /detail [32m200 [0m1.386 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.834 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.685 ms - 84380[0m
+[0mGET /assets/js/application.js [36m304 [0m1.541 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m0.448 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.524 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m0.416 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.299 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.477 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.148 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.790 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.970 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.977 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.845 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m1.371 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.894 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.823 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.624 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.441 ms - 125346[0m
+[0mGET /assets/js/application.js [32m200 [0m1.267 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.715 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.554 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.578 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.605 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.701 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.446 ms - 3138[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.836 ms - 870284[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.751 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.985 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.104 ms - 870839[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m2.230 ms - 6343[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.901 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m1.395 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m0.572 ms - 55588[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m1.751 ms - 44427[0m
+[0mGET /assets/js/application.js [36m304 [0m0.665 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.645 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.624 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.328 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.288 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.291 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.557 ms - 775[0m
+[0mGET /assets/images/orders/positive/photo_hui.jpg [32m200 [0m0.890 ms - 117256[0m
+[0mGET /service [32m200 [0m1.998 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m2.051 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.797 ms - -[0m
+[0mGET /assets/js/ui/aside.js [36m304 [0m0.487 ms - -[0m
+[0mGET /assets/js/app/service.js [36m304 [0m0.459 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.499 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.403 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.744 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.767 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.588 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.780 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m206 [0m2.167 ms - 1[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.647 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.529 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.536 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.468 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.524 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.584 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.810 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.453 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.463 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.522 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.539 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m206 [0m1.141 ms - 39454[0m
+[0mGET /orders/new [32m200 [0m4.224 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.842 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.083 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.767 ms - 125346[0m
+[0mGET /orders/new [32m200 [0m3.566 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.085 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.817 ms - 237115[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.613 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.874 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.906 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.610 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.287 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.861 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.946 ms - 125346[0m
+[0mGET /assets/js/application.js [32m200 [0m0.938 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.795 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.731 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.747 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.487 ms - 3138[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.718 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.997 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.188 ms - 167906[0m
+[0mGET /orders/new [32m200 [0m2.094 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.869 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.070 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.947 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.545 ms - 742617[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.678 ms - 796154[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.637 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.952 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.999 ms - 4991[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.924 ms - 870839[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.789 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.839 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.845 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.594 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.798 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.750 ms - 167906[0m
+[0mGET /orders/new [32m200 [0m1.285 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m64.557 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.784 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.373 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.460 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.578 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.713 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.695 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.720 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.124 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.353 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.675 ms - 237115[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.665 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.068 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.702 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.723 ms - 796154[0m
+[0mGET / [32m200 [0m1.411 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.053 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.760 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.820 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.971 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.841 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.946 ms - 775[0m
+[0mGET / [32m200 [0m1.850 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.794 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.456 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.862 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.609 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.817 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m1.187 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.637 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.681 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.883 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.801 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.941 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.838 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.739 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.636 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.174 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.503 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.984 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.793 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.674 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.474 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.229 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.406 ms - 3138[0m
+Not Found
+[0mPOST /azenv.php?auth=144895483509&a=PSCN&i=3078852802&p=80 [33m404 [0m2.959 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.786 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.250 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.728 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.812 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.731 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.723 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.259 ms - 237115[0m
+[0mGET /assets/js/application.js [32m200 [0m1.296 ms - 340[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.730 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.763 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.939 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.725 ms - 167906[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.647 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.279 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.838 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.920 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.408 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.424 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m1.299 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.497 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.285 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.435 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.297 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.319 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.514 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.294 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.314 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.150 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.988 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.523 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.877 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.612 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.692 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.030 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.746 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.989 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m4.438 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m4.864 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.203 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.817 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.783 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.772 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.688 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.452 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.830 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.701 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.008 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.583 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.076 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.563 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.792 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.866 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.627 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m1.024 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.706 ms - 4991[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.593 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m4.261 ms - 3138[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m2.979 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.783 ms - 84380[0m
+[0mGET /admin/orders [32m200 [0m487.355 ms - 46485[0m
+[0mGET /orders/new [32m200 [0m1.626 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.955 ms - 30443[0m
+[0mGET /detail?from=timeline&isappinstalled=0 [32m200 [0m1.084 ms - 9191[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.927 ms - 125346[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.984 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.496 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.800 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.907 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.803 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.878 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.819 ms - 167906[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m3.440 ms - 3338[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.882 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.962 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.862 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.941 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.528 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.780 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.721 ms - 3138[0m
+[0mGET / [32m200 [0m1.127 ms - 4536[0m
+[0mGET /assets/js/application.js [32m200 [0m0.971 ms - 340[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m2.962 ms - 30443[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.697 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.856 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.666 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.497 ms - 775[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.751 ms - 3338[0m
+[0mGET /assets/js/application.js [32m200 [0m0.906 ms - 340[0m
+[0mGET /orders/new [32m200 [0m1.225 ms - 3892[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.984 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.235 ms - 125346[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.484 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.455 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.492 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.478 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.023 ms - 237115[0m
+[0mGET /assets/js/application.js [36m304 [0m0.499 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.003 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.804 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.880 ms - 4991[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.725 ms - 190[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.638 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.524 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.312 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.273 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.629 ms - 3338[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.641 ms - 84380[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m2.390 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.856 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.535 ms - 41383[0m
+[0mGET /assets/js/application.js [36m304 [0m1.154 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.446 ms - 53027[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.326 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.881 ms - 4054[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.549 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.544 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.284 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.337 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.261 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.298 ms - 3338[0m
+[0mGET / [32m200 [0m1.560 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m1.350 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.822 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.100 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.626 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.722 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.620 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.739 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.917 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.413 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.996 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.767 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m2.426 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.898 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.673 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.308 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.141 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.690 ms - 3338[0m
+[0mGET /stories [32m200 [0m1.434 ms - 3733[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m1.617 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.692 ms - -[0m
+[0mGET /assets/js/app/story.js [32m200 [0m0.723 ms - 755[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.805 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.470 ms - -[0m
+[0mGET /health [32m200 [0m1.544 ms - 9781[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.734 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.465 ms - -[0m
+[0mGET /assets/js/ui/aside.js [32m200 [0m1.282 ms - 1205[0m
+[0mGET /assets/js/app/health.js [32m200 [0m1.470 ms - 92[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.467 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.292 ms - -[0m
+[0mGET /service [32m200 [0m1.643 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.509 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.601 ms - -[0m
+[0mGET /assets/js/ui/aside.js [36m304 [0m1.131 ms - -[0m
+[0mGET /assets/js/app/service.js [32m200 [0m1.605 ms - 93[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.670 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.300 ms - -[0m
+[0mGET /stories [32m200 [0m1.022 ms - 3733[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.429 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.686 ms - -[0m
+[0mGET /assets/js/app/story.js [36m304 [0m0.404 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.339 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.434 ms - -[0m
+[0mGET /detail [32m200 [0m4.503 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.386 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.461 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.556 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.720 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.621 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.182 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m1.276 ms - 14818[0m
+[0mGET /orders/new [32m200 [0m1.264 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.570 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.663 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.678 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.859 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.853 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.864 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.839 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.079 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.529 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.490 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.822 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.146 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.968 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.066 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.822 ms - 870839[0m
+[0mGET / [32m200 [0m1.382 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m1.413 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.461 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.147 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m1.146 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.175 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.580 ms - 775[0m
+[0mGET / [32m200 [0m1.288 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.779 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m1.031 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.133 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.925 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.359 ms - 775[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.426 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.058 ms - 3338[0m
+[0mGET / [32m200 [0m1.397 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.622 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.634 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.309 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.511 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.455 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.813 ms - 775[0m
+[0mGET /about [32m200 [0m65.140 ms - 5884[0m
+[0mGET /service [32m200 [0m1.314 ms - 8711[0m
+[0mGET / [32m200 [0m1.121 ms - 4536[0m
+[0mGET /detail [32m200 [0m1.449 ms - 9191[0m
+[0mGET /orders/new [32m200 [0m1.252 ms - 3892[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.996 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.836 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.700 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.650 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.420 ms - 870839[0m
+wood
+[0mGET /orders/new/wood [32m200 [0m1.600 ms - 6246[0m
+[0mGET /assets/images/orders/pro/wood_2.png [32m200 [0m0.981 ms - 56431[0m
+[0mGET /assets/images/orders/pro/wood_1.png [32m200 [0m0.875 ms - 37588[0m
+Not Found
+[0mGET /index.html [33m404 [0m1.774 ms - 3338[0m
+Not Found
+[0mGET /index.html [33m404 [0m1.223 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.063 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.105 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.042 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.755 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.785 ms - 125346[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.829 ms - 796154[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.839 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.676 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.814 ms - 167906[0m
+[0mGET /orders/new [32m200 [0m4.391 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.040 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.676 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.197 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m3.237 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m3.426 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.227 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m2.994 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m3.836 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.605 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m1.036 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.768 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.774 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.713 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.938 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.583 ms - 3138[0m
+[0mGET /assets/js/application.js [32m200 [0m0.902 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.920 ms - 125346[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.582 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.015 ms - 237115[0m
+[0mGET /orders/new [32m200 [0m1.185 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.810 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.046 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.565 ms - 742617[0m
+[0mGET / [32m200 [0m1.443 ms - 4536[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.612 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.671 ms - 101931[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.394 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.767 ms - 796154[0m
+[0mGET /assets/js/application.js [36m304 [0m0.301 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.554 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.442 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.580 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.493 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.480 ms - 3338[0m
+[0mGET /detail [32m200 [0m2.660 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.631 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.322 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m0.607 ms - -[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.057 ms - 3338[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.425 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.372 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.272 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m0.483 ms - -[0m
+[0mGET /assets/js/application.js [32m200 [0m1.018 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.721 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.934 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.851 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.445 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.482 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.951 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.007 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.290 ms - 870839[0m
+[0mGET /orders/new [32m200 [0m1.089 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.820 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.675 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.513 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.548 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.694 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m3.289 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.594 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.690 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.745 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.872 ms - 4991[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.582 ms - 796154[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.573 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.797 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.849 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.649 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.372 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.603 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.140 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.358 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.589 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.527 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.780 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.585 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.918 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.161 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.950 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.814 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.259 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m2.801 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.659 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.646 ms - 3138[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m3.424 ms - 6343[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.571 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m0.908 ms - 44427[0m
+[0mGET /assets/js/application.js [36m304 [0m0.396 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m2.190 ms - 55588[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.329 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.695 ms - 4054[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.681 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.619 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.283 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.500 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.588 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_hui.jpg [32m200 [0m0.712 ms - 117256[0m
+13301306385
+[0mGET /leancloud/sendSMS/13301306385?mobile=13301306385 [32m200 [0m192.023 ms - 39[0m
+[0mGET /detail [32m200 [0m2.214 ms - 9191[0m
+TEST FIRST
+TEST
+{ _serverData: 
+   { mobilePhoneNumber: '13301306385',
+     username: '黄宇',
+     email: '251361005@qq.com',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     age: 999,
+     emailVerified: true,
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { mobilePhoneNumber: '13301306385',
+     username: '黄宇',
+     email: '251361005@qq.com',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     age: 999,
+     emailVerified: true,
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c7490',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: true,
+  _previousAttributes: 
+   { smsCode: '402913',
+     mobilePhoneNumber: '13301306385',
+     username: '黄宇',
+     email: '251361005@qq.com' },
+  _changing: false,
+  _saving: 0,
+  _allPreviousSaves: 
+   Promise {
+     _resolved: false,
+     _rejected: false,
+     _resolvedCallbacks: [],
+     _rejectedCallbacks: [] },
+  _existed: false,
+  _sessionToken: 'y3ufgntmzg9xhopgpx8tigmb5',
+  id: '564c8c1e60b25b7928cf5fbd',
+  createdAt: Wed Nov 18 2015 22:33:02 GMT+0800 (CST),
+  updatedAt: Tue Nov 24 2015 18:29:18 GMT+0800 (CST),
+  _isCurrentUser: true }
+********************************************************
+============================
+{ mobilePhoneNumber: '13301306385',
+  template: 'order-success',
+  name: '黄宇',
+  gender: '',
+  type: '灰色钛架款' }
+[0mPOST /orders [32m200 [0m570.485 ms - 13[0m
+[0mGET /orders/success [32m200 [0m1.508 ms - 3761[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.639 ms - -[0m
+[0mGET /assets/images/bitmap@2x.png [32m200 [0m2.398 ms - 5824[0m
+已发送短信
+[0mGET /orders/new [32m200 [0m1.045 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.921 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.573 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.508 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.044 ms - 101931[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.652 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.970 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.856 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.880 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.655 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.711 ms - 3138[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.087 ms - 870284[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m22.283 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.608 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.688 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.739 ms - 796154[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.821 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.739 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.405 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.514 ms - 41383[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.483 ms - 53027[0m
+[0mGET / [32m200 [0m1.349 ms - 4536[0m
+[0mGET / [32m200 [0m1.260 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m1.514 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.204 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.787 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.597 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.594 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.579 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.870 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.679 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.735 ms - 237115[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.013 ms - 4991[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.810 ms - 796154[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.561 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.565 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.525 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.880 ms - 1706[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.971 ms - 870839[0m
+[0mGET /orders/new [32m200 [0m3.016 ms - 3892[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.836 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.533 ms - 870839[0m
+[0mGET / [32m200 [0m1.136 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.469 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.562 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.605 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.540 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.287 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.408 ms - -[0m
+[0mGET /orders/new [32m200 [0m2.478 ms - 3892[0m
+[0mGET /orders/new [32m200 [0m1.210 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.429 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.779 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m1.246 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.344 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.368 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.367 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.331 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.348 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.397 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.344 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.473 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.688 ms - 870839[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.643 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m1.324 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.424 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.267 ms - -[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m1.612 ms - 6343[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.937 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.719 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [36m304 [0m0.666 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [36m304 [0m0.380 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.302 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [36m304 [0m0.582 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.642 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.446 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.447 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.287 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.281 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.163 ms - 742617[0m
+woodHalf
+[0mGET /orders/new/woodHalf [32m200 [0m1.859 ms - 6274[0m
+[0mGET /assets/images/orders/pro/wood_half.png [32m200 [0m1.778 ms - 49718[0m
+[0mGET /assets/images/orders/pro/wood_half_2.png [32m200 [0m1.003 ms - 35253[0m
+[0mGET /orders/new [32m200 [0m1.637 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.837 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.851 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.510 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.421 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.245 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.493 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.447 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.927 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.693 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m1.771 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.735 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.759 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.478 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.607 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.716 ms - 3138[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m4.699 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.058 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.750 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.807 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.897 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.429 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.416 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.499 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.418 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.468 ms - 167906[0m
+[0mGET /assets/js/application.js [32m200 [0m0.955 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.586 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.979 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.074 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.666 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.887 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.810 ms - 3138[0m
+[0mGET http://115.28.32.109:8080/ [32m200 [0m1.139 ms - 4536[0m
+13911413915
+[0mGET /leancloud/sendSMS/13911413915?mobile=13911413915 [32m200 [0m181.655 ms - 39[0m
+[0mGET / [32m200 [0m1.119 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.727 ms - 30443[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.718 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m1.116 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m1.020 ms - 114[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.850 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.503 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.885 ms - 775[0m
+TEST FIRST
+TEST
+[0mGET / [32m200 [0m1.080 ms - 4536[0m
+ERROR!!!!!
+此电子邮箱已经被占用。
+[0mPOST /orders [32m200 [0m156.087 ms - 54[0m
+[0mGET /orders/success [32m200 [0m1.248 ms - 3761[0m
+[0mGET /assets/images/bitmap@2x.png [32m200 [0m1.037 ms - 5824[0m
+[0mGET /detail [32m200 [0m2.605 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.529 ms - -[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.603 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.518 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.783 ms - 190[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.404 ms - 3338[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m1.007 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.446 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.416 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.674 ms - 14818[0m
+[0mGET /orders/new [32m200 [0m1.242 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.503 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.541 ms - 101931[0m
+[0mGET /assets/js/application.js [36m304 [0m0.669 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.664 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m2.109 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.795 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.767 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.197 ms - 167906[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.574 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.645 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.474 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.395 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.704 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.785 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.965 ms - 870839[0m
+[0mGET /orders/new [32m200 [0m1.407 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.846 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.667 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.982 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.452 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.792 ms - 870839[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.459 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.870 ms - 237115[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.817 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.804 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.850 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.977 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m3.251 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.094 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.876 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.405 ms - 3138[0m
+[0mGET / [32m200 [0m1.936 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.585 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.514 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.510 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.396 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.463 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.448 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.155 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.686 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.831 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.847 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.784 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.822 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.695 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.495 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.604 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.902 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.876 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.708 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.696 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.486 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.683 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.641 ms - 870839[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.803 ms - 870839[0m
+[0mGET / [32m200 [0m1.182 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.485 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.566 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.690 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.463 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.569 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.948 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.772 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.701 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.586 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.209 ms - 125346[0m
+[0mGET /assets/js/application.js [32m200 [0m0.645 ms - 340[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.573 ms - 870284[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.515 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.906 ms - 4991[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.760 ms - 870839[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.694 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.881 ms - 52919[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.809 ms - 237115[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.638 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.402 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.652 ms - 167906[0m
+[0mGET /orders/new [32m200 [0m1.224 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.528 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.761 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.739 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.503 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m2.052 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.794 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m2.606 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.147 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.657 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.682 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.780 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.962 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m2.407 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m2.326 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.747 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m2.213 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.718 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.621 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.185 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.977 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.949 ms - 870284[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.459 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.710 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.713 ms - 870839[0m
+[0mGET /assets/js/application.js [32m200 [0m0.726 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.713 ms - 167906[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.808 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m2.183 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.454 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.208 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.524 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.226 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.744 ms - 30443[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.961 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.701 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.676 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.625 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.902 ms - 796154[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.712 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.746 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.862 ms - 237115[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.566 ms - 4991[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.857 ms - 870839[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.677 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.518 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.413 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.409 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m4.467 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.819 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.936 ms - 125346[0m
+[0mGET /assets/js/application.js [32m200 [0m0.784 ms - 340[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.436 ms - 796154[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.591 ms - 742617[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.927 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.949 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.921 ms - 84380[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.722 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.680 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.829 ms - 167906[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.815 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.499 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.415 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.958 ms - 101931[0m
+[0mGET /orders/new [32m200 [0m1.547 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.691 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.456 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [36m304 [0m0.651 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.270 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [36m304 [0m0.249 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [36m304 [0m0.506 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.517 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.282 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [36m304 [0m0.344 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.399 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.500 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.418 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.544 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.725 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.317 ms - -[0m
+[0mGET / [32m200 [0m1.228 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.959 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.783 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.834 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.948 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m1.297 ms - 775[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.484 ms - 3138[0m
+[0mGET /admin/signin [32m200 [0m1.138 ms - 881[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.539 ms - 3338[0m
+{ email: 'caixiaogu@akeso.cn', password: '888888' }
+[0mPOST /admin/signin [36m302 [0m170.076 ms - 56[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c7493',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m4.935 ms - 9467[0m
+[0mGET /admin/query/orders [32m200 [0m360.299 ms - 74667[0m
+[0mGET / [32m200 [0m1.266 ms - 4536[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m387.055 ms - 74778[0m
+[0mGET /admin/query/users [32m200 [0m573.004 ms - 137456[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m527.492 ms - 137619[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.887 ms - 3338[0m
+[0mGET /admin/orders [32m200 [0m379.057 ms - 46649[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.389 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.119 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.516 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.165 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.852 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.046 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.708 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.621 ms - 796154[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.757 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.614 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m3.043 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.855 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.901 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.635 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.398 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.686 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.753 ms - 870839[0m
+[0mGET /detail [32m200 [0m1.207 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.555 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m0.770 ms - 340[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m2.785 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.631 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.100 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m0.886 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.797 ms - 14818[0m
+[0mGET /admin/orders [32m200 [0m452.570 ms - 46649[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.326 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m4.006 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.823 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.577 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.440 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.458 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.710 ms - 167906[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.170 ms - 870284[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.753 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.654 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.618 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.844 ms - 84380[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.733 ms - 237115[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.706 ms - 52919[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.663 ms - 870839[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.664 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.488 ms - 3138[0m
+[0mGET /orders/new [32m200 [0m1.409 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.405 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.432 ms - -[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.826 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.245 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.181 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m1.060 ms - 167906[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.977 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.614 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.726 ms - 796154[0m
+[0mGET /assets/js/application.js [36m304 [0m0.469 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [36m304 [0m0.488 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.612 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m1.279 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.462 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.558 ms - -[0m
+ti
+[0mGET /orders/new/ti [32m200 [0m1.386 ms - 6343[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.496 ms - -[0m
+[0mGET /assets/images/orders/pro/titanium_2.png [32m200 [0m0.718 ms - 44427[0m
+[0mGET /assets/images/orders/pro/titanium_1.png [32m200 [0m0.542 ms - 55588[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.297 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.541 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m2.061 ms - 4054[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.655 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.261 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.271 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.264 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.299 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_hui.jpg [32m200 [0m0.939 ms - 117256[0m
+[0mGET /assets/images/orders/positive/photo_black.jpg [36m304 [0m0.436 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_blue.jpg [32m200 [0m0.840 ms - 121358[0m
+[0mGET /assets/images/orders/positive/photo_hui.jpg [36m304 [0m0.560 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_black.jpg [36m304 [0m0.503 ms - -[0m
+[0mGET /service [32m200 [0m1.752 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.579 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.427 ms - -[0m
+[0mGET /assets/js/app/service.js [32m200 [0m1.287 ms - 93[0m
+[0mGET /assets/js/ui/aside.js [32m200 [0m0.983 ms - 1205[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.462 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.375 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.578 ms - -[0m
+[0mGET /orders/new [32m200 [0m0.871 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.801 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.767 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.503 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.724 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.864 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.668 ms - 237115[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.820 ms - 167906[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.664 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.873 ms - 796154[0m
+[0mGET /orders/new [32m200 [0m2.212 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.601 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.509 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.711 ms - 870284[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.656 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [36m304 [0m0.417 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.834 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.550 ms - -[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.563 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [36m304 [0m0.437 ms - -[0m
+[0mGET / [32m200 [0m1.085 ms - 4536[0m
+[0mGET /detail?from=timeline&isappinstalled=0 [32m200 [0m1.462 ms - 9191[0m
+[0mGET / [32m200 [0m0.968 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.690 ms - 30443[0m
+[0mGET / [32m200 [0m0.911 ms - 4536[0m
+[0mGET /assets/js/application.js [32m200 [0m0.724 ms - 340[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.653 ms - 190[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.739 ms - 3138[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.690 ms - 84380[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.447 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m0.628 ms - 14818[0m
+[0mGET /orders/new [32m200 [0m1.064 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.850 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.609 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.713 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.517 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.811 ms - 870284[0m
+[0mGET /assets/js/application.js [32m200 [0m0.653 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.797 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.651 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.483 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.576 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.590 ms - 1706[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.859 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.753 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.991 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.663 ms - 870839[0m
+[0mGET / [32m200 [0m1.036 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m2.050 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.910 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.489 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.921 ms - 101931[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.939 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.928 ms - 870284[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.126 ms - 742617[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.857 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.630 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.759 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.934 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.774 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.128 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.265 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.725 ms - 3138[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.669 ms - 1706[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m2.358 ms - 3338[0m
+sheet
+[0mGET /orders/new/sheet [32m200 [0m1.116 ms - 6052[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.682 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.564 ms - -[0m
+[0mGET /assets/images/orders/pro/sheet_2.png [32m200 [0m0.934 ms - 41383[0m
+[0mGET /assets/images/orders/pro/sheet_1.png [32m200 [0m0.566 ms - 53027[0m
+[0mGET /assets/js/application.js [36m304 [0m0.396 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m0.569 ms - 4054[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.407 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.272 ms - -[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.259 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.385 ms - -[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.580 ms - 775[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.137 ms - 3338[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [32m200 [0m2.061 ms - 148882[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [36m304 [0m0.581 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_sheet_red.jpg [36m304 [0m0.616 ms - -[0m
+[0mGET / [32m200 [0m1.187 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.440 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.591 ms - -[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.723 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.536 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.278 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.262 ms - -[0m
+[0mGET / [32m200 [0m1.209 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.579 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.356 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.387 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.808 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.263 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.527 ms - -[0m
+[0mGET / [32m200 [0m1.664 ms - 4536[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c7493',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m4.431 ms - 9467[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m321.724 ms - 74778[0m
+[0mGET /admin/query/orders [32m200 [0m353.750 ms - 74667[0m
+[0mGET /admin/query/users [32m200 [0m484.213 ms - 137456[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m479.120 ms - 137619[0m
+[0mGET / [32m200 [0m2.635 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.568 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.692 ms - -[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c7493',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m3.265 ms - 9467[0m
+{ _serverData: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _opSetQueue: [ {} ],
+  attributes: 
+   { username: '蔡啸谷',
+     orders: { parent: null, key: 'orders', targetClassName: 'Orders' },
+     email: 'caixiaogu@akeso.cn',
+     age: 999,
+     emailVerified: false,
+     mobilePhoneNumber: '18513450915',
+     authData: null,
+     mobilePhoneVerified: true },
+  _hashedJSON: { orders: '{"__type":"Relation","className":"Orders"}' },
+  _escapedAttributes: {},
+  cid: 'c7493',
+  changed: {},
+  _silent: {},
+  _pending: {},
+  _hasData: undefined,
+  _previousAttributes: {},
+  _existed: true,
+  _sessionToken: 'oildn97ws412klt22btjfbk8o',
+  id: '5648c75d60b27f7a01c8c28d',
+  createdAt: Mon Nov 16 2015 01:56:45 GMT+0800 (CST),
+  updatedAt: Fri Nov 20 2015 17:18:47 GMT+0800 (CST),
+  _isCurrentUser: true }
+[0mGET /admin [32m200 [0m2.382 ms - 9467[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m320.510 ms - 74778[0m
+[0mGET /admin/query/orders [32m200 [0m388.019 ms - 74667[0m
+[0mGET /admin/query/users [32m200 [0m538.077 ms - 137456[0m
+[0mGET /admin/query/orders?groupBy=createdAt [32m200 [0m317.208 ms - 74778[0m
+[0mGET /admin/query/orders [32m200 [0m400.838 ms - 74667[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m475.536 ms - 137619[0m
+[0mGET /admin/query/users [32m200 [0m556.764 ms - 137456[0m
+[0mGET /admin/query/users?groupBy=createdAt [32m200 [0m563.149 ms - 137619[0m
+[0mGET /detail [32m200 [0m1.154 ms - 9191[0m
+[0mGET /detail [32m200 [0m0.835 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.453 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.630 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.840 ms - 190[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.613 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.485 ms - 3414[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.850 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m1.703 ms - 14818[0m
+[0mGET /admin/orders [32m200 [0m481.416 ms - 46649[0m
+[0mGET /orders/new [32m200 [0m1.245 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.725 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.523 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.063 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.218 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.867 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.768 ms - 796154[0m
+[0mGET /admin/users [32m200 [0m574.743 ms - 42485[0m
+[0mGET /orders/new [32m200 [0m1.797 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m1.182 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.783 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.165 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.899 ms - 101931[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.413 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.429 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.473 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.900 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.808 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.622 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.665 ms - 4991[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m1.343 ms - 52919[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m1.515 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.598 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.616 ms - 3138[0m
+[0mGET / [32m200 [0m1.501 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.784 ms - 30443[0m
+[0mGET /assets/js/application.js [32m200 [0m1.039 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.857 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.907 ms - 84380[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.673 ms - 775[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.531 ms - 3138[0m
+[0mGET /detail [32m200 [0m1.439 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.733 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.522 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [32m200 [0m0.872 ms - 190[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.449 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.457 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [32m200 [0m1.117 ms - 3414[0m
+[0mGET /assets/js/ui/onePageScroll.js [32m200 [0m1.022 ms - 14818[0m
+[0mGET /service [32m200 [0m1.791 ms - 8711[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.494 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.626 ms - -[0m
+[0mGET /assets/js/ui/aside.js [32m200 [0m1.746 ms - 1205[0m
+[0mGET /assets/js/app/service.js [32m200 [0m0.483 ms - 93[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.509 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.508 ms - -[0m
+[0mGET / [32m200 [0m1.295 ms - 4536[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.369 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.697 ms - -[0m
+[0mGET /assets/js/app/production.js [36m304 [0m0.655 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.805 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.900 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.470 ms - -[0m
+[0mGET /detail [32m200 [0m1.479 ms - 9191[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.432 ms - -[0m
+[0mGET /assets/js/application.js [36m304 [0m0.477 ms - -[0m
+[0mGET /assets/js/app/production_detail.js [36m304 [0m0.593 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.555 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.664 ms - -[0m
+[0mGET /assets/js/lib/jquery.pin.js [36m304 [0m0.473 ms - -[0m
+[0mGET /assets/js/ui/onePageScroll.js [36m304 [0m0.386 ms - -[0m
+[0mGET / [32m200 [0m1.459 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m1.388 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.894 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.635 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.324 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.760 ms - 742617[0m
+[0mGET /assets/js/application.js [32m200 [0m0.542 ms - 340[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.216 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.468 ms - 870284[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m1.663 ms - 4991[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.037 ms - 870839[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.770 ms - 84380[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.792 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.863 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m0.763 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.862 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.841 ms - 796154[0m
+[0mGET / [32m200 [0m1.284 ms - 4536[0m
+[0mGET /orders/new [32m200 [0m1.249 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.553 ms - -[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.811 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.739 ms - 125346[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.114 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.605 ms - 101931[0m
+[0mGET /assets/js/application.js [36m304 [0m0.510 ms - -[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.696 ms - 870839[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.591 ms - 167906[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.728 ms - 796154[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.943 ms - 4991[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.944 ms - 237115[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.526 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.680 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.535 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.746 ms - 1706[0m
+[0mGET / [32m200 [0m1.302 ms - 4536[0m
+[0mGET / [32m200 [0m1.201 ms - 4536[0m
+[0mGET /assets/js/application.js [32m200 [0m0.756 ms - 340[0m
+[0mGET /assets/js/app/production.js [32m200 [0m0.636 ms - 114[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.835 ms - 84380[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.106 ms - 3138[0m
+[0mGET /assets/js/ui/modal.js [32m200 [0m0.711 ms - 775[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.839 ms - 30443[0m
+Not Found
+[0mGET /favicon.ico [33m404 [0m1.491 ms - 3338[0m
+[0mGET /orders/new [32m200 [0m1.306 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.601 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m0.969 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m0.917 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m1.017 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m1.107 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m1.123 ms - 870284[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m1.282 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m1.115 ms - 796154[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.837 ms - 167906[0m
+[0mGET /assets/js/application.js [36m304 [0m0.661 ms - -[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.795 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.618 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.879 ms - 52919[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m1.597 ms - 1706[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.464 ms - -[0m
+[0mGET / [32m200 [0m2.696 ms - 4536[0m
+woodHalf
+[0mGET /orders/new/woodHalf [32m200 [0m1.680 ms - 6274[0m
+[0mGET /assets/images/demo-glass-type.png [36m304 [0m0.456 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.443 ms - -[0m
+[0mGET /assets/images/orders/pro/wood_half_2.png [32m200 [0m0.574 ms - 35253[0m
+[0mGET /assets/images/orders/pro/wood_half.png [32m200 [0m0.491 ms - 49718[0m
+[0mGET /assets/js/application.js [36m304 [0m0.567 ms - -[0m
+[0mGET /assets/js/app/orders_type.js [32m200 [0m1.117 ms - 4054[0m
+[0mGET /assets/js/ui/form.js [36m304 [0m0.424 ms - -[0m
+[0mGET /assets/js/ui/navbar.js [36m304 [0m0.592 ms - -[0m
+[0mGET /assets/js/ui/modal.js [36m304 [0m0.603 ms - -[0m
+[0mGET /assets/js/lib/jquery.min.js [36m304 [0m0.274 ms - -[0m
+[0mGET /assets/js/lib/underscore.js [36m304 [0m0.291 ms - -[0m
+[0mGET /orders/new [32m200 [0m1.238 ms - 3892[0m
+[0mGET /assets/images/demo-glass-type.png [32m200 [0m0.813 ms - 30443[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.462 ms - 237115[0m
+[0mGET /assets/images/orders/ti@2x.png [32m200 [0m0.677 ms - 870284[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m2.145 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_white.jpg [32m200 [0m1.708 ms - 101931[0m
+[0mGET /assets/images/orders/sheet@2x.png [32m200 [0m1.015 ms - 742617[0m
+[0mGET /assets/images/orders/positive/photo_sheet_black.jpg [32m200 [0m0.645 ms - 125346[0m
+[0mGET /assets/images/orders/positive/photo_wood_red.jpg [32m200 [0m0.450 ms - 237115[0m
+[0mGET /assets/images/orders/wood@2x.png [32m200 [0m0.660 ms - 870839[0m
+[0mGET /assets/images/orders/wood_half@2x.png [32m200 [0m0.572 ms - 796154[0m
+[0mGET /assets/js/application.js [32m200 [0m0.695 ms - 340[0m
+[0mGET /assets/js/app/orders_new.js [32m200 [0m0.928 ms - 4991[0m
+[0mGET /assets/js/lib/jquery.min.js [32m200 [0m0.876 ms - 84380[0m
+[0mGET /assets/js/ui/form.js [32m200 [0m0.593 ms - 1706[0m
+[0mGET /assets/js/lib/underscore.js [32m200 [0m0.469 ms - 52919[0m
+[0mGET /assets/js/ui/navbar.js [32m200 [0m1.015 ms - 3138[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [32m200 [0m0.734 ms - 167906[0m
+[0mGET /assets/images/orders/positive/photo_wood_black_half.jpg [32m200 [0m0.720 ms - 111813[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.837 ms - -[0m
+[0mGET /assets/images/orders/positive/photo_wood_green_half.jpg [32m200 [0m1.018 ms - 171098[0m
+[0mGET /assets/images/orders/positive/photo_wood_red_half.jpg [36m304 [0m0.465 ms - -[0m
+[0mGET /admin/users [32m200 [0m476.799 ms - 42485[0m
+[0mGET /admin/users [32m200 [0m535.441 ms - 42485[0m
