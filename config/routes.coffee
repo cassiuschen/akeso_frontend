@@ -86,10 +86,10 @@ router
   # 新建订单
   # {smsCode: xxx, mobilePhoneNumber: xxx, username: xxx, gender: xxx, email: xxx, orders:{ type:xxx, color:xxx }}
   .post '/orders', (req, res) ->
-    console.log 'TEST FIRST'
+    console.log "========================================== Order Comming =================================================="
+    console.log req.body
     user = new LeanCloud.User()
-    console.log 'TEST'
-    
+
     user.signUpOrlogInWithMobilePhone
       smsCode: req.body.smsCode
       mobilePhoneNumber: req.body.mobilePhoneNumber
@@ -98,7 +98,6 @@ router
     ,
       success: (user_req) ->
         console.log user_req
-        console.log "********************************************************"
         #user.logIn()
         Orders = LeanCloud.Object.extend("Orders")
         
@@ -127,17 +126,38 @@ router
                     , (err) ->
                       console.log err.message
                 res.send
-                  success: 0
+                  status: 200
+                  message: "订单提交成功"
               error: (usr, err) ->
+                console.log "+++++++++++++++++++++++++++++++ ERROR!!!!!"
+                console.log "+++++++++++++++++++++++++++++++ ERROR DATA"
+                console.log req.body
+                console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
                 console.log err.message
+                console.log "+++++++++++++++++++++++++++++++++++++++++++++"
+                res.send
+                  message: err.message
+                  status: 500
           error: (oder, err) ->
+            console.log "+++++++++++++++++++++++++++++++ ERROR!!!!!"
+            console.log "+++++++++++++++++++++++++++++++ ERROR DATA"
+            console.log req.body
+            console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
             console.log err.message
+            console.log "+++++++++++++++++++++++++++++++++++++++++++++"
+            res.send
+              message: err.message
+              status: 500
           
       error: (usr, err) ->
-        console.log "ERROR!!!!!"
+        console.log "+++++++++++++++++++++++++++++++ ERROR!!!!!"
+        console.log "+++++++++++++++++++++++++++++++ ERROR DATA"
+        console.log req.body
+        console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
         console.log err.message
+        console.log "+++++++++++++++++++++++++++++++++++++++++++++"
         res.send
-          message: "登录失败，请重试！"
+          message: err.message
           status: 500
 
   .get '/orders/new', (req, res) ->

@@ -48,29 +48,26 @@ define ['jquery', 'underscore', 'form', 'navbar', 'modal'], ($, _, UIForm, NavBa
     $('#sendCode').attr 'disabled', 'disabled'
     mobile = $('input#mobile').val()
     result = {}
-#    $.ajax
-#      type: 'GET'
-#      url: "/leancloud/sendSMS/#{mobile}"
-#      params:
-#        mobile: mobile
-#      data: 
-#        mobile: mobile
-#      contentType: "application/json"
-#      dataType: "json"
-#      async: false
-#      success: (data, _) ->
-#        result = data
-#        console.log result.message
-#        if result.status == 200
-#          $('#submit').removeAttr 'disabled'
-#          $('#submit').on 'click', ->
-#            that.submit()
-#        else
-#          UIForm.getWarn 'input#mobile', "手机号似乎有点问题哦，请重新填写。", (el) ->
-#            $('#sendCode').removeAttr 'disabled'
-    $('#submit').removeAttr 'disabled'
-    $('#submit').on 'click', ->
-      that.submit()
+    $.ajax
+      type: 'GET'
+      url: "/leancloud/sendSMS/#{mobile}"
+      params:
+        mobile: mobile
+      data: 
+        mobile: mobile
+      contentType: "application/json"
+      dataType: "json"
+      async: false
+      success: (data, _) ->
+        result = data
+        console.log result.message
+        if result.status == 200
+          $('#submit').removeAttr 'disabled'
+          $('#submit').on 'click', ->
+            that.submit()
+        else
+          UIForm.getWarn 'input#mobile', "手机号似乎有点问题哦，请重新填写。", (el) ->
+            $('#sendCode').removeAttr 'disabled'
   getData: ->
     data = {}
     data.username = $('input#name').val()

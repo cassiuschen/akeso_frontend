@@ -1,5 +1,22 @@
 define(['jquery'], function($) {
   return {
+    formWarning: function(selector, text, callback) {
+      var el;
+      if (callback == null) {
+        callback = (function() {});
+      }
+      el = $(selector);
+      el.children('input').addClass('warning');
+      el.children('.title').after("<div class=\"info\"><i class=\"fa fa-warning\"></i> " + text + "</div>");
+      return el.children('input').bind('input propertychange', function() {
+        el.children('input').removeClass('warning');
+        $(selector + ">.title+.info").remove();
+        try {
+          callback.call(el);
+        } catch (undefined) {}
+        return el.children('input').unbind('input propertychange');
+      });
+    },
     validateInput: function(selector, validation, warning_text) {
       var el, value;
       if (validation == null) {

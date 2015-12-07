@@ -108,7 +108,12 @@ define(['jquery', 'underscore', 'form', 'navbar', 'modal'], function($, _, UIFor
         contentType: "application/json",
         dataType: "json",
         success: function(data, _) {
-          return window.location = '/orders/success';
+          console.log(data);
+          if (data.status === 500) {
+            return UIForm.formWarning('.form', data.message);
+          } else {
+            return window.location = '/orders/success';
+          }
         },
         error: function(err) {
           return console.log(err);
