@@ -1,4 +1,15 @@
 define ['jquery'], ($) ->
+	formWarning: (selector, text, callback = (->;)) ->
+		el = $(selector)
+		el.children('input').addClass 'warning'
+		el.children('.title').after("<div class=\"info\"><i class=\"fa fa-warning\"></i> #{text}</div>")
+		el.children('input').bind 'input propertychange', ->
+			el.children('input').removeClass 'warning'
+			$("#{selector}>.title+.info").remove()
+			try
+				callback.call(el)
+			el.children('input').unbind 'input propertychange'
+			
 	validateInput: (selector, validation = ((th) -> return true), warning_text = "信息填写有误，请重新输入！") ->
 		el = $(selector)
 		value = el.val()

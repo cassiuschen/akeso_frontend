@@ -48,26 +48,29 @@ define ['jquery', 'underscore', 'form', 'navbar', 'modal'], ($, _, UIForm, NavBa
     $('#sendCode').attr 'disabled', 'disabled'
     mobile = $('input#mobile').val()
     result = {}
-    $.ajax
-      type: 'GET'
-      url: "/leancloud/sendSMS/#{mobile}"
-      params:
-        mobile: mobile
-      data: 
-        mobile: mobile
-      contentType: "application/json"
-      dataType: "json"
-      async: false
-      success: (data, _) ->
-        result = data
-        console.log result.message
-        if result.status == 200
-          $('#submit').removeAttr 'disabled'
-          $('#submit').on 'click', ->
-            that.submit()
-        else
-          UIForm.getWarn 'input#mobile', "手机号似乎有点问题哦，请重新填写。", (el) ->
-            $('#sendCode').removeAttr 'disabled'
+#    $.ajax
+#      type: 'GET'
+#      url: "/leancloud/sendSMS/#{mobile}"
+#      params:
+#        mobile: mobile
+#      data: 
+#        mobile: mobile
+#      contentType: "application/json"
+#      dataType: "json"
+#      async: false
+#      success: (data, _) ->
+#        result = data
+#        console.log result.message
+#        if result.status == 200
+#          $('#submit').removeAttr 'disabled'
+#          $('#submit').on 'click', ->
+#            that.submit()
+#        else
+#          UIForm.getWarn 'input#mobile', "手机号似乎有点问题哦，请重新填写。", (el) ->
+#            $('#sendCode').removeAttr 'disabled'
+    $('#submit').removeAttr 'disabled'
+    $('#submit').on 'click', ->
+      that.submit()
   getData: ->
     data = {}
     data.username = $('input#name').val()
@@ -90,6 +93,10 @@ define ['jquery', 'underscore', 'form', 'navbar', 'modal'], ($, _, UIForm, NavBa
       contentType: "application/json"
       dataType: "json"
       success: (data, _) ->
-        window.location = '/orders/success'
+        console.log data
+        if data.status == 500
+          UIForm.formWarning '.form', data.message
+        else
+          window.location = '/orders/success'
       error: (err) ->
         console.log err
