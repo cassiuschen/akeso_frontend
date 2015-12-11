@@ -34,7 +34,6 @@ router.get '*', (req, res, next) ->
 router
   .get '/', (req, res) ->
     user = LeanCloud.User.current()
-    console.log user
     res.render 'admin/index',
       controller: "Index"
       user: user
@@ -69,7 +68,6 @@ router
         success: (results) ->
           users = _.map results, (u) ->
             u.attributes.mobilePhoneNumber
-          console.log users
           attendancesQuery = new LeanCloud.Query(Attendances)
           attendancesQuery
             .limit(1000)
@@ -162,6 +160,46 @@ router
           name: "订单数据-#{new Date()}"
           data: [_.flatten titles].concat orders
         ]
+  .get '/excel/attendances.xlsx', (req, res) ->
+    usersQuery = new LeanCloud.Query(Users)
+    usersQuery
+      .limit(1000)
+      .find
+        success: (results) ->
+          users = _.map results, (u) ->
+            u.attributes.mobilePhoneNumber
+          attendancesQuery = new LeanCloud.Query(Attendances)
+          attendancesQuery
+            .limit(1000)
+            .find
+              success: (data) ->
+                attendances = data
+                _.each attendances, (a) ->
+
+                  if _.contains users, a.attributes.mobile
+                    a.attributes.isSigned = true
+                  else
+                    a.attributes.isSigned = false
+                sheetTitle = ["姓名", "手机", "电子邮箱", "职业", "年龄", "性别", "病症", "是否登记"]
+                sheet = []
+                sheet.push sheetTitle
+
+                userData = _.each(attendances, (a) ->
+                  raw = []
+                  raw.push(a.attributes.name)
+                  raw.push(a.attributes.mobile)
+                  raw.push(a.attributes.email)
+                  raw.push(a.attributes.job)
+                  raw.push(if a.attributes.age < 100 then a.attributes.age else "未填写")
+                  raw.push(if a.attributes.gender == "male" then "男" else "女")
+                  raw.push(a.attributes.illness)
+                  raw.push(a.attributes.isSigned)
+                  sheet.push raw
+                )
+                res.send excel.build [
+                  name: "内测用户数据-#{new Date()}"
+                  data: sheet
+                ]
 
   .get '/signin', (req, res) ->
     res.render 'admin/signin'

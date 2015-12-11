@@ -31,7 +31,10 @@ block content
         header.panel-heading
           | 内测用户数据
         .panel-body.table-responsive
-
+          .box-tools.m-b-15
+            a.btn.btn-default.pull-right(href="/admin/excel/attendances.xlsx")
+              +fa("download")
+              | 下载数据表格(.xlsx)
           table.table.table-hover
             thead
               tr
