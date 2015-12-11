@@ -110,7 +110,9 @@ define(['jquery', 'underscore', 'form', 'navbar', 'modal'], function($, _, UIFor
         success: function(data, _) {
           console.log(data);
           if (data.status === 500) {
-            return UIForm.formWarning('.form', data.message);
+            UIForm.formWarning('.form', data.message);
+            $('#sendCode').removeAttr('disabled');
+            return $('#sendCode').text('请重新发送');
           } else {
             return window.location = '/orders/success';
           }

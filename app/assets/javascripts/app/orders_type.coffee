@@ -93,6 +93,8 @@ define ['jquery', 'underscore', 'form', 'navbar', 'modal'], ($, _, UIForm, NavBa
         console.log data
         if data.status == 500
           UIForm.formWarning '.form', data.message
+          $('#sendCode').removeAttr 'disabled'
+          $('#sendCode').text '请重新发送'
         else
           window.location = '/orders/success'
       error: (err) ->
