@@ -177,7 +177,7 @@ router
                 filteredAttendances = _.filter attendances, (a) ->
                   _.contains users, a.attributes.mobilePhoneNumber
 
-                sheetTitle = ["姓名", "手机", "电子邮箱", "职业", "年龄", "性别", "病症", "款式"]
+                sheetTitle = ["姓名", "手机", "电子邮箱", "职业", "年龄", "性别", "病症", "款式", "地址"]
                 sheet = []
                 sheet.push sheetTitle
 
@@ -191,7 +191,7 @@ router
                   raw.push(if a.attributes.gender == "male" then "男" else "女")
                   raw.push(a.attributes.illness)
                   raw.push(a.attributes.type)
-                  #raw.push(a.attributes.isSigned)
+                  raw.push(a.attributes.address)
                   sheet.push raw
                 )
                 res.send excel.build [
