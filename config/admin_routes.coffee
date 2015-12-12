@@ -161,39 +161,37 @@ router
           data: [_.flatten titles].concat orders
         ]
   .get '/excel/attendances.xlsx', (req, res) ->
-    usersQuery = new LeanCloud.Query(Users)
-    usersQuery
+    attendancesQuery = new LeanCloud.Query(Attendances)
+    attendancesQuery
       .limit(1000)
       .find
         success: (results) ->
           users = _.map results, (u) ->
-            u.attributes.mobilePhoneNumber
-          attendancesQuery = new LeanCloud.Query(Attendances)
-          attendancesQuery
+            u.attributes.mobile
+          usersQuery = new LeanCloud.Query(Users)
+          usersQuery
             .limit(1000)
             .find
               success: (data) ->
                 attendances = data
-                _.each attendances, (a) ->
+                filteredAttendances = _.filter attendances, (a) ->
+                  _.contains users, a.attributes.mobilePhoneNumber
 
-                  if _.contains users, a.attributes.mobile
-                    a.attributes.isSigned = true
-                  else
-                    a.attributes.isSigned = false
-                sheetTitle = ["姓名", "手机", "电子邮箱", "职业", "年龄", "性别", "病症", "是否登记"]
+                sheetTitle = ["姓名", "手机", "电子邮箱", "职业", "年龄", "性别", "病症", "款式"]
                 sheet = []
                 sheet.push sheetTitle
 
-                userData = _.each(attendances, (a) ->
+                userData = _.each(filteredAttendances, (a) ->
                   raw = []
-                  raw.push(a.attributes.name)
-                  raw.push(a.attributes.mobile)
+                  raw.push(a.attributes.username)
+                  raw.push(a.attributes.mobilePhoneNumber)
                   raw.push(a.attributes.email)
                   raw.push(a.attributes.job)
                   raw.push(if a.attributes.age < 100 then a.attributes.age else "未填写")
                   raw.push(if a.attributes.gender == "male" then "男" else "女")
                   raw.push(a.attributes.illness)
-                  raw.push(a.attributes.isSigned)
+                  raw.push(a.attributes.type)
+                  #raw.push(a.attributes.isSigned)
                   sheet.push raw
                 )
                 res.send excel.build [
