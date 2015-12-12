@@ -12,7 +12,26 @@ router.options '*', (req, res) ->
 LeanCloud.initialize('Cpt7lNSjHVOCP1DvYNT73ky9', 'AbTX5HRGkOry6rwBdG59lfkd')
 #else
 #  LeanCloud.initialize('aLFJqize9puIjxGu7Q9jWd9q', '4nIIMFQFjAv0asjOr2yJ4DrU')
-
+sendErrorMessage = (data) ->
+  #用户 {{name}} 订单提交时出现错误，以下为数据信息： 
+  # 用户电话： {{mobile}}，邮箱：{{email}}，省份：{{location}} 
+  # 订单信息：{{color}}款{{type}}，选配{{glass}} 
+  # 错误原因：{{errorMessage}} 请及时联系用户
+  adminMobile = ['15910364815', '13911413915']
+  _.each adminMobile, (admin) ->
+    params =
+      mobilePhoneNumber: admin
+      template: "error-warning"
+      name: data.name
+      mobile: data.userMobile
+      email: data.email
+      location: data.location
+      color: data.order.color
+      type: data.order.type
+      glass: data.order.glass
+      errorMessage: data.error
+      type: "#{req.body.orders.color}#{req.body.orders.type}"
+    LeanCloud.Cloud.requestSmsCode(params)
 router
   .get '/', (req, res) ->
     res.render 'static/index',
@@ -135,6 +154,17 @@ router
                 console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
                 console.log err.message
                 console.log "+++++++++++++++++++++++++++++++++++++++++++++"
+                errorData =
+                  errorMessage: err.message
+                  name: req.body.username
+                  userMobile: req.body.mobilePhoneNumber
+                  email: req.body.email
+                  location: req.body.orders.province
+                  order:
+                    type: req.body.orders.type
+                    color: req.body.orders.color
+                    glass: req.body.orders.glass
+                sendErrorMessage(errorData)
                 res.send
                   message: err.message
                   status: 500
@@ -145,6 +175,17 @@ router
             console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
             console.log err.message
             console.log "+++++++++++++++++++++++++++++++++++++++++++++"
+            errorData =
+              errorMessage: err.message
+              name: req.body.username
+              userMobile: req.body.mobilePhoneNumber
+              email: req.body.email
+              location: req.body.orders.province
+              order:
+                type: req.body.orders.type
+                color: req.body.orders.color
+                glass: req.body.orders.glass
+            sendErrorMessage(errorData)
             res.send
               message: err.message
               status: 500
@@ -156,6 +197,17 @@ router
         console.log "+++++++++++++++++++++++++++++++ ERROR MESSAGE"
         console.log err.message
         console.log "+++++++++++++++++++++++++++++++++++++++++++++"
+        errorData =
+          errorMessage: err.message
+          name: req.body.username
+          userMobile: req.body.mobilePhoneNumber
+          email: req.body.email
+          location: req.body.orders.province
+          order:
+            type: req.body.orders.type
+            color: req.body.orders.color
+            glass: req.body.orders.glass
+        sendErrorMessage(errorData)
         res.send
           message: err.message
           status: 500
